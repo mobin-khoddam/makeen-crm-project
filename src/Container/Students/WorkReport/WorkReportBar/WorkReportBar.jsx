@@ -1,23 +1,30 @@
-import addIcon from '/src/assets/images/Students/WorkReports/add.svg'
 import editIcon from '/src/assets/images/Students/WorkReports/edit-2.svg'
 import messageIcon from '/src/assets/images/Students/WorkReports/message-text.svg'
-import sendIcon from '/src/assets/images/Students/WorkReports/send-2.svg'
 import taskIcon from '/src/assets/images/Students/WorkReports/task.svg'
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 const WorkReportBar = () => {
+    const location = useLocation()
+    const isActive = ((path)=> location.pathname === path)
     return (
         <div className="w-full bg-white rounded-2xl flex mb-[43px] cursor-pointer">
-            <Link to="/work-report/add" className="bg-[#FACA15] p-4  text-white flex items-center justify-center gap-2 w-full rounded-r-2xl">
-                <img src={`${editIcon}`} alt=""/>
+            <Link to="/work-report/add"
+                  className={` p-4  flex items-center justify-center gap-2 w-full rounded-r-2xl ${isActive('/work-report/add') && 'bg-[#FACA15] text-white'}`}>
+                <div style={{mask: `url(${editIcon}) center no-repeat`}}
+                     className={`w-6 h-6  ${isActive('/work-report/add') ? 'bg-white' : 'bg-black'}`}></div>
                 <span>ثبت گزارش کار</span>
             </Link>
-            <Link to="/work-report/see-reports" className=" p-4 flex items-center justify-center gap-2 w-full border-x">
-                <img src={`${taskIcon}`} alt=""/>
+            <Link to="/work-report/see-reports"
+                  className={`p-4 flex items-center justify-center gap-2 w-full border-x ${isActive('/work-report/see-reports') && 'bg-[#FACA15] text-white'}`}>
+                <div style={{mask: `url(${taskIcon}) center no-repeat`}}
+                     className={`w-6 h-6  ${isActive('/work-report/see-reports') ? 'bg-white' : 'bg-black' }`}></div>
                 <span>مشاهده گزارش کارها</span>
             </Link>
-            <Link to="/work-report/report-card" className=" p-4 flex items-center justify-center gap-2 w-full rounded-l-2xl shadow-sm">
-                <img src={`${messageIcon}`} alt=""/>
+            <Link to="/work-report/report-card"
+                  className={`p-4 flex items-center justify-center gap-2 w-full rounded-l-2xl shadow-sm ${isActive('/work-report/report-card') && 'bg-[#FACA15] text-white'}`}>
+                <div style={{mask: `url(${messageIcon}) center no-repeat`}}
+                     className={`w-6 h-6  ${isActive('/work-report/report-card') ? 'bg-white' : 'bg-black'}`}></div>
+
                 <span>کارنامه</span>
             </Link>
         </div>

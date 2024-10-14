@@ -27,15 +27,15 @@ const router = createBrowserRouter([
     },
     {
       path: "/work-report/add",
-      element: <WorkReportPage><AddWorkReportPage /></WorkReportPage>,
+      element: <AddWorkReportPage />,
     },
     {
         path: "/work-report/see-reports",
-        element: <WorkReportPage><SeeWorkReportListPage /></WorkReportPage>,
+        element: <SeeWorkReportListPage />,
     },
     {
         path: "/work-report/report-card",
-        element: <WorkReportPage><ReportCardPage /></WorkReportPage>
+        element: <ReportCardPage />
     },
     {
         path: "*",

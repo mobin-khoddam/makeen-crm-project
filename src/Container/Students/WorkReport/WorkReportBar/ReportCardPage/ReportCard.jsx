@@ -1,9 +1,14 @@
+import WorkReportPage from "../../../../../pages/Students/WorkReport/WorkReportPage.jsx";
+
 const ReportCardPage = () => {
     return (
-        <div>
-            report card page
-        </div>
+        <WorkReportPage>
+            <div>
+                report card page
+            </div>
+        </WorkReportPage>
     )
 }
 
 export default ReportCardPage
+
