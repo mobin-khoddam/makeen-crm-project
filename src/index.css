@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'iran-yekan';
+    src: url('./assets/fonts/IRANYekanRegularFaNum.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'iran-yekan', sans-serif;
+}
+
+.input-forget-password {
+    @apply w-14 h-14 rounded-[10px] border text-center text-2xl ;
+    @apply max-[440px]:w-12 max-[440px]:h-12 max-[440px]:text-xl max-[400px]:h-10 max-[400px]:w-10;
+}
+
+
+.login-form-style {
+    @apply flex flex-col items-center justify-center bg-white px-8 w-[406px] h-[530px] min-h-[530px] rounded-[15px] shadow-[0px_0px_2px_0px_#00000040] max-xl:w-11/12;
+}
