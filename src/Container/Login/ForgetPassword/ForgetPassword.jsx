@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import {useForm} from "react-hook-form";
+import LoginPage from "../../../pages/Login/LoginPage.jsx";
 
 const ForgetPassword = () => {
 
@@ -39,6 +40,7 @@ const ForgetPassword = () => {
     }
 
     return (
+        <LoginPage>
             <form onSubmit={handleSubmit(onSubmit)} className="login-form-style">
                 <div className="flex flex-col gap-3 items-center font-medium mb-10">
                     <div className="flex text-3xl text-center mb-1 max-[355px]:flex-col max-[355px]:gap-2">
@@ -83,6 +85,7 @@ const ForgetPassword = () => {
                     تایید و ادامه
                 </button>
             </form>
+        </LoginPage>
     )
 }
 

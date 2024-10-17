@@ -15,11 +15,11 @@ import SeeWorkReportListPage
 const router = createBrowserRouter([
     {
         path: "/",
-        element: <LoginPage><LoginForm /></LoginPage>
+        element: <LoginForm />
     },
     {
         path: "/forget-password",
-        element: <LoginPage><ForgetPassword/></LoginPage>,
+        element: <ForgetPassword/>,
     },
     {
         path: "/dashboard",
