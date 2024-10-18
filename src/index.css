@@ -24,7 +24,7 @@ body {
 }
 
 
-.rmdp-top-class, rmdp-day-picker {
+.rmdp-top-class, .rmdp-day-picker {
     @apply w-[358px] max-[420px]:w-[248px];
 }
 

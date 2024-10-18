@@ -1,6 +1,6 @@
 const Pagination = () => {
     return (
-        <div className="w-fit mx-auto border">
+        <div className="w-fit mx-auto  mb-10">
             <div
                 className="join [&_button]:w-10 [&_button]:h-10 [&_button]:bg-white [&_button]:border max-[400px]:[&_button]:w-9 max-[400px]:[&_button]:h-9">
                 <button className="join-item !w-[67px] max-[400px]:!w-[60px]">

@@ -2,7 +2,6 @@ import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {useForm} from "react-hook-form";
 import lockIcon from '/src/assets/images/Login/Lock-icon.png'
-import MakeenLogo from "../../../Componants/MakeenLogo/MakeenLogo.jsx";
 import LoginPage from "../../../pages/Login/LoginPage.jsx";
 
 const LoginForm = () => {

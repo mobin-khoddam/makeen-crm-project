@@ -16,9 +16,9 @@ const WorkReportList = () => {
     return (
         <div>
             <div className="mt-6 overflow-x-auto">
-                <table className="w-full min-w-[703px] mb-10 ">
+                <table className="w-full min-w-[703px] mb-10 border">
                     <thead className="">
-                    <tr className="[&_*]:py-5 text-primary-gray-100 [&_*]:font-normal border ">
+                    <tr className="[&_*]:py-5 text-primary-gray-100 [&_*]:font-normal  ">
                         <th>شماره گزارش</th>
                         <th>تاریخ</th>
                         <th>زمان گزارش</th>
@@ -28,7 +28,7 @@ const WorkReportList = () => {
                     </thead>
                     <tbody>
                     {
-                        SeeTableReportList.map((item, index) => (
+                        SeeTableReportList.map((item) => (
                             <tr key={item.id} className="[&_th]:p-5 [&_th]:odd:bg-white">
                                 <th>{item.reportNumber}</th>
                                 <th>{item.date}</th>

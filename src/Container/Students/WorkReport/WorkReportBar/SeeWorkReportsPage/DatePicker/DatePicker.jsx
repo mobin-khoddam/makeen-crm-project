@@ -3,7 +3,6 @@ import {Calendar} from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian"
 import persian_fa from "react-date-object/locales/persian_fa"
 import dateIcon from '/src/assets/images/Students/WorkReports/calendar4-range.svg'
-import arrow from '/src/assets/images/Students/WorkReports/chevron-up.svg'
 
 const FilterDatePicker = ({setShowDateDrawer, showDateDrawer, setShowCategories}) => {
     const [selectedDates, setSelectedDates] = useState();
