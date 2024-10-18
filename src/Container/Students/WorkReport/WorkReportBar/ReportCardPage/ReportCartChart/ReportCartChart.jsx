@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import { Line } from 'react-chartjs-2';
+
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -9,7 +11,6 @@ import {
     Tooltip,
     Legend,
 } from 'chart.js';
-import { Line } from 'react-chartjs-2';
 
 ChartJS.register(
     CategoryScale,
