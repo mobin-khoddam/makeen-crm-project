@@ -11,7 +11,7 @@ const ReportCardMessages = () => {
                             <img src={`${messageIcon}`} alt="messageIcon"/>
                             <span>{item.pointOfView}</span>
                         </div>
-                        <p className="bg-gray-table p-4 pt-0 rounded-lg">
+                        <p className="bg-gray-table p-4 rounded-lg">
                             {item.message}
                         </p>
                     </div>
