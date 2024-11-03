@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {useForm} from "react-hook-form";
 import lockIcon from '/src/assets/images/Login/Lock-icon.png'
-import MakeenLogo from "../../../Componants/MakeenLogo/MakeenLogo.jsx";
+import LoginPage from "../../../pages/Login/LoginPage.jsx";
 
 const LoginForm = () => {
 
@@ -23,6 +23,7 @@ const LoginForm = () => {
 
 
     return (
+        <LoginPage>
             <form onSubmit={handleSubmit(onSubmit)} className="login-form-style">
                 <span className="font-medium text-2xl mb-[75px]">خوش آمدید</span>
                 <div className="w-full relative mb-[51px]">
@@ -60,7 +61,9 @@ const LoginForm = () => {
                 <button type="submit"
                         className="text-white bg-[#0593CE] w-full h-12 font-semibold text-xl rounded-[10px]">ورود
                 </button>
+
             </form>
+        </LoginPage>
     )
 }
 
