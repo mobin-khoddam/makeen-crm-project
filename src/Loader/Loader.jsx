@@ -1,13 +1,10 @@
-import {createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import LoginForm from "../Container/Login/LoginForm/LoginForm.jsx";
 import ForgetPassword from "../Container/Login/ForgetPassword/ForgetPassword.jsx";
 import DashboardPage from "../pages/Students/Dashboard/DashboardPage.jsx";
 import Page404 from "../pages/Page404.jsx";
-import ReportCardPage from "../Container/Students/WorkReport/WorkReportBar/ReportCardPage/ReportCard.jsx";
-import AddWorkReportPage from "../Container/Students/WorkReport/WorkReportBar/AddWorkReportPage/AddWorkReportPage.jsx";
-import SeeWorkReportListPage
-    from "../Container/Students/WorkReport/WorkReportBar/SeeWorkReportsPage/SeeWorkReportsListPage.jsx";
-
+import WorkReportPage from '../pages/Students/WorkReport/WorkReportPage.jsx'
+import Finance from "../pages/Students/Finance/FinancePage.jsx";
 
 const router = createBrowserRouter([
     {
@@ -23,16 +20,12 @@ const router = createBrowserRouter([
         element: <DashboardPage/>,
     },
     {
-      path: "/work-report/add",
-      element: <AddWorkReportPage />,
+        path: "/work-report",
+        element: <WorkReportPage />,
     },
     {
-        path: "/work-report/see-reports",
-        element: <SeeWorkReportListPage />,
-    },
-    {
-        path: "/work-report/report-card",
-        element: <ReportCardPage />
+        path: 'finance',
+        element: <Finance />
     },
     {
         path: "*",

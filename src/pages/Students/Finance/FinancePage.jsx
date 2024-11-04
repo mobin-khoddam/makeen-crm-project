@@ -1,11 +1,14 @@
 import OriginalTemplatePage from "../../../Componants/OriginalTemplate/OriginalTemplatePage.jsx";
+import FinanceCards from "../../../Container/Students/Finance/FinanceCards/FinanceCards.jsx";
+import FinanceRow from "../../../Container/Students/Finance/FinanceTable/FinanceRow.jsx";
 
-const StudentsPage = () => {
-    return (
-        <OriginalTemplatePage>
+const Finance = () => {
+  return (
+    <OriginalTemplatePage>
+      <FinanceCards />
+      <FinanceRow />
+    </OriginalTemplatePage>
+  );
+};
 
-        </OriginalTemplatePage>
-    )
-}
-
-export default StudentsPage;
+export default Finance;

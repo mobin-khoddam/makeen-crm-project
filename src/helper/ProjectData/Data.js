@@ -1,5 +1,9 @@
-export const CategoriesFilterList = ['تایید شده', 'رد شده', 'بررسی نشده', 'نمایش همه']
-
+export const CategoriesFilterList = [
+  "تایید شده",
+  "رد شده",
+  "بررسی نشده",
+  "نمایش همه",
+];
 
 export const SeeTableReportList = [
     {id: 1,reportNumber: 87, date: '1403/4/23', reportTime: '8', reportStatus: 'بررسی نشده'},
@@ -37,4 +41,15 @@ export const WorkCardStatusList = [
 export const MessageReportCardList = [
     {id: 1, pointOfView: 'دیدگاه استاد', message: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با اسد '},
     {id:2, pointOfView: 'دیدگاه ادمین', message: 'لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه '}
+]
+
+
+import editIcon from '/src/assets/images/Students/WorkReports/edit-2.svg'
+import messageIcon from '/src/assets/images/Students/WorkReports/message-text.svg'
+import taskIcon from '/src/assets/images/Students/WorkReports/task.svg'
+
+export const WorkReportBarList = [
+    { id: 1, icon: editIcon, text: 'ثبت گزارش کار', pageRender: 'AddWorkReportPage' },
+    { id: 2, icon: messageIcon, text: 'مشاهده گزارش کارها', pageRender: 'SeeWorkReportListPage' },
+    { id: 3, icon: taskIcon, text: 'کارنامه', pageRender: 'ReportCardPage' },
 ]

@@ -22,7 +22,7 @@ const Sidebar = () => {
                         <div className="mb-6 mx-auto w-fit">< MakeenLogo></MakeenLogo></div>
                         <div className="w-full pr-6 flex flex-col gap-6 mb-44">
                             <CustomSidebarLink location={'/dashboard'} svg={`${homeSvg}`} title="داشبورد"/>
-                            <CustomSidebarLink location={'/work-report/add'} svg={`${noteSvg}`} title="گزارش کار"/>
+                            <CustomSidebarLink location={'/work-report'} svg={`${noteSvg}`} title="گزارش کار"/>
                             <CustomSidebarLink location={'/finance'} svg={`${financeSvg}`} title="مالی"/>
                             <CustomSidebarLink location={'/asd'} svg={`${LeaveRequestsSvg}`} title="درخواست های مرخصی"/>
                             <CustomSidebarLink location={'/asd'} svg={`${MessagesSvg}`} title="پیام ها"/>
