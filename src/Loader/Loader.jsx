@@ -3,11 +3,7 @@ import LoginForm from "../Container/Login/LoginForm/LoginForm.jsx";
 import ForgetPassword from "../Container/Login/ForgetPassword/ForgetPassword.jsx";
 import DashboardPage from "../pages/Students/Dashboard/DashboardPage.jsx";
 import Page404 from "../pages/Page404.jsx";
-import ReportCardPage from "../Container/Students/WorkReport/WorkReportBar/ReportCardPage/ReportCard.jsx";
-import AddWorkReportPage from "../Container/Students/WorkReport/WorkReportBar/AddWorkReportPage/AddWorkReportPage.jsx";
-import SeeWorkReportListPage
-    from "../Container/Students/WorkReport/WorkReportBar/SeeWorkReportsPage/SeeWorkReportsListPage.jsx";
-
+import WorkReportPage from '../pages/Students/WorkReport/WorkReportPage.jsx'
 
 const router = createBrowserRouter([
     {
@@ -24,15 +20,7 @@ const router = createBrowserRouter([
     },
     {
         path: "/work-report",
-        element: <AddWorkReportPage />,
-    },
-    {
-        path: "/work-report/see-reports",
-        element: <SeeWorkReportListPage />,
-    },
-    {
-        path: "/work-report/report-card",
-        element: <ReportCardPage />
+        element: <WorkReportPage />,
     },
     {
         path: "*",
