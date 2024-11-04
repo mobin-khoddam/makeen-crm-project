@@ -4,6 +4,7 @@ import ForgetPassword from "../Container/Login/ForgetPassword/ForgetPassword.jsx
 import DashboardPage from "../pages/Students/Dashboard/DashboardPage.jsx";
 import Page404 from "../pages/Page404.jsx";
 import WorkReportPage from '../pages/Students/WorkReport/WorkReportPage.jsx'
+import Finance from "../pages/Students/Finance/FinancePage.jsx";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
     {
         path: "/work-report",
         element: <WorkReportPage />,
+    },
+    {
+        path: 'finance',
+        element: <Finance />
     },
     {
         path: "*",

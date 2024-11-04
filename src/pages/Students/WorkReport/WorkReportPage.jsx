@@ -26,7 +26,3 @@ const WorkReportPage = () => {
 
 export default WorkReportPage
 
-
-// <AddWorkReportPage />
-//                 <SeeWorkReportListPage />
-//                 <ReportCardPage />
