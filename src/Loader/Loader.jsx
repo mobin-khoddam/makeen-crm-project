@@ -23,8 +23,8 @@ const router = createBrowserRouter([
         element: <DashboardPage/>,
     },
     {
-      path: "/work-report/add",
-      element: <AddWorkReportPage />,
+        path: "/work-report",
+        element: <AddWorkReportPage />,
     },
     {
         path: "/work-report/see-reports",
