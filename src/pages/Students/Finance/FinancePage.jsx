@@ -1,11 +1,7 @@
 import OriginalTemplatePage from "../../../Componants/OriginalTemplate/OriginalTemplatePage.jsx";
 
-const StudentsPage = () => {
-    return (
-        <OriginalTemplatePage>
+const Finance = () => {
+  return <OriginalTemplatePage>this is finance</OriginalTemplatePage>;
+};
 
-        </OriginalTemplatePage>
-    )
-}
-
-export default StudentsPage;
+export default Finance;
