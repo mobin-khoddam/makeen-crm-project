@@ -1,4 +1,4 @@
-import {createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import LoginForm from "../Container/Login/LoginForm/LoginForm.jsx";
 import ForgetPassword from "../Container/Login/ForgetPassword/ForgetPassword.jsx";
 import DashboardPage from "../pages/Students/Dashboard/DashboardPage.jsx";
