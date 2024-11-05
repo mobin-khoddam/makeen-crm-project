@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         element: <WorkReportPage />,
     },
     {
-        path: 'finance',
+        path: '/finance',
         element: <Finance />
     },
     {
