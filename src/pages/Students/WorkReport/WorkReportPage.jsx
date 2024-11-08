@@ -8,15 +8,17 @@ import { useState } from "react";
 
 const WorkReportPage = () => {
     const [selectPageRender, setSelectPageRender] = useState('AddWorkReportPage')
+    const [showCategories, setShowCategories] = useState(false)
+
 
     return (
-        <div>
+        <div onClick={() => setShowCategories(false)}>
             <OriginalTemplatePage>
                 <WorkStatusCard />
                 <WorkReportBar setSelectPageRender={setSelectPageRender} selectPageRender={selectPageRender}/>
                 {
                     selectPageRender === 'AddWorkReportPage' ? <AddWorkReportPage /> :
-                    selectPageRender === 'SeeWorkReportListPage' ? <SeeWorkReportListPage /> :
+                    selectPageRender === 'SeeWorkReportListPage' ? <SeeWorkReportListPage showCategories={showCategories} setShowCategories={setShowCategories}/> :
                     selectPageRender === 'ReportCardPage' && <ReportCardPage />
                 }
             </OriginalTemplatePage>

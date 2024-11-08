@@ -6,6 +6,7 @@ import Page404 from "../pages/Page404.jsx";
 import WorkReportPage from "../pages/Students/WorkReport/WorkReportPage.jsx";
 import Finance from "../pages/Students/Finance/FinancePage.jsx";
 import Messages from "../pages/Students/Messages/Messages.jsx";
+import LeaveRequest from "../pages/Students/LeaveRequest/LeaveRequest.jsx";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/finance",
     element: <Finance />,
+  },
+  {
+    path:"/leave-request",
+    element: <LeaveRequest />
   },
   {
     path: "*",
