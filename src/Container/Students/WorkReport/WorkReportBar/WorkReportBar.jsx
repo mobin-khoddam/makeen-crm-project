@@ -7,17 +7,15 @@ const WorkReportBar = ({ setSelectPageRender, selectPageRender }) => {
         <span
           onClick={() => setSelectPageRender(barItems.pageRender)}
           key={barItems.id}
-          className={`${
-            selectPageRender === barItems.pageRender
+          className={`${selectPageRender === barItems.pageRender
               ? "bg-[#FACA15] text-white"
               : "bg-white text-black"
-          } '`}
+            } ' transition-all duration-300 ease-linear`}
         >
           <div
-            style={{ mask: `url(${barItems.icon}) center no-repeat` }}
-            className={`w-6 h-6  ${
-              selectPageRender === barItems.pageRender ? "bg-white" : "bg-black"
-            }`}
+            style={{ mask: `url(${barItems.icon}) center no-repeat`, transition: 'all', transitionDuration: '300ms' }}
+            className={`w-6 h-6  ${selectPageRender === barItems.pageRender ? "bg-white" : "bg-black"
+              }`}
           ></div>
           <span>{barItems.text}</span>
         </span>

@@ -42,7 +42,7 @@ const Sidebar = () => {
                 title="مالی"
               />
               <CustomSidebarLink
-                location={"/asd"}
+                location={"/leave-request"}
                 svg={`${LeaveRequestsSvg}`}
                 title="درخواست های مرخصی"
               />
