@@ -52,7 +52,7 @@ const Sidebar = () => {
                 title="پیام ها"
               />
               <CustomSidebarLink
-                location={"/asd"}
+                location={"/personal-information"}
                 svg={`${PersonalSvg}`}
                 title="اطلاعات فردی"
               />
