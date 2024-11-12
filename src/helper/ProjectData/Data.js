@@ -151,3 +151,129 @@ export const LeaveRequestTableList = {
         {id: 5, one: 1, two: '1403/4/23', three: 8, four: 'تایید شده'}
     ]
 }
+
+export const personalInformationInput = [
+    {id: 1, name: 'name', placeholder: 'نام', isNumber: false},
+    {id: 2, name: 'family', placeholder: 'نام خانوادگی', isNumber: false},
+    {id: 3, name: 'fathersName', placeholder: 'نام پدر', isNumber: false},
+    {id: 4, name: 'birthPlace', placeholder: 'محل تولد', isNumber: false},
+    {id: 5, name: 'birthDate', placeholder: 'تاریخ تولد', isNumber: false},
+    {id: 6, name: 'religion', placeholder: 'دین', isNumber: false},
+    {id: 7, name: 'NationalCode', placeholder: 'کد ملی', isNumber: true},
+    {id: 8, name: 'NumberOfChildren', placeholder: 'تعداد فرزند', isNumber: false},
+    {id: 9, name: 'email', placeholder: 'ایمیل', isNumber: false},
+    {id: 10, name: 'phoneNumber', placeholder: 'تلفن همراه', isNumber: true},
+    {id: 11, name: 'ParentNumber', placeholder: 'شماره پدر/مادر', isNumber: true},
+    {id: 12, name: 'EssentialContactNumber', placeholder: 'شماره تماس ضروری', isNumber: true},
+]
+
+export const personalInformationRadioStatusMarried = [
+    {id: 1, value: 'single', title: 'مجرد'},
+    {id: 2, value: 'married', title: 'متاهل'},
+]
+
+export const personalInformationRadioGender = [
+    {id: 1, value: 'mail', title: 'مرد'},
+    {id: 2, value: 'female', title: 'زن'},
+]
+
+export const personalInformationHomeAddress = [
+    {id: 1, name: 'homeNumber', placeholder: 'شماره منزل', isNumber: true},
+    {id: 2, name: 'PostalCode', placeholder: 'کد پستی', isNumber: true},
+]
+
+export const personalInformationRadioDutySystem = [
+    {id: 1, value: 'theArmy', title: 'ارتش'},
+    {id: 2, value: 'army', title: 'سپاه'},
+    {id: 3, value: 'policeForce', title: 'نیروی انتظامی'},
+    {id: 4, value: 'ministryOfDefense', title: 'وزارت دفاع '},
+    {id: 5, value: 'other', title: 'سایر'},
+]
+
+export const personInformationRadioExemptionType = [
+    {id: 1, value: 'Surplus', title: 'مازاد'},
+    {id: 2, value: 'medicine', title: 'پزشکی'},
+    {id: 3, value: 'education', title: 'تحصیلی'},
+    {id: 4, value: 'Sponsorship', title: 'کفالت'},
+    {id: 5, value: 'MartyrsSon', title: 'فرزند شهید'},
+    {id: 6, value: 'Sacrifice', title: 'ایثارگری'},
+    {id: 7, value: 'other', title: 'سایر'},
+]
+
+export const personInformationDiploma = [
+    {id: 1, name: 'highSchoolDiploma', placeholder: 'دبیرستان', isNumber: false},
+    {id: 2, name: 'industryDiploma', placeholder: 'رشته', isNumber: false},
+    {id: 3, name: 'startDateDiploma', placeholder: 'تاریخ شروع', isNumber: false},
+    {id: 4, name: 'endDateDiploma', placeholder: 'تاریخ پایان', isNumber: false},
+    {id: 5, name: 'pointDiploma', placeholder: 'معدل', isNumber: false},
+]
+
+export const personInformationBachelorsDegree = [
+    {id: 1, name: 'highSchoolBachelorsDegree', placeholder: 'دانشگاه', isNumber: false},
+    {id: 2, name: 'industryBachelorsDegree', placeholder: 'رشته', isNumber: false},
+    {id: 3, name: 'startDateBachelorsDegree', placeholder: 'تاریخ شروع', isNumber: false},
+    {id: 4, name: 'endDateBachelorsDegree', placeholder: 'تاریخ پایان', isNumber: false},
+    {id: 5, name: 'pointBachelorsDegree', placeholder: 'معدل', isNumber: false},
+]
+
+export const personInformationMastersDegree = [
+    {id: 1, name: 'highSchoolMastersDegree', placeholder: 'دانشگاه', isNumber: false},
+    {id: 2, name: 'industryMastersDegree', placeholder: 'رشته', isNumber: false},
+    {id: 3, name: 'startDateMastersDegree', placeholder: 'تاریخ شروع', isNumber: false},
+    {id: 4, name: 'endDateMastersDegree', placeholder: 'تاریخ پایان', isNumber: false},
+    {id: 5, name: 'pointMastersDegree', placeholder: 'معدل', isNumber: false},
+]
+
+export const personInformationCompletedTrainingCourses = [
+    {id: 1, name: 'CourseTopic', placeholder: 'موضوع دوره', isNumber: false},
+    {id: 2, name: 'CourseDuration', placeholder: 'مدت دوره', isNumber: false},
+    {id: 3, name: 'startDate', placeholder: 'تاریخ شروع', isNumber: false},
+    {id: 4, name: 'NameOfTheInstitution', placeholder: 'نام موسسه', isNumber: false},
+    {id: 5, name: 'Considerations', placeholder: 'ملاحظات', isNumber: false},
+]
+
+export const personInformationRadioRelatedSoftware = [
+    {id: 1, value: 'great', title: 'عالی'},
+    {id: 2, value: 'good', title: 'خوب'},
+    {id: 3, value: 'average', title: 'متوسط'},
+    {id: 4, value: 'weak', title: 'ضعیف'},
+]
+
+export const personInformationRadioWorkHistory = [
+    {id: 1, value: 'have', title: 'دارم'},
+    {id: 2, value: 'dontHave', title: 'ندارم'}
+]
+
+export const personInformationRadioFamiliarLanguagesSuffering1 = [
+    {id: 1, value: 'average', title: 'متوسط'},
+    {id: 2, value: 'weak', title: 'ضعیف'},
+]
+
+export const personInformationRadioFamiliarLanguagesSuffering2 = [
+    {id: 1, value: 'great', title: 'عالی'},
+    {id: 2, value: 'good', title: 'خوب'},
+]
+
+export const personalInformationLanguageField = [
+    {id: 1, title: 'خواندن:', register: 'reading'},
+    {id: 2, title: 'نوشتن:', register: 'writing'},
+    {id: 3, title: 'مکالمه:', register: 'conversation'},
+]
+
+export const personalInformationRepresentative = [
+    {id: 1, name: 'RepresentativeName', placeholder: 'نام', isNumber: false},
+    {id: 2, name: 'RepresentativeAcquaintancePeriod', placeholder: 'مدت آشنایی', isNumber: false},
+    {id: 3, name: 'Representative ratio', placeholder: 'نسبت با شما', isNumber: false},
+    {id: 4, name: 'RepresentativeContactNumber', placeholder: 'شماره تماس', isNumber: true},
+    {id: 5, name: 'RepresentativeAddress', placeholder: 'آدرس', isNumber: false},
+]
+
+export const  personalInformationRadioConnection = [
+    {id: 1, value: 'instagram', title: 'اینستاگرام مکین'},
+    {id: 2, value: 'instagram', title: 'اینستاگرام دوستان'},
+    {id: 3, value: 'makeensSite', title: 'سایت مکین'},
+    {id: 4, value: 'introducingFriends', title: 'معرفی دوستان'},
+    {id: 5, value: 'telegramChannel', title: 'کانال تلکرامی'},
+    {id: 6, value: 'employmentSite', title: 'سایت کاریابی'},
+    {id: 7, value: 'other', title: 'سایر'},
+]
