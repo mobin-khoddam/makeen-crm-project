@@ -3,11 +3,11 @@ import LoginForm from "../Container/Login/LoginForm/LoginForm.jsx";
 import ForgetPassword from "../Container/Login/ForgetPassword/ForgetPassword.jsx";
 import DashboardPage from "../pages/Students/Dashboard/DashboardPage.jsx";
 import Page404 from "../pages/Page404.jsx";
-import ReportCardPage from "../Container/Students/WorkReport/WorkReportBar/ReportCardPage/ReportCard.jsx";
-import AddWorkReportPage from "../Container/Students/WorkReport/WorkReportBar/AddWorkReportPage/AddWorkReportPage.jsx";
-import SeeWorkReportListPage from "../Container/Students/WorkReport/WorkReportBar/SeeWorkReportsPage/SeeWorkReportsListPage.jsx";
-
+import WorkReportPage from "../pages/Students/WorkReport/WorkReportPage.jsx";
 import Finance from "../pages/Students/Finance/FinancePage.jsx";
+import Messages from "../pages/Students/Messages/Messages.jsx";
+import LeaveRequest from "../pages/Students/LeaveRequest/LeaveRequest.jsx";
+import PersonalInformation from "../pages/Students/PersonalInformation/PersonalInformation.jsx";
 
 const router = createBrowserRouter([
   {
@@ -23,20 +23,24 @@ const router = createBrowserRouter([
     element: <DashboardPage />,
   },
   {
+    path: "/messages",
+    element: <Messages />,
+  },
+  {
+    path: "/work-report",
+    element: <WorkReportPage />,
+  },
+  {
     path: "/finance",
     element: <Finance />,
   },
   {
-    path: "/work-report/add",
-    element: <AddWorkReportPage />,
+    path:"/leave-request",
+    element: <LeaveRequest />
   },
   {
-    path: "/work-report/see-reports",
-    element: <SeeWorkReportListPage />,
-  },
-  {
-    path: "/work-report/report-card",
-    element: <ReportCardPage />,
+    path: "/personal-information",
+    element: <PersonalInformation />,
   },
   {
     path: "*",

@@ -1,29 +1,26 @@
-import WorkReportPage from "../../../../../pages/Students/WorkReport/WorkReportPage.jsx";
-import FilterDatePicker from "./DatePicker/DatePicker.jsx";
+import FilterDatePicker from "../../../DatePicker.jsx";
 import CategoriesFilter from "./CategoriesFilter/CategoriesFilter.jsx";
 import {useState} from "react";
-import WorkReportList from "./WorkReportList/WorkReportList.jsx";
+import {tableListItem} from "../../../../../helper/ProjectData/Data.js";
+import TableList from "../../../TableList.jsx";
 
-const SeeWorkReportListPage = () => {
-    const [showCategories, setShowCategories] = useState(false)
-    const [showDateDrawer, setShowDateDrawer] = useState(false)
 
+const SeeWorkReportListPage = ({showCategories ,setShowCategories}) => {
+    const [data, setDate] = useState('YYYY/MM/DD')
     return (
-        <WorkReportPage>
+        <>
             <div className="flex items-center gap-4 cursor-pointer max-lg:flex-col max-lg:items-start">
-                <div className="z-20">
-                    <FilterDatePicker showDateDrawer={showDateDrawer} setShowDateDrawer={setShowDateDrawer}
-                                      setShowCategories={setShowCategories}/>
+                <div className="z-20 w-[362px] max-[440px]:w-full">
+                    <FilterDatePicker date={data} setDate={setDate} />
                 </div>
                 <div className="z-10">
-                    <CategoriesFilter showCategories={showCategories} setShowCategories={setShowCategories}
-                                      setShowDateDrawer={setShowDateDrawer}/>
+                    <CategoriesFilter showCategories={showCategories} setShowCategories={setShowCategories} />
                 </div>
             </div>
             <div>
-                <WorkReportList />
+                <TableList body={tableListItem.tableBody} head={tableListItem.tableHead} />
             </div>
-        </WorkReportPage>
+        </>
     )
 }
 
