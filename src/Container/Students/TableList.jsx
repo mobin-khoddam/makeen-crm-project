@@ -5,7 +5,7 @@ const TableList = ({body, head}) => {
     const statusColorHandler = (text) => {
         switch (text) {
             case "رد شده":
-                return "text-[#FD151B]";
+                return "text-[#D10000]";
             case "تایید شده":
                 return "text-[#09814A]";
             case "بررسی نشده":
@@ -13,7 +13,7 @@ const TableList = ({body, head}) => {
             case "در حال بررسی":
                 return "text-[#A3AED0]";
             case "مشروط":
-                return "text-[#FACA15]";
+                return "text-[#B8860B]";
             default:
                 return "text-black";
         }

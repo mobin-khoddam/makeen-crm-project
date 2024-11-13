@@ -8,9 +8,10 @@ const CustomRadioInput = ({register, data, errors, name, title, isRequired, clas
                         <div key={item.id}>
                             <div className="flex items-center gap-2">
                                 <input {...register(name, {required: isRequired ? 'پر کردن این فیلد الزامیست' : false})}
+                                       id={`${item.value}${name}`}
                                        value={item.value}
                                        type="radio" name={name}/>
-                                <span>{item.title}</span>
+                                <label htmlFor={`${item.value}${name}`}>{item.title}</label>
                             </div>
                         </div>
                     ))

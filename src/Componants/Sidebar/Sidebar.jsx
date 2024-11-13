@@ -21,9 +21,9 @@ const Sidebar = () => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <ul className=" bg-white text-base-content w-[240px] rounded-2xl py-6 pl-0">
+          <div className=" bg-white text-base-content w-[240px] rounded-2xl py-6 pl-0">
             <div className="mb-6 mx-auto w-fit">
-              <MakeenLogo></MakeenLogo>
+              <MakeenLogo />
             </div>
             <div className="w-full pr-6 flex flex-col gap-6 mb-44">
               <CustomSidebarLink
@@ -68,7 +68,7 @@ const Sidebar = () => {
                 خروج از حساب کاربری
               </span>
             </div>
-          </ul>
+          </div>
         </div>
       </div>
     </div>
