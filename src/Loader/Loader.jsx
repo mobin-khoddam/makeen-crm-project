@@ -44,7 +44,7 @@ const router = createBrowserRouter([
     element: <PersonalInformation />,
   },
   {
-    path: "/menthor/dashboard",
+    path: "/mentor/dashboard",
     element: <DashboardMenthor />,
   },
   {
