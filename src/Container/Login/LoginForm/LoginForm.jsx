@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import lockIcon from "/src/assets/images/Login/Lock-icon.png";
 import LoginPage from "../../../pages/Login/LoginPage.jsx";
+import { userRoll} from "../../../../store/store.jsx";
 
 const LoginForm = () => {
   const [passwordError, setPasswordError] = useState();
@@ -15,14 +16,21 @@ const LoginForm = () => {
   } = useForm();
 
   useEffect(() => {
-    setPasswordError(errors.password?.message ?? "");
-    setUserNameError(errors.userName?.message ?? "");
+    setPasswordError(errors.password?.message || "");
+    setUserNameError(errors.userName?.message || "");
   }, [errors.password, errors.userName]);
+
+  const {role} = userRoll((state) => state);
+  const {getRole} = userRoll((state) => state);
 
   const onSubmit = (data) => {
     console.log(data);
-    if (data.userName === "mohammad" && data.password === "12345678") {
-      navigate("/student/dashboard");
+    if (data.userName === "student") {
+      getRole(data.userName)
+      navigate('/student/dashboard')
+    } else if (data.userName === "mentor") {
+      getRole(data.userName)
+      navigate('/mentor/dashboard')
     }
   };
 
@@ -35,7 +43,7 @@ const LoginForm = () => {
             {...register("userName", {
               required: "this field is required",
               minLength: {
-                value: 8,
+                value: 5,
                 message: "filed must be more 10 characters",
               },
             })}
