@@ -1,5 +1,5 @@
 import messageIcon from "/src/assets/images/Students/WorkReports/messages-3.svg";
-import { MessageReportCardList } from "../../../../../../helper/ProjectData/Data.js";
+import { MessageReportCardList } from "../../../../../../helper/ProjectData/Data.jsx";
 
 const ReportCardMessages = () => {
   return (

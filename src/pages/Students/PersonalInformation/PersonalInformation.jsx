@@ -15,7 +15,7 @@ import {
     personInformationRadioFamiliarLanguagesSuffering1, personInformationRadioFamiliarLanguagesSuffering2,
     personInformationRadioRelatedSoftware,
     personInformationRadioWorkHistory
-} from "../../../helper/ProjectData/Data.js";
+} from "../../../helper/ProjectData/Data.jsx";
 import CustomRadioInput from "../../../Container/Students/PersonalInformation/CustomRadioInput.jsx";
 import CustomInputField from "../../../Container/Students/PersonalInformation/CustomInput/CustomInputField.jsx";
 import ImageUploader from "../../../Container/Students/PersonalInformation/ImageUploader.jsx";

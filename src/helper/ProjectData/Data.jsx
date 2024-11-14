@@ -1,3 +1,21 @@
+import HomeSvg from '/src/assets/images/Sidebar/home.svg?react'
+import SmsSvg from '/src/assets/images/Sidebar/sms.svg?react'
+import JudgeSvg from '/src/assets/images/Sidebar/judge.svg?react'
+import NoteSvg from '/src/assets/images/Sidebar/note.svg?react'
+import CakeSvg from '/src/assets/images/Sidebar/cake.svg?react'
+import ProfileSvg from '/src/assets/images/Sidebar/profile.svg?react'
+import CardSvg from '/src/assets/images/Sidebar/card-send.svg?react'
+
+export const studentSidebar = [
+    {id: 1, location: '/student/dashboard', svg:  HomeSvg , title: 'داشبورد'},
+    {id: 2, location: '/student/work-report', svg:  NoteSvg, title: 'گزارش کار'},
+    {id: 3, location: '/student/finance', svg: CardSvg, title: 'مالی'},
+    {id: 4, location: '/student/leave-request', svg:  CakeSvg , title: 'درخواست های مرخصی'},
+    {id: 5, location: '/student/messages', svg:  SmsSvg, title: 'پیام ها'},
+    {id: 6, location: '/student/personal-information', svg: ProfileSvg, title: 'اطلاعات فردی'},
+    {id: 7, location: false, svg: JudgeSvg , title: 'آیین نامه انضباطی'},
+]
+
 export const CategoriesFilterList = [
     "تایید شده",
     "رد شده",
@@ -93,9 +111,9 @@ export const MessageReportCardList = [
 ]
 
 
-import editIcon from '/src/assets/images/Students/WorkReports/edit-2.svg'
-import messageIcon from '/src/assets/images/Students/WorkReports/message-text.svg'
-import taskIcon from '/src/assets/images/Students/WorkReports/task.svg'
+import editIcon from '/src/assets/images/Students/WorkReports/edit-2.svg?react'
+import messageIcon from '/src/assets/images/Students/WorkReports/message-text.svg?react'
+import taskIcon from '/src/assets/images/Students/WorkReports/task.svg?react'
 
 export const WorkReportBarList = [
     {id: 1, icon: editIcon, text: 'ثبت گزارش کار', pageRender: 'AddWorkReportPage'},
