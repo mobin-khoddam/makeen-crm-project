@@ -8,7 +8,6 @@ import regulationsSvg from "/src/assets/images/Sidebar/judge.svg";
 import logOutIcon from "/src/assets/images/Sidebar/logOut.png";
 import CustomSidebarLink from "../../helper/CustomSidebarLink/CustomSidebarLink.jsx";
 import MakeenLogo from "../MakeenLogo/MakeenLogo.jsx";
-
 const Sidebar = () => {
   return (
     <div className="">
@@ -27,37 +26,37 @@ const Sidebar = () => {
             </div>
             <div className="w-full pr-6 flex flex-col gap-6 mb-44">
               <CustomSidebarLink
-                location={"/dashboard"}
+                location={"/student/dashboard"}
                 svg={`${homeSvg}`}
                 title="داشبورد"
               />
               <CustomSidebarLink
-                location={"/work-report"}
+                location={"/student/work-report"}
                 svg={`${noteSvg}`}
                 title="گزارش کار"
               />
               <CustomSidebarLink
-                location={"/finance"}
+                location={"/student/finance"}
                 svg={`${financeSvg}`}
                 title="مالی"
               />
               <CustomSidebarLink
-                location={"/leave-request"}
+                location={"/student/leave-request"}
                 svg={`${LeaveRequestsSvg}`}
                 title="درخواست های مرخصی"
               />
               <CustomSidebarLink
-                location={"/messages"}
+                location={"/student/messages"}
                 svg={`${MessagesSvg}`}
                 title="پیام ها"
               />
               <CustomSidebarLink
-                location={"/personal-information"}
+                location={"/student/personal-information"}
                 svg={`${PersonalSvg}`}
                 title="اطلاعات فردی"
               />
               <CustomSidebarLink
-                location={"/asd"}
+                location={"/student/asd"}
                 svg={`${regulationsSvg}`}
                 title="آیین نامه انضباطی"
               />

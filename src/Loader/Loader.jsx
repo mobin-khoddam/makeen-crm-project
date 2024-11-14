@@ -19,27 +19,27 @@ const router = createBrowserRouter([
     element: <ForgetPassword />,
   },
   {
-    path: "/dashboard",
+    path: "/student/dashboard",
     element: <DashboardPage />,
   },
   {
-    path: "/messages",
+    path: "/student/messages",
     element: <Messages />,
   },
   {
-    path: "/work-report",
+    path: "/student/work-report",
     element: <WorkReportPage />,
   },
   {
-    path: "/finance",
+    path: "/student/finance",
     element: <Finance />,
   },
   {
-    path:"/leave-request",
-    element: <LeaveRequest />
+    path: "/student/leave-request",
+    element: <LeaveRequest />,
   },
   {
-    path: "/personal-information",
+    path: "/student/personal-information",
     element: <PersonalInformation />,
   },
   {

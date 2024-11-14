@@ -3,14 +3,15 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'iran-yekan';
-    src: url('./assets/fonts/IRANYekanRegularFaNum.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "iran-yekan";
+  src: url("./assets/fonts/IRANYekanRegularFaNum.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
-    font-family: 'iran-yekan', sans-serif;
+  font-family: "iran-yekan", sans-serif;
 }
 
 .rmdp-input, .rmdp-container {
@@ -30,15 +31,40 @@ body {
 }
 
 .input-forget-password {
-    @apply w-14 h-14 rounded-[10px] border text-center text-2xl;
+    @apply w-14 h-14 rounded-[10px] border text-center text-2xl ;
     @apply max-[440px]:w-12 max-[440px]:h-12 max-[440px]:text-xl max-[400px]:h-10 max-[400px]:w-10;
 }
 
-
 .login-form-style {
-    @apply flex flex-col items-center justify-center bg-white px-8 w-[406px] h-[530px] min-h-[530px] rounded-[15px] shadow-[0px_0px_2px_0px_#00000040] max-xl:w-11/12;
+  @apply flex flex-col items-center justify-center bg-white px-8 w-[406px] h-[530px] min-h-[530px] rounded-[15px] shadow-[0px_0px_2px_0px_#00000040] max-xl:w-11/12;
+}
+
+
+.rmdp-top-class, .rmdp-day-picker {
+    @apply w-[358px] max-[420px]:w-[248px];
+}
+
+.rmdp-day-picker div {
+    @apply w-full;
+}
+
+.rmdp-day {
+    @apply h-[44.58px] max-[420px]:h-[28.86px];
+}
+
+.rmdp-calendar {
+    @apply w-full border-0;
+}
+
+.rmdp-wrapper {
+    @apply border-0;
+}
+
+
+.rmdp-day-picker{
+    @apply p-5;
 }
 
 .btn-active {
-    @apply !bg-primary-blue text-white;
+  @apply !bg-primary-blue text-white;
 }
