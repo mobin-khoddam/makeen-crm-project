@@ -22,7 +22,7 @@ export const ReportTimeCardList = [
         id: 2,
         thirdNumber: false,
         icon: redIcon,
-        timeNumberAndTitleColor: "text-[#FD151B]",
+        timeNumberAndTitleColor: "text-[#D10000]",
         title: "کسر ساعت ماهانه",
         titleBackgroundColor: "bg-[#FFE8E8]"
     },
@@ -112,15 +112,15 @@ export const LeaveRequestList = [
         id: 1,
         thirdNumber: false,
         icon: timerIcon,
-        timeNumberAndTitleColor: "text-[#F21414]",
+        timeNumberAndTitleColor: "text-[#D10000]",
         title: "میزان تاخیر های روزانه",
-        titleBackgroundColor: "bg-[#FFE5E5]"
+        titleBackgroundColor: "bg-[#FFD7D7]"
     },
     {
         id: 2,
         thirdNumber: false,
         icon: coffeeIcon,
-        timeNumberAndTitleColor: "text-[#0FC5FF]",
+        timeNumberAndTitleColor: "text-[#007ACC]",
         title: "مرخصی باقی مانده",
         titleBackgroundColor: "bg-[#E8F9FF]"
     },
@@ -128,7 +128,7 @@ export const LeaveRequestList = [
         id: 3,
         thirdNumber: false,
         icon: coffeeIcon2,
-        timeNumberAndTitleColor: "text-[#50D300]",
+        timeNumberAndTitleColor: "text-[#3E8E00]",
         title: "مرخصی استفاده شده",
         titleBackgroundColor: "bg-[#EDFFE8]"
     },
@@ -187,7 +187,7 @@ export const personalInformationRadioDutySystem = [
     {id: 2, value: 'army', title: 'سپاه'},
     {id: 3, value: 'policeForce', title: 'نیروی انتظامی'},
     {id: 4, value: 'ministryOfDefense', title: 'وزارت دفاع '},
-    {id: 5, value: 'other', title: 'سایر'},
+    {id: 5, value: 'otherEndOfServiceCard', title: 'سایر'},
 ]
 
 export const personInformationRadioExemptionType = [
@@ -197,7 +197,7 @@ export const personInformationRadioExemptionType = [
     {id: 4, value: 'Sponsorship', title: 'کفالت'},
     {id: 5, value: 'MartyrsSon', title: 'فرزند شهید'},
     {id: 6, value: 'Sacrifice', title: 'ایثارگری'},
-    {id: 7, value: 'other', title: 'سایر'},
+    {id: 7, value: 'otherExemption', title: 'سایر'},
 ]
 
 export const personInformationDiploma = [
@@ -269,8 +269,8 @@ export const personalInformationRepresentative = [
 ]
 
 export const  personalInformationRadioConnection = [
-    {id: 1, value: 'instagram', title: 'اینستاگرام مکین'},
-    {id: 2, value: 'instagram', title: 'اینستاگرام دوستان'},
+    {id: 1, value: 'makeenInstagram', title: 'اینستاگرام مکین'},
+    {id: 2, value: 'friendsInstagram', title: 'اینستاگرام دوستان'},
     {id: 3, value: 'makeensSite', title: 'سایت مکین'},
     {id: 4, value: 'introducingFriends', title: 'معرفی دوستان'},
     {id: 5, value: 'telegramChannel', title: 'کانال تلکرامی'},

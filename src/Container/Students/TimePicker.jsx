@@ -10,7 +10,7 @@ const TimePicker = ({ placeholder, time, setTime }) => {
         format="HH:mm"
         value={time}
         onChange={setTime}
-        plugins={[<TimePickerPlugin key={1} hideSeconds />]}
+        plugins={[<TimePickerPlugin key="timePicker" hideSeconds />]}
         disableDayPicker
       />
       <img className="w-4 h-4 absolute left-0 ml-4" src={clockIcon} alt="" />
