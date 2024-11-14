@@ -1,11 +1,11 @@
 import {studentSidebar} from "../../helper/ProjectData/Data.jsx";
 import {Link, useLocation} from "react-router-dom";
 
-const SideBarNavLinks = () => {
+const SideBarLink = ({data}) => {
     const location = useLocation()
     const isActive = (path) => location.pathname.includes(path);
     return (
-        studentSidebar.map((item) => {
+        data.map((item) => {
             const IconSvg = item.svg
             return (
                 <Link className={` flex items-center gap-4 font-semibold w-full ${isActive(item.location) && 'border-l-4 border-l-primary-blue'}`} to={item.location} key={item.id}>
@@ -17,4 +17,4 @@ const SideBarNavLinks = () => {
         })
     )
 }
-export default SideBarNavLinks;
+export default SideBarLink;
