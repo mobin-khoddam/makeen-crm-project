@@ -1,4 +1,4 @@
-import { MonthReportCardList } from "../../../../../../helper/ProjectData/Data.js";
+import { MonthReportCardList } from "../../../../../../helper/ProjectData/Data.jsx";
 
 const MonthReportCardPage = () => {
   return (
