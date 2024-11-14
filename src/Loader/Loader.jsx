@@ -5,9 +5,10 @@ import DashboardPage from "../pages/Students/Dashboard/DashboardPage.jsx";
 import Page404 from "../pages/Page404.jsx";
 import WorkReportPage from "../pages/Students/WorkReport/WorkReportPage.jsx";
 import Finance from "../pages/Students/Finance/FinancePage.jsx";
-import Messages from "../pages/Students/Messages/Messages.jsx";
+import Messages from "../pages/Students/LeaveRequest/Messages/Messages.jsx";
 import LeaveRequest from "../pages/Students/LeaveRequest/LeaveRequest.jsx";
 import PersonalInformation from "../pages/Students/PersonalInformation/PersonalInformation.jsx";
+import DashboardMenthor from "../pages/Mentor/Dashboard/DashboardMenthor.jsx";
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
   {
     path: "/student/personal-information",
     element: <PersonalInformation />,
+  },
+  {
+    path: "/menthor/dashboard",
+    element: <DashboardMenthor />,
   },
   {
     path: "*",
