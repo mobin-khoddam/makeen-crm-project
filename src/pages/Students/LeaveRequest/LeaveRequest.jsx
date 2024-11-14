@@ -3,8 +3,8 @@ import LeaveRequestForm from '../../../Container/Students/LeaveRequest/LeaveRequ
 import ReportCardTimeTemplate from '../../../Container/Students/ReportCardTimeTemplate'
 import LeaveRules from "../../../Container/Students/LeaveRequest/LeaveRules.jsx";
 import TableList from "../../../Container/Students/TableList.jsx";
-import {LeaveRequestList} from "../../../helper/ProjectData/Data.js";
-import {LeaveRequestTableList} from '../../../helper/ProjectData/Data.js'
+import {LeaveRequestList} from "../../../helper/ProjectData/Data.jsx";
+import {LeaveRequestTableList} from '../../../helper/ProjectData/Data.jsx'
 
 
 const LeaveRequest = () => {
