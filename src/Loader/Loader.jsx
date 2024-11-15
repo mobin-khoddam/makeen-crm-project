@@ -9,7 +9,6 @@ import Messages from "../pages/Students/LeaveRequest/Messages/Messages.jsx";
 import LeaveRequest from "../pages/Students/LeaveRequest/LeaveRequest.jsx";
 import PersonalInformation from "../pages/Students/PersonalInformation/PersonalInformation.jsx";
 import DashboardMenthor from "../pages/Mentor/Dashboard/DashboardMenthor.jsx";
-import Students from "../pages/Mentor/Students/Students.jsx";
 
 const router = createBrowserRouter([
   {
@@ -47,10 +46,6 @@ const router = createBrowserRouter([
   {
     path: "/mentor/dashboard",
     element: <DashboardMenthor />,
-  },
-  {
-    path: "/mentor/students",
-    element: <Students />,
   },
   {
     path: "*",
