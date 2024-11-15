@@ -1,7 +1,7 @@
 import DatePicker from "react-multi-date-picker";
 import persian from "react-date-object/calendars/persian"
 import persian_fa from "react-date-object/locales/persian_fa"
-import dateIcon from '../../assets/images/Students/WorkReports/calendar4-range.svg'
+import dateIcon from '../assets/images/Students/WorkReports/calendar4-range.svg'
 
 const FilterDatePicker = ({date, setDate}) => {
     return (

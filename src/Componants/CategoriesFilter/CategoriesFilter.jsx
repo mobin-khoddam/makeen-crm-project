@@ -8,7 +8,7 @@ const CategoriesFilter = ({ setShowCategories, showCategories }) => {
         setTimeout(() => setShowCategories(!showCategories), 100);
     }
     return (
-        <div className="relative ">
+        <div className="relative cursor-pointer">
             <div onClick={showDrawerHandler}
                 className="px-4 py-[14px] bg-white rounded-xl flex items-center gap-2">
                 <span>{filter}</span>
