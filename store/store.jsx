@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 export const userRoll = create((set)=>({
-    role: null,
+    role: 'mentor',
     getRole: (newRoll) => set({
         role: newRoll,
     })

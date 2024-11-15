@@ -9,6 +9,7 @@ import Messages from "../pages/Students/LeaveRequest/Messages/Messages.jsx";
 import LeaveRequest from "../pages/Students/LeaveRequest/LeaveRequest.jsx";
 import PersonalInformation from "../pages/Students/PersonalInformation/PersonalInformation.jsx";
 import DashboardMenthor from "../pages/Mentor/Dashboard/DashboardMenthor.jsx";
+import MessagesPage from "../pages/Mentor/Messages/MessagesPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -44,8 +45,12 @@ const router = createBrowserRouter([
     element: <PersonalInformation />,
   },
   {
-    path: "/menthor/dashboard",
+    path: "/mentor/dashboard",
     element: <DashboardMenthor />,
+  },
+  {
+    path: "/mentor/messages",
+    element: <MessagesPage />,
   },
   {
     path: "*",

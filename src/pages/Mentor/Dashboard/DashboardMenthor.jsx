@@ -1,4 +1,3 @@
-import React from "react";
 import OriginalTemplatePage from "../../../Componants/OriginalTemplate/OriginalTemplatePage";
 import DashboardComponent from "../../../Container/Menthor/Dashboard/DashboardComponent";
 

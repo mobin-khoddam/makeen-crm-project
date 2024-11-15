@@ -1,5 +1,3 @@
-import React from "react";
-
 const MenthorTable = ({ head, body }) => {
   return (
     <div className="overflow-x-auto bg-white ">
@@ -29,7 +27,7 @@ const MenthorTable = ({ head, body }) => {
                   {item.fullName}
                 </span>
               </th>
-              <td>{item.course}</td>
+              <td className="text-center">{item.course}</td>
               <td className=" text-center ">{item.reportTime}</td>
               <td
                 style={{
