@@ -28,7 +28,7 @@ const MenthorTable = ({ head, body }) => {
                   {item.fullName}
                 </span>
               </th>
-              <td>{item.course}</td>
+              <td className="text-center">{item.course}</td>
               <td className=" text-center ">{item.reportTime}</td>
               <td
                 style={{
