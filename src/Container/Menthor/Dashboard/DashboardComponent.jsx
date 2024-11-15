@@ -1,4 +1,3 @@
-import React from "react";
 import image1 from "../../../assets/images/menthor/course1.png";
 import image2 from "../../../assets/images/menthor/course2.png";
 import { LinearProgress } from "@mui/material";

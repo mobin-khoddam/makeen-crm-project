@@ -1,5 +1,3 @@
-import React from "react";
-
 const MenthorTable = ({ head, body }) => {
   return (
     <div className="overflow-x-auto bg-white ">
