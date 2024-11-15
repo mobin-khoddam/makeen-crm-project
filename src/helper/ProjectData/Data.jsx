@@ -7,13 +7,13 @@ import ProfileSvg from '/src/assets/images/Sidebar/Student/profile.svg?react'
 import CardSvg from '/src/assets/images/Sidebar/Student/card-send.svg?react'
 
 export const studentSidebar = [
-    {id: 1, location: '/student/dashboard', svg:  HomeSvg , title: 'داشبورد'},
-    {id: 2, location: '/student/work-report', svg:  NoteSvg, title: 'گزارش کار'},
+    {id: 1, location: '/student/dashboard', svg: HomeSvg, title: 'داشبورد'},
+    {id: 2, location: '/student/work-report', svg: NoteSvg, title: 'گزارش کار'},
     {id: 3, location: '/student/finance', svg: CardSvg, title: 'مالی'},
-    {id: 4, location: '/student/leave-request', svg:  CakeSvg , title: 'درخواست های مرخصی'},
-    {id: 5, location: '/student/messages', svg:  SmsSvg, title: 'پیام ها'},
+    {id: 4, location: '/student/leave-request', svg: CakeSvg, title: 'درخواست های مرخصی'},
+    {id: 5, location: '/student/messages', svg: SmsSvg, title: 'پیام ها'},
     {id: 6, location: '/student/personal-information', svg: ProfileSvg, title: 'اطلاعات فردی'},
-    {id: 7, location: false, svg: JudgeSvg , title: 'آیین نامه انضباطی'},
+    {id: 7, location: false, svg: JudgeSvg, title: 'آیین نامه انضباطی'},
 ]
 
 import HomeSvgMentor from '/src/assets/images/Sidebar/Mentor/home.svg?react'
@@ -22,8 +22,8 @@ import PeopleSvgMentor from '/src/assets/images/Sidebar/Mentor/people.svg?react'
 
 export const mentorSidebar = [
     {id: 1, location: '/mentor/dashboard', svg: HomeSvgMentor, title: 'داشبورد'},
-    {id: 1, location: '/mentor/students', svg: PeopleSvgMentor, title: 'دانشجویان'},
-    {id: 1, location: '/mentor/messages', svg: SmsSvgMentor, title: 'پیام ها'},
+    {id: 2, location: '/mentor/students', svg: PeopleSvgMentor, title: 'دانشجویان'},
+    {id: 3, location: '/mentor/messages', svg: SmsSvgMentor, title: 'پیام ها'},
 ]
 
 export const CategoriesFilterList = [
@@ -296,7 +296,7 @@ export const personalInformationRepresentative = [
     {id: 5, name: 'RepresentativeAddress', placeholder: 'آدرس', isNumber: false},
 ]
 
-export const  personalInformationRadioConnection = [
+export const personalInformationRadioConnection = [
     {id: 1, value: 'makeenInstagram', title: 'اینستاگرام مکین'},
     {id: 2, value: 'friendsInstagram', title: 'اینستاگرام دوستان'},
     {id: 3, value: 'makeensSite', title: 'سایت مکین'},
@@ -305,3 +305,87 @@ export const  personalInformationRadioConnection = [
     {id: 6, value: 'employmentSite', title: 'سایت کاریابی'},
     {id: 7, value: 'other', title: 'سایر'},
 ]
+
+import TaskSvg from '../../assets/images/menthor/studentsBar/task.svg?react'
+import MessageSvg from '../../assets/images/menthor/studentsBar/message-text.svg?react'
+import PeopleSvg from '../../assets/images/menthor/studentsBar/people.svg?react'
+import ClipboardSvg from '../../assets/images/menthor/studentsBar/clipboard-text.svg?react'
+
+export const mentorPanelStudentsBar = [
+    {id: 1, svg: PeopleSvg, title: 'لیست دانشجویان', page: 'first'},
+    {id: 2, svg: TaskSvg, title: 'مشاهده گزارش کارها', page: 'second'},
+    {id: 3, svg: MessageSvg, title: 'کارنامه', page: 'third'},
+    {id: 4, svg: ClipboardSvg, title: 'نمره فنی', page: 'fourth'},
+]
+
+import image from './../../assets/images/Header/person.png'
+
+export const mentorPageStudentsList = {
+    tableHead: [
+        {id: 1, title: 'ردیف'},
+        {id: 2, title: 'نام و نام خانوادگی'},
+        {id: 3, title: ''},
+        {id: 4, title: ''},
+        {id: 5, title: 'عملیات'}
+    ],
+    tableBody: [
+        {id: 1, one: 1, two: 'علیرضا  احمدی ', img: image},
+        {id: 2, one: 1, two: 'علیرضا  احمدی ', img: image},
+        {id: 3, one: 1, two: 'علیرضا  احمدی ', img: image},
+        {id: 4, one: 1, two: 'علیرضا  احمدی ', img: image},
+        {id: 5, one: 1, two: 'علیرضا  احمدی ', img: image}
+    ]
+}
+
+export const mentorPageStudentsWorkReport = {
+    tableHead: [
+        {id: 1, title: 'شماره گزارش'},
+        {id: 2, title: 'نام و نام خانوادگی'},
+        {id: 3, title: 'تاریخ'},
+        {id: 4, title: 'زمان گزارش'},
+        {id: 4, title: 'وضعیت گزارش'},
+        {id: 5, title: 'عملیات'}
+    ],
+    tableBody: [
+        {id: 1, one: 87, two: 'محمد مهدی مقدس نصیری', three: '1403/4/23', four: 'تایید شده', five: 8},
+        {id: 2, one: 87, two: 'محمد مهدی مقدس نصیری', three: '1403/4/23', four: 'رد شده', five: 8},
+        {id: 3, one: 87, two: 'محمد مهدی مقدس نصیری', three: '1403/4/23', four: 'تایید شده', five: 8},
+        {id: 4, one: 87, two: 'محمد مهدی مقدس نصیری', three: '1403/4/23', four: 'بررسی نشده', five: 8},
+        {id: 5, one: 87, two: 'محمد مهدی مقدس نصیری', three: '1403/4/23', four: 'تایید شده', five: 8},
+        {id: 6, one: 87, two: 'محمد مهدی مقدس نصیری', three: '1403/4/23', four: 'تایید شده', five: 8},
+    ]
+}
+
+export const mentorPageStudentsReportCard = {
+    tableHead: [
+        {id: 1, title: 'ردیف'},
+        {id: 2, title: 'نام و نام خانوادگی'},
+        {id: 3, title: ''},
+        {id: 4, title: ''},
+        {id: 5, title: 'عملیات'}
+    ],
+    tableBody: [
+        {id: 1, one: 1, two: 'علیرضا  احمدی ', img: image},
+        {id: 2, one: 1, two: 'علیرضا  احمدی ', img: image},
+        {id: 3, one: 1, two: 'علیرضا  احمدی ', img: image},
+        {id: 4, one: 1, two: 'علیرضا  احمدی ', img: image},
+        {id: 5, one: 1, two: 'علیرضا  احمدی ', img: image}
+    ]
+}
+
+export const mentorPageStudentsTechnicalScore = {
+    tableHead: [
+        {id: 1, title: 'ردیف'},
+        {id: 2, title: 'نام و نام خانوادگی'},
+        {id: 3, title: ''},
+        {id: 4, title: 'نمره فنی'},
+        {id: 5, title: 'عملیات'}
+    ],
+    tableBody: [
+        {id: 1, one: 1, two: 'علیرضا  احمدی ', four: 5, img: image},
+        {id: 2, one: 2, two: 'علیرضا  احمدی ', four: 5, img: image},
+        {id: 3, one: 3, two: 'علیرضا  احمدی ', four: 5, img: image},
+        {id: 4, one: 4, two: 'علیرضا  احمدی ', four: 5, img: image},
+        {id: 5, one: 5, two: 'علیرضا  احمدی ', four: 5, img: image}
+    ]
+}
