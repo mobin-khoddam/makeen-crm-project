@@ -1,4 +1,3 @@
-import {studentSidebar} from "../../helper/ProjectData/Data.jsx";
 import {Link, useLocation} from "react-router-dom";
 
 const SideBarLink = ({data}) => {

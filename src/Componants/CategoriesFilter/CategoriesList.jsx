@@ -1,4 +1,4 @@
-import { CategoriesFilterList } from "../../../../../../helper/ProjectData/Data.jsx";
+import { CategoriesFilterList } from "../../helper/ProjectData/Data.jsx";
 
 const CategoriesList = ({ setFilter, setShowCategories }) => {
   const setFilterHandler = (item) => {

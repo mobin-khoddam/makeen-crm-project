@@ -20,7 +20,7 @@ const LoginForm = () => {
     setUserNameError(errors.userName?.message || "");
   }, [errors.password, errors.userName]);
 
-  const {role} = userRoll((state) => state);
+  // const {role} = userRoll((state) => state);
   const {getRole} = userRoll((state) => state);
 
   const onSubmit = (data) => {

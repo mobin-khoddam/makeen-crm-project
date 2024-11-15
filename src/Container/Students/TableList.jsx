@@ -20,15 +20,15 @@ const TableList = ({body, head}) => {
     };
 
     return (
-        <div>
-            <div className="mt-6 overflow-x-auto">
+        <div className='overflow-x-auto mt-6 max-sm:text-sm'>
+            <div>
                 <table className="w-full min-w-[703px] mb-10 border">
                     <thead className="">
                     <tr className="[&_*]:py-5 text-primary-gray-100 [&_*]:font-normal  ">
                         {
-                            head.map((elem) => (
-                                <th key={elem.id}>
-                                    {elem.title}
+                            head.map((item) => (
+                                <th key={item.id}>
+                                    {item.title}
                                 </th>
                             ))
                         }
@@ -38,8 +38,16 @@ const TableList = ({body, head}) => {
                     {body.map((item) => (
                         <tr key={item.id} className="[&_th]:p-5 [&_th]:odd:bg-white">
                             <th>{item.one}</th>
-                            <th>{item.two}</th>
+                            <th className='flex justify-center items-center gap-2'>
+                                {
+                                    item.img && <img className='rounded-full w-10 h-10 object-cover' src={item.img} alt="" />
+                                }
+                                {item.two}
+                            </th>
                             <th>{item.three}</th>
+                            {
+                                item.five && <th>{item.five}</th>
+                            }
                             <th
                                 className={`font-medium ${statusColorHandler(
                                     item.four
