@@ -10,7 +10,6 @@ import {
 const TableList = ({ body, head }) => {
     const searchParams = useLocation();
     const navigate = useNavigate();
-    console.log(searchParams);
     const statusColorHandler = (text) => {
         switch (text) {
             case "رد شده":
@@ -43,7 +42,7 @@ const TableList = ({ body, head }) => {
                         {body.map((item) => (
                             <tr key={item.id} className="[&_th]:p-5 [&_th]:odd:bg-white">
                                 <th>{item.one}</th>
-                                <th className="flex justify-center items-center gap-2">
+                                <th className={`${item.img && 'flex justify-center items-center gap-2'}`}>
                                     {item.img && (
                                         <img
                                             className="rounded-full w-10 h-10 object-cover"

@@ -1,4 +1,4 @@
-import { WorkCardStatusList } from "../../../../../../helper/ProjectData/Data.jsx";
+import {WorkCardStatusList} from "../../helper/ProjectData/Data.jsx";
 
 const ShowStatusList = () => {
   return (
