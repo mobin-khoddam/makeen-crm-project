@@ -1,5 +1,6 @@
 import seeReport from "/src/assets/images/Students/WorkReports/seeWorekReport.svg";
-import Pagination from "../../Componants/Pagination/Pagination.jsx";
+import Pagination from "./Pagination/Pagination.jsx";
+import {Link} from "react-router-dom";
 
 const TableList = ({body, head, modalRef}) => {
     const statusColorHandler = (text) => {
@@ -60,16 +61,16 @@ const TableList = ({body, head, modalRef}) => {
                             </th>
                             <th className="font-medium text-primary-blue cursor-pointer">
                                 {
-                                    item.operation ? <div>
+                                    item.operation ? <Link to={item.route}>
                                             <div onClick={() => modalRef.current.showModal()}>
                                                 <span className='bg-[#F7F5FF] p-1 rounded-xl'>{item.operation}</span>
                                             </div>
-                                        </div> :
-                                        <div>
+                                        </Link> :
+                                        <Link to={item.route}>
                                             <div>
                                                 <span className='bg-[#F7F5FF] p-1 rounded-xl'>مشاهده</span>
                                             </div>
-                                        </div>
+                                        </Link>
                                 }
                             </th>
                         </tr>

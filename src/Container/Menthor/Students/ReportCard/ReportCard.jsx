@@ -1,4 +1,4 @@
-import TableList from "../../../Students/TableList.jsx";
+import TableList from "../../../../Componants/TableList.jsx";
 import {mentorPageStudentsReportCard} from "../../../../helper/ProjectData/Data.jsx";
 import SearchInput from "../SearchInput.jsx";
 import MonthPicker from "../../../../Componants/MonthPicker.jsx";

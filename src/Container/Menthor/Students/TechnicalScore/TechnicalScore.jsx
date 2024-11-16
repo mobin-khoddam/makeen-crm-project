@@ -1,4 +1,4 @@
-import TableList from "../../../Students/TableList.jsx";
+import TableList from "../../../../Componants/TableList.jsx";
 import {mentorPageStudentsTechnicalScore} from "../../../../helper/ProjectData/Data.jsx";
 import TechnicScoreModal from "./TechnicScoreModal.jsx";
 import {useRef} from "react";

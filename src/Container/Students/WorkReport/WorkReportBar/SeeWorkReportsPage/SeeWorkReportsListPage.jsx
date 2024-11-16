@@ -2,7 +2,7 @@ import FilterDatePicker from "../../../../../Componants/DatePicker.jsx";
 import CategoriesFilter from "../../../../../Componants/CategoriesFilter/CategoriesFilter.jsx";
 import {useState} from "react";
 import {tableListItem} from "../../../../../helper/ProjectData/Data.jsx";
-import TableList from "../../../TableList.jsx";
+import TableList from "../../../../../Componants/TableList.jsx";
 
 
 const SeeWorkReportListPage = ({showCategories ,setShowCategories}) => {
