@@ -323,7 +323,7 @@ import image from './../../assets/images/Header/person.png'
 export const mentorPageStudentsList = {
     tableHead: [
         {id: 1, title: 'ردیف'},
-        {id: 2, title: 'نام و نام خانوادگی'},
+        {id: 2, title: 'نام و نام خانوادگی', right: true},
         {id: 3, title: ''},
         {id: 4, title: ''},
         {id: 5, title: 'عملیات'}
@@ -343,8 +343,8 @@ export const mentorPageStudentsWorkReport = {
         {id: 2, title: 'نام و نام خانوادگی'},
         {id: 3, title: 'تاریخ'},
         {id: 4, title: 'زمان گزارش'},
-        {id: 4, title: 'وضعیت گزارش'},
-        {id: 5, title: 'عملیات'}
+        {id: 5, title: 'وضعیت گزارش'},
+        {id: 6, title: 'عملیات'}
     ],
     tableBody: [
         {id: 1, one: 87, two: 'محمد مهدی مقدس نصیری', three: '1403/4/23', four: 'تایید شده', five: 8},
@@ -359,7 +359,7 @@ export const mentorPageStudentsWorkReport = {
 export const mentorPageStudentsReportCard = {
     tableHead: [
         {id: 1, title: 'ردیف'},
-        {id: 2, title: 'نام و نام خانوادگی'},
+        {id: 2, title: 'نام و نام خانوادگی', right: true},
         {id: 3, title: ''},
         {id: 4, title: ''},
         {id: 5, title: 'عملیات'}
@@ -376,16 +376,16 @@ export const mentorPageStudentsReportCard = {
 export const mentorPageStudentsTechnicalScore = {
     tableHead: [
         {id: 1, title: 'ردیف'},
-        {id: 2, title: 'نام و نام خانوادگی'},
+        {id: 2, title: 'نام و نام خانوادگی', right: true},
         {id: 3, title: ''},
         {id: 4, title: 'نمره فنی'},
         {id: 5, title: 'عملیات'}
     ],
     tableBody: [
-        {id: 1, one: 1, two: 'علیرضا  احمدی ', four: 5, img: image},
-        {id: 2, one: 2, two: 'علیرضا  احمدی ', four: 5, img: image},
-        {id: 3, one: 3, two: 'علیرضا  احمدی ', four: 5, img: image},
-        {id: 4, one: 4, two: 'علیرضا  احمدی ', four: 5, img: image},
-        {id: 5, one: 5, two: 'علیرضا  احمدی ', four: 5, img: image}
+        {id: 1, one: 1, two: 'علیرضا  احمدی ', four: 5, img: image, operation: 'ویرایش نمره فنی'},
+        {id: 2, one: 2, two: 'علیرضا  احمدی ', four: '-', img: image, operation: 'ثبت نمره فنی'},
+        {id: 3, one: 3, two: 'علیرضا  احمدی ', four: '-', img: image, operation: 'ثبت نمره فنی'},
+        {id: 4, one: 4, two: 'علیرضا  احمدی ', four: '-', img: image, operation: 'ثبت نمره فنی'},
+        {id: 5, one: 5, two: 'علیرضا  احمدی ', four: '-', img: image, operation: 'ثبت نمره فنی'}
     ]
 }
