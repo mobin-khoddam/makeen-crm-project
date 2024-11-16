@@ -1,10 +1,11 @@
-import OriginalTemplatePage from "../../../Componants/OriginalTemplate/OriginalTemplatePage";
-import LeaveRequestForm from "../../../Container/Students/LeaveRequest/LeaveRequestForm";
-import ReportCardTimeTemplate from "../../../Container/Students/ReportCardTimeTemplate";
+import OriginalTemplatePage from '../../../Componants/OriginalTemplate/OriginalTemplatePage'
+import LeaveRequestForm from '../../../Container/Students/LeaveRequest/LeaveRequestForm'
+import ReportCardTimeTemplate from '../../../Componants/ReportCardTimeTemplate.jsx'
 import LeaveRules from "../../../Container/Students/LeaveRequest/LeaveRules.jsx";
-import TableList from "../../../Container/Students/TableList.jsx";
-import { LeaveRequestList } from "../../../helper/ProjectData/Data.jsx";
-import { LeaveRequestTableList } from "../../../helper/ProjectData/Data.jsx";
+import TableList from "../../../Componants/TableList.jsx";
+import {LeaveRequestList} from "../../../helper/ProjectData/Data.jsx";
+import {LeaveRequestTableList} from '../../../helper/ProjectData/Data.jsx'
+
 
 const LeaveRequest = () => {
   return (

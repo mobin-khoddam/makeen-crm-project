@@ -1,5 +1,5 @@
-import { mentorPageStudentsList } from "../../../../helper/ProjectData/Data.jsx";
-import TableList from "../../../Students/TableList.jsx";
+import {mentorPageStudentsList} from "../../../../helper/ProjectData/Data.jsx";
+import TableList from "../../../../Componants/TableList.jsx";
 import SearchInput from "../SearchInput.jsx";
 
 const StudentsList = () => {
