@@ -1,7 +1,8 @@
 import seeReport from "/src/assets/images/Students/WorkReports/seeWorekReport.svg";
-import Pagination from "../../Componants/Pagination/Pagination.jsx";
+import Pagination from "./Pagination/Pagination.jsx";
+import {Link} from "react-router-dom";
 
-const TableList = ({body, head}) => {
+const TableList = ({body, head, modalRef}) => {
     const statusColorHandler = (text) => {
         switch (text) {
             case "رد شده":
@@ -24,25 +25,28 @@ const TableList = ({body, head}) => {
             <div>
                 <table className="w-full min-w-[703px] mb-10 border">
                     <thead className="">
-                    <tr className="[&_*]:py-5 text-primary-gray-100 [&_*]:font-normal  ">
+                    <tr className="[&_*]:p-5 text-primary-gray-100 [&_*]:font-normal  ">
                         {
-                            head.map((item) => (
-                                <th key={item.id}>
-                                    {item.title}
-                                </th>
-                            ))
+                            head.map((item) => {
+                                return (
+                                    <th className={item.right && 'flex'} key={item.id}>
+                                        {item.title}
+                                    </th>
+                                )
+                            })
                         }
                     </tr>
                     </thead>
                     <tbody>
                     {body.map((item) => (
-                        <tr key={item.id} className="[&_th]:p-5 [&_th]:odd:bg-white">
+                        <tr key={item.id} className={`[&_th]:p-5 [&_th]:odd:bg-white`}>
                             <th>{item.one}</th>
-                            <th className='flex justify-center items-center gap-2'>
+                            <th className={`flex items-center gap-2 ${item.img ? '' : 'justify-center'}`}>
                                 {
-                                    item.img && <img className='rounded-full w-10 h-10 object-cover' src={item.img} alt="" />
+                                    item.img &&
+                                    <img className={`rounded-full w-10 h-10 object-cover `} src={item.img} alt=""/>
                                 }
-                                {item.two}
+                                <span>{item.two}</span>
                             </th>
                             <th>{item.three}</th>
                             {
@@ -55,8 +59,19 @@ const TableList = ({body, head}) => {
                             >
                                 {item.four}
                             </th>
-                            <th className="font-medium text-primary-blue">
-                                <img className="w-fit mx-auto" src={`${seeReport}`} alt=""/>
+                            <th className="font-medium text-primary-blue cursor-pointer">
+                                {
+                                    item.operation ? <Link to={item.route}>
+                                            <div onClick={() => modalRef.current.showModal()}>
+                                                <span className='bg-[#F7F5FF] p-1 rounded-xl'>{item.operation}</span>
+                                            </div>
+                                        </Link> :
+                                        <Link to={item.route}>
+                                            <div>
+                                                <span className='bg-[#F7F5FF] p-1 rounded-xl'>مشاهده</span>
+                                            </div>
+                                        </Link>
+                                }
                             </th>
                         </tr>
                     ))}
