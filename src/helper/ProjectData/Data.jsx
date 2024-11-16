@@ -330,10 +330,10 @@ export const mentorPageStudentsList = {
     ],
     tableBody: [
         {id: 1, one: 1, two: 'علیرضا  احمدی ', img: image},
-        {id: 2, one: 1, two: 'علیرضا  احمدی ', img: image},
-        {id: 3, one: 1, two: 'علیرضا  احمدی ', img: image},
-        {id: 4, one: 1, two: 'علیرضا  احمدی ', img: image},
-        {id: 5, one: 1, two: 'علیرضا  احمدی ', img: image}
+        {id: 2, one: 2, two: 'علیرضا  احمدی ', img: image},
+        {id: 3, one: 3, two: 'علیرضا  احمدی ', img: image},
+        {id: 4, one: 4, two: 'علیرضا  احمدی ', img: image},
+        {id: 5, one: 5, two: 'علیرضا  احمدی ', img: image}
     ]
 }
 

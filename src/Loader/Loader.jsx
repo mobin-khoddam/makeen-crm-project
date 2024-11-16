@@ -11,6 +11,7 @@ import PersonalInformation from "../pages/Students/PersonalInformation/PersonalI
 import DashboardMenthor from "../pages/Mentor/Dashboard/DashboardMenthor.jsx";
 import Students from "../pages/Mentor/Students/Students.jsx";
 import MessagesPage from "../pages/Mentor/Messages/MessagesPage.jsx";
+import StudentSinglePage from "../pages/Mentor/Students/StudentSinglePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "/mentor/messages",
     element: <MessagesPage />,
+  },
+  {
+    path: "/mentor/students/:student",
+    element: <StudentSinglePage />,
   },
   {
     path: "*",
