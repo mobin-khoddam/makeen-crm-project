@@ -1,6 +1,6 @@
 import seeReport from "/src/assets/images/Students/WorkReports/seeWorekReport.svg";
 
-import Pagination from "../../Componants/Pagination/Pagination.jsx";
+import Pagination from '../Componants/Pagination/Pagination.jsx'
 import {
   useLocation,
   useNavigate,
