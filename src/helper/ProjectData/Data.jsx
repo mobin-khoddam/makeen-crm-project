@@ -389,3 +389,20 @@ export const mentorPageStudentsTechnicalScore = {
         {id: 5, one: 5, two: 'علیرضا  احمدی ', four: '-', img: image, operation: 'ثبت نمره فنی'}
     ]
 }
+
+export const dd = {
+    tableHead: [
+        {id: 1, title: 'هفته'},
+        {id: 3, title: ''},
+        {id: 2, title: 'نمره فنی',},
+        {id: 4, title: ''},
+        {id: 5, title: 'عملیات'}
+    ],
+    tableBody: [
+        {id: 1, one: 'اول', three:  5,},
+        {id: 2, one: 'دوم', three: '-',},
+        {id: 3, one: 'سوم', three: '-',},
+        {id: 4, one: 'چهارم', three: '-',},
+        {id: 5, one: 'پنجم', three: '-',}
+    ]
+}

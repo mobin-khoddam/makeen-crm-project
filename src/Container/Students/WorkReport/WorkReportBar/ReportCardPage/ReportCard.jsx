@@ -1,7 +1,7 @@
-import ReportCardChart from "./ReportCartChart/ReportCartChart.jsx";
-import ReportCartStats from "./ReportCartStats/ReportCartStats.jsx";
 import MonthReportCardPage from "./MonthReportCard/MonthReportCard.jsx";
 import ReportCardMessages from "./ReportCardMessages/ReportCardMessages.jsx";
+import ReportCartStats from "../../../../../Componants/ReportCartStats/ReportCartStats.jsx";
+import ReportCardChart from "../../../../../Componants/ReportCartChart.jsx";
 
 const ReportCardPage = () => {
     return (
