@@ -407,7 +407,7 @@ export const mentorPageStudentsTechnicalScore = {
     ]
 }
 
-export const dd = {
+export const technicScoreStudents = {
     tableHead: [
         {id: 1, title: 'هفته'},
         {id: 3, title: ''},
@@ -423,3 +423,13 @@ export const dd = {
         {id: 5, one: 'پنجم', three: '-',}
     ]
 }
+
+
+export const CourseCardList = [
+    {id: 1, course: 'React', numbers: 73},
+    {id: 2, course: 'JAVA', numbers: 73},
+    {id: 3, course: 'python', numbers: 73},
+    {id: 4, course: 'c#', numbers: 73},
+    {id: 5, course: 'angular', numbers: 73},
+    {id: 6, course: 'go', numbers: 73},
+]
