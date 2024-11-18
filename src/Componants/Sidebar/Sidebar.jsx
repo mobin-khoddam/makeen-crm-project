@@ -1,8 +1,8 @@
-import logOutIcon from "/src/assets/images/Sidebar/Student/logOut.png";
+import logOutIcon from "/src/assets/images/Sidebar/logOut.png";
 import MakeenLogo from "../MakeenLogo/MakeenLogo.jsx";
 import SideBarLink from "./SideBarLink.jsx";
 import {userRoll} from "../../../store/store.jsx";
-import {mentorSidebar, studentSidebar} from "../../helper/ProjectData/Data.jsx";
+import {adminSideBar, mentorSidebar, studentSidebar} from "../../helper/ProjectData/Data.jsx";
 
 const Sidebar = () => {
     const {role} = userRoll(state => state)
@@ -26,7 +26,7 @@ const Sidebar = () => {
                                 role === "student" ? (
                                     <SideBarLink data={studentSidebar} />
                                 ) : role === "mentor" ? <SideBarLink data={mentorSidebar} /> :
-                                    <></>
+                                    <SideBarLink data={adminSideBar} />
                             }
                         </div>
                         <div className="flex gap-4 mb-6 cursor-pointer pr-6">
