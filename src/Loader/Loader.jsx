@@ -12,6 +12,7 @@ import DashboardMenthor from "../pages/Mentor/Dashboard/DashboardMenthor.jsx";
 import Students from "../pages/Mentor/Students/Students.jsx";
 import MessagesPage from "../pages/Mentor/Messages/MessagesPage.jsx";
 import StudentSinglePage from "../pages/Mentor/Students/StudentSinglePage.jsx";
+import AdminDashboard from "../pages/Admin/Dashboard/Dashboard.jsx";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
   {
     path: "/mentor/messages",
     element: <MessagesPage />,
+  },
+  {
+    path: "/admin/dashboard",
+    element: <AdminDashboard />,
   },
   {
     path: "/mentor/students/:student",
