@@ -1,10 +1,10 @@
-import HomeSvg from "/src/assets/images/Sidebar/Student/home.svg?react";
-import SmsSvg from "/src/assets/images/Sidebar/Student/sms.svg?react";
-import JudgeSvg from "/src/assets/images/Sidebar/Student/judge.svg?react";
-import NoteSvg from "/src/assets/images/Sidebar/Student/note.svg?react";
-import CakeSvg from "/src/assets/images/Sidebar/Student/cake.svg?react";
-import ProfileSvg from "/src/assets/images/Sidebar/Student/profile.svg?react";
-import CardSvg from "/src/assets/images/Sidebar/Student/card-send.svg?react";
+import HomeSvg from "../../../src/assets/images/Sidebar/home.svg";
+import SmsSvg from "../../../src/assets/images/Sidebar/sms.svg";
+import JudgeSvg from "../../../src/assets/images/Sidebar/judge.svg";
+import NoteSvg from "../../../src/assets/images/Sidebar/note.svg";
+import CakeSvg from "../../../src/assets/images/Sidebar/cake.svg";
+import ProfileSvg from "../../../src/assets/images/Sidebar/profile.svg";
+import CardSvg from "../../../src/assets/images/Sidebar/card-send.svg";
 
 export const studentSidebar = [
   { id: 1, location: "/student/dashboard", svg: HomeSvg, title: "داشبورد" },
