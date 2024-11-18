@@ -31,6 +31,8 @@ const LoginForm = () => {
     } else if (data.userName === "mentor") {
       getRole(data.userName);
       navigate("/mentor/dashboard");
+    } else if (data.userName === "admin") {
+      navigate("/admin/dashboard");
     }
   };
 

@@ -1,10 +1,17 @@
-import HomeSvg from '/src/assets/images/Sidebar/Student/home.svg?react'
-import SmsSvg from '/src/assets/images/Sidebar/Student/sms.svg?react'
-import JudgeSvg from '/src/assets/images/Sidebar/Student/judge.svg?react'
-import NoteSvg from '/src/assets/images/Sidebar/Student/note.svg?react'
-import CakeSvg from '/src/assets/images/Sidebar/Student/cake.svg?react'
-import ProfileSvg from '/src/assets/images/Sidebar/Student/profile.svg?react'
-import CardSvg from '/src/assets/images/Sidebar/Student/card-send.svg?react'
+import HomeSvg from '/src/assets/images/Sidebar/home.svg?react'
+import SmsSvg from '/src/assets/images/Sidebar/sms.svg?react'
+import JudgeSvg from '/src/assets/images/Sidebar/judge.svg?react'
+import NoteSvg from '/src/assets/images/Sidebar/note.svg?react'
+import CakeSvg from '/src/assets/images/Sidebar/cake.svg?react'
+import ProfileSvg from '/src/assets/images/Sidebar/profile.svg?react'
+import CardSvg from '/src/assets/images/Sidebar/card-send.svg?react'
+import PeoplesSvg from '/src/assets/images/Sidebar/people.svg?react'
+import UserSvg from '/src/assets/images/Sidebar/user-octagon.svg?react'
+import CodeCircleSvg from '/src/assets/images/Sidebar/code-circle.svg?react'
+import SettingSvg from '/src/assets/images/Sidebar/setting-2.svg?react'
+import NoteFavoriteSvg from '/src/assets/images/Sidebar/note-favorite.svg?react'
+import MenuBoardSvg from '/src/assets/images/Sidebar/menu-board.svg?react'
+
 
 export const studentSidebar = [
     {id: 1, location: '/student/dashboard', svg: HomeSvg, title: 'داشبورد'},
@@ -16,14 +23,24 @@ export const studentSidebar = [
     {id: 7, location: false, svg: JudgeSvg, title: 'آیین نامه انضباطی'},
 ]
 
-import HomeSvgMentor from '/src/assets/images/Sidebar/Mentor/home.svg?react'
-import SmsSvgMentor from '/src/assets/images/Sidebar/Mentor/sms.svg?react'
-import PeopleSvgMentor from '/src/assets/images/Sidebar/Mentor/people.svg?react'
 
 export const mentorSidebar = [
-    {id: 1, location: '/mentor/dashboard', svg: HomeSvgMentor, title: 'داشبورد'},
-    {id: 2, location: '/mentor/students', svg: PeopleSvgMentor, title: 'دانشجویان'},
-    {id: 3, location: '/mentor/messages', svg: SmsSvgMentor, title: 'پیام ها'},
+    {id: 1, location: '/mentor/dashboard', svg: HomeSvg, title: 'داشبورد'},
+    {id: 2, location: '/mentor/students', svg: PeoplesSvg, title: 'دانشجویان'},
+    {id: 3, location: '/mentor/messages', svg: SmsSvg, title: 'پیام ها'},
+]
+
+export const adminSideBar = [
+    {id: 1, location: '/admin/dashboard', svg: HomeSvg, title: 'داشبورد'},
+    {id: 2, location: '/admin/work-report-and-report-card', svg: NoteSvg, title: 'گزارش کار - کارنامه'},
+    {id: 3, location: '/admin/leave-requests', svg: MenuBoardSvg, title: 'درخواست های مرخصی'},
+    {id: 4, location: '/admin/students', svg: PeoplesSvg, title: 'دانشجویان'},
+    {id: 5, location: '/admin/mentors', svg: UserSvg, title: 'اساتید'},
+    {id: 6, location: '/admin/financial-affairs', svg: CardSvg, title: 'امور مالی'},
+    {id: 7, location: '/admin/courses', svg: CodeCircleSvg, title: 'دوره ها'},
+    {id: 8, location: '/admin/send-notification', svg: SmsSvg, title: 'ارسال اعلان'},
+    {id: 9, location: '/admin/compositions', svg: SettingSvg, title: 'تنضیمات'},
+    {id: 10, location: '/admin/disciplinary-regulations', svg: NoteFavoriteSvg, title: 'آیین نامه انظباطی'},
 ]
 
 export const CategoriesFilterList = [
