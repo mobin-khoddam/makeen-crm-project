@@ -699,6 +699,7 @@ export const mentorPageStudentsTechnicalScore = {
   ],
 };
 
+<<<<<<< HEAD
 export const technicScoreStudents = {
     tableHead: [
         {id: 1, title: 'هفته'},
@@ -725,3 +726,21 @@ export const CourseCardList = [
     {id: 5, course: 'angular', numbers: 73},
     {id: 6, course: 'go', numbers: 73},
 ]
+=======
+export const dd = {
+  tableHead: [
+    { id: 1, title: "هفته" },
+    { id: 3, title: "" },
+    { id: 2, title: "نمره فنی" },
+    { id: 4, title: "" },
+    { id: 5, title: "عملیات" },
+  ],
+  tableBody: [
+    { id: 1, one: "اول", three: 5 },
+    { id: 2, one: "دوم", three: "-" },
+    { id: 3, one: "سوم", three: "-" },
+    { id: 4, one: "چهارم", three: "-" },
+    { id: 5, one: "پنجم", three: "-" },
+  ],
+};
+>>>>>>> 48e358906d689c8c999f9482ec3df05d6cac2a85
