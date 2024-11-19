@@ -1,8 +1,6 @@
+import StudentReport from "../SinglePage/StudentReport";
+
 const ReportCard = () => {
-  return(
-      <div>
-          1
-      </div>
-  )
-}
+  return <StudentReport />;
+};
 export default ReportCard;

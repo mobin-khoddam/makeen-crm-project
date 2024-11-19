@@ -10,7 +10,7 @@ const CategoriesList = ({ setFilter, setShowCategories }) => {
       {CategoriesFilterList.map((item, index) => (
         <div
           onClick={() => setFilterHandler(item)}
-          className="pr-3 py-2 border border-white rounded-md hover:border-primary-blue "
+          className="pr-3 py-2 border  border-white rounded-md hover:border-primary-blue "
           key={index}
         >
           {item}
