@@ -725,4 +725,3 @@ export const CourseCardList = [
     {id: 5, course: 'angular', numbers: 73},
     {id: 6, course: 'go', numbers: 73},
 ]
-
