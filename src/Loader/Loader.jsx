@@ -60,12 +60,12 @@ const router = createBrowserRouter([
     element: <MessagesPage />,
   },
   {
-    path: "/admin/dashboard",
-    element: <AdminDashboard />,
-  },
-  {
     path: "/mentor/students/:student",
     element: <StudentSinglePage />,
+  },
+  {
+    path: "/admin/dashboard",
+    element: <AdminDashboard />,
   },
   {
     path: "*",

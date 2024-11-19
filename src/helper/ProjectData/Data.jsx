@@ -699,19 +699,30 @@ export const mentorPageStudentsTechnicalScore = {
   ],
 };
 
-export const dd = {
-  tableHead: [
-    { id: 1, title: "هفته" },
-    { id: 3, title: "" },
-    { id: 2, title: "نمره فنی" },
-    { id: 4, title: "" },
-    { id: 5, title: "عملیات" },
-  ],
-  tableBody: [
-    { id: 1, one: "اول", three: 5 },
-    { id: 2, one: "دوم", three: "-" },
-    { id: 3, one: "سوم", three: "-" },
-    { id: 4, one: "چهارم", three: "-" },
-    { id: 5, one: "پنجم", three: "-" },
-  ],
-};
+export const technicScoreStudents = {
+    tableHead: [
+        {id: 1, title: 'هفته'},
+        {id: 3, title: ''},
+        {id: 2, title: 'نمره فنی',},
+        {id: 4, title: ''},
+        {id: 5, title: 'عملیات'}
+    ],
+    tableBody: [
+        {id: 1, one: 'اول', three:  5,},
+        {id: 2, one: 'دوم', three: '-',},
+        {id: 3, one: 'سوم', three: '-',},
+        {id: 4, one: 'چهارم', three: '-',},
+        {id: 5, one: 'پنجم', three: '-',}
+    ]
+}
+
+
+export const CourseCardList = [
+    {id: 1, course: 'React', numbers: 73},
+    {id: 2, course: 'JAVA', numbers: 73},
+    {id: 3, course: 'python', numbers: 73},
+    {id: 4, course: 'c#', numbers: 73},
+    {id: 5, course: 'angular', numbers: 73},
+    {id: 6, course: 'go', numbers: 73},
+]
+

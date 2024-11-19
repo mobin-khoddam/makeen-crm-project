@@ -1,10 +1,10 @@
 import TableList from "../../../../Componants/TableList.jsx";
-import {dd} from "../../../../helper/ProjectData/Data.jsx";
+import {technicScoreStudents} from "../../../../helper/ProjectData/Data.jsx";
 
 const TechnicalScore = () => {
   return(
       <div>
-          <TableList head={dd.tableHead} body={dd.tableBody} />
+          <TableList head={technicScoreStudents.tableHead} body={technicScoreStudents.tableBody} />
       </div>
   )
 }
