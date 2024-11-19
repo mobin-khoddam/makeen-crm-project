@@ -1,4 +1,4 @@
-import leftArrow from '/src/assets/images/Admin/Dashboard/arrow-left.svg'
+import leftArrow from '/src/assets/images/GeneralImages/arrow-left.svg'
 
 const CourseCard = ({course, number}) => {
     return (
