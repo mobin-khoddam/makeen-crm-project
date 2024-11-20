@@ -2,7 +2,7 @@ import LeaveRequestCard from "./LeaveRequestCard"
 import arrow from '../../../../assets/images/GeneralImages/arrow-left-gray.svg'
 
 
-const LeaveRequestContainer = () => {
+const LeaveRequestContainer = ({onClick, modalRef}) => {
     const data = [
         { id: 1, },
         { id: 2, },
@@ -24,7 +24,7 @@ const LeaveRequestContainer = () => {
                 {
                     data.map(item => (
                         <div key={item.id}>
-                            <LeaveRequestCard />
+                            <LeaveRequestCard modalRef={modalRef} onClick={onClick} />
                         </div>
                     ))
                 }
