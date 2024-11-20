@@ -1,7 +1,16 @@
-const CustomButton = ({text, className}) => {
+import { Link } from "react-router-dom"
+
+const CustomButton = ({ text, className, href, onClick }) => {
     return (
-        <div>
-            <button className={`button bg-primary-blue text-white px-5 py-3 rounded-xl ${className}`}>{text}</button>
+        <div onDoubleClick={onClick}>
+            {
+                href ? <Link className={`button bg-primary-blue text-white px-5 py-3 rounded-xl ${className}`} to={href}>
+                    {text}
+                </Link> :
+                    <button className={`button bg-primary-blue text-white px-5 py-3 rounded-xl ${className}`}>
+                        {text}
+                    </button>
+            }
         </div>
     )
 }
