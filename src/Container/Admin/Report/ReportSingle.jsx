@@ -5,6 +5,7 @@ import StudentProfile from "../../Menthor/Students/SinglePage/StudentProfile";
 import FilterDatePicker from "../../../Componants/DatePicker";
 import CategoriesFilter from "../../../Componants/CategoriesFilter/CategoriesFilter";
 import StudentReportList from "../../Menthor/Students/SinglePage/StudentReportList";
+import Pagination from "../../../Componants/Pagination/Pagination";
 
 const ReportSingle = () => {
   const location = useLocation();
@@ -21,6 +22,9 @@ const ReportSingle = () => {
         <CategoriesFilter showCategories={state} setShowCategories={setState} />
       </div>
       <StudentReportList />
+      <div className="mt-[40px]">
+        <Pagination />
+      </div>
     </OriginalTemplatePage>
   );
 };
