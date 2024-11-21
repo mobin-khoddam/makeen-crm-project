@@ -1,6 +1,7 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const WorkReportsTable = ({ head, body }) => {
+  const navigate = useNavigate();
   return (
     <div className="overflow-x-auto bg-white border-[#E9E9E9] border-solid rounded-[8px] mb-[40px] ">
       <table className="table table-zebra border-[1px] ">
@@ -35,7 +36,23 @@ const WorkReportsTable = ({ head, body }) => {
                 </span>
               </td>
               <td className=" text-center">
-                <button className="w-[114px] h-[40px] bg-[#F7F5FF] rounded-[8px] text-[#4318FF] ">
+                <button
+                  onClick={() => {
+                    navigate(
+                      `/admin/work-report-and-report-card/${item.fullName}`,
+                      {
+                        state: {
+                          id: item.id,
+                          fullName: item.fullName,
+                          img: item.img,
+                          courseName: item.courseName,
+                          courseNumber: item.courseNumber,
+                        },
+                      }
+                    );
+                  }}
+                  className="w-[114px] h-[40px] bg-[#F7F5FF] rounded-[8px] text-[#4318FF] "
+                >
                   همه گزارش ها
                 </button>
               </td>

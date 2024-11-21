@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ReportSheet from "./ReportSheet";
 import WorkReportPart from "./WorkReportPart";
 
@@ -89,8 +89,8 @@ const WorkReport = () => {
           کارنامه
         </button>
       </div>
-          {state.second && <ReportSheet />}
-          {state.first && <WorkReportPart />}
+      {state.second && <ReportSheet />}
+      {state.first && <WorkReportPart />}
     </div>
   );
 };

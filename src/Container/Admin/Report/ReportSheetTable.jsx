@@ -1,5 +1,3 @@
-import React from "react";
-
 const ReportSheetTable = ({ head, body }) => {
   return (
     <div className="overflow-x-auto bg-white border-[#E9E9E9] border-solid rounded-[8px] ">
