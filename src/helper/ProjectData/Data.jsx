@@ -11,6 +11,7 @@ import CodeCircleSvg from "/src/assets/images/Sidebar/code-circle.svg?react";
 import SettingSvg from "/src/assets/images/Sidebar/setting-2.svg?react";
 import NoteFavoriteSvg from "/src/assets/images/Sidebar/note-favorite.svg?react";
 import MenuBoardSvg from "/src/assets/images/Sidebar/menu-board.svg?react";
+import studentImage from "../../assets/images/menthor/profile1.png";
 
 export const studentSidebar = [
   { id: 1, location: "/student/dashboard", svg: HomeSvg, title: "داشبورد" },
@@ -847,6 +848,7 @@ export const AdminWorkReport = {
           />
         </svg>
       ),
+      img: studentImage,
     },
     {
       id: 2,
@@ -882,6 +884,7 @@ export const AdminWorkReport = {
           />
         </svg>
       ),
+      img: studentImage,
     },
     {
       id: 3,
@@ -917,6 +920,7 @@ export const AdminWorkReport = {
           />
         </svg>
       ),
+      img: studentImage,
     },
     {
       id: 4,
@@ -952,6 +956,7 @@ export const AdminWorkReport = {
           />
         </svg>
       ),
+      img: studentImage,
     },
     {
       id: 5,
@@ -987,6 +992,7 @@ export const AdminWorkReport = {
           />
         </svg>
       ),
+      img: studentImage,
     },
   ],
 };

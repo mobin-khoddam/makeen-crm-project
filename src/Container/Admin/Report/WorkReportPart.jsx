@@ -1,4 +1,3 @@
-import React from "react";
 import WorkReportsTable from "./WorkReportsTable";
 import { AdminWorkReport } from "../../../helper/ProjectData/Data";
 import Pagination from "../../../Componants/Pagination/Pagination";
