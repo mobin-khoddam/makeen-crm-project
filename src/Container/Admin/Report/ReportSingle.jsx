@@ -22,7 +22,9 @@ const ReportSingle = () => {
         <CategoriesFilter showCategories={state} setShowCategories={setState} />
       </div>
       <StudentReportList />
-      <Pagination />
+      <div className="mt-[40px]">
+        <Pagination />
+      </div>
     </OriginalTemplatePage>
   );
 };
