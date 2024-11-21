@@ -11,7 +11,10 @@ import PersonalInformation from "../pages/Students/PersonalInformation/PersonalI
 import DashboardMenthor from "../pages/Mentor/Dashboard/DashboardMenthor.jsx";
 import Students from "../pages/Mentor/Students/Students.jsx";
 import MessagesPage from "../pages/Mentor/Messages/MessagesPage.jsx";
-
+import StudentSinglePage from "../pages/Mentor/Students/StudentSinglePage.jsx";
+import AdminDashboard from "../pages/Admin/Dashboard/Dashboard.jsx";
+import AdminReportPage from "../pages/Admin/ReportPage/AdminReportPage.jsx";
+import ReportSingle from "../Container/Admin/Report/ReportSingle.jsx";
 
 const router = createBrowserRouter([
   {
@@ -57,6 +60,22 @@ const router = createBrowserRouter([
   {
     path: "/mentor/messages",
     element: <MessagesPage />,
+  },
+  {
+    path: "/mentor/students/:student",
+    element: <StudentSinglePage />,
+  },
+  {
+    path: "/admin/dashboard",
+    element: <AdminDashboard />,
+  },
+  {
+    path: "/admin/work-report-and-report-card",
+    element: <AdminReportPage />,
+  },
+  {
+    path: "/admin/work-report-and-report-card/:fullName",
+    element: <ReportSingle />,
   },
   {
     path: "*",

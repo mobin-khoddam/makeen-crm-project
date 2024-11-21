@@ -1,4 +1,4 @@
-import searchIcon from '../../../assets/images/menthor/search.svg'
+import searchIcon from '../../../assets/images/GeneralImages/search.svg'
 const SearchInput = () => {
   return(
       <div className='relative w-[416px] flex items-center h-12 my-10 max-w-full'>

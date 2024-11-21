@@ -9,7 +9,7 @@ const OriginalTemplatePage = ({ children }) => {
     <ThemeProvider theme={theme}>
       <div className="bg-primary-gray min-h-screen p-8 flex gap-12 max-md:gap-0 max-sm:p-6">
         <Sidebar />
-        <div className="flex flex-col w-full h-fit overflow-x-auto">
+        <div className="flex flex-col w-full h-fit overflow-x-auto overflow-y-hidden">
           <Header />
           {children}
         </div>
