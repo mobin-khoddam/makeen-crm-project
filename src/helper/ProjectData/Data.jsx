@@ -746,3 +746,57 @@ export const adminPanelLeaveRecords = {
     {id: 7, row: 7, name: 'علیرضا  احمدی ', courseName: 'ui/ux ', date: '1403/7/24', amountOfDelay: '21 دقیقه', range:{max: 16, min: 8}, operation: 'ویرایش'},
   ],
 }
+
+export const ReportSheetData = {
+  row: [
+    { id: 1, title: "#" },
+    { id: 2, title: "نام و نام خانوادگی " },
+    { id: 3, title: "نام فرعی دوره " },
+    { id: 4, title: "شماره دوره " },
+    { id: 5, title: "نمره فنی" },
+    { id: 6, title: "نمره انطباق پذیری" },
+    { id: 7, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      technicalMark: 10,
+      SoftMark: 10,
+    },
+    {
+      id: 2,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      technicalMark: 10,
+      SoftMark: 10,
+    },
+    {
+      id: 3,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      technicalMark: 10,
+      SoftMark: 10,
+    },
+    {
+      id: 4,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      technicalMark: 10,
+      SoftMark: 10,
+    },
+    {
+      id: 5,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      technicalMark: 10,
+      SoftMark: 10,
+    },
+  ],
+};

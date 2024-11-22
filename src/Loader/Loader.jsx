@@ -12,11 +12,9 @@ import DashboardMenthor from "../pages/Mentor/Dashboard/DashboardMenthor.jsx";
 import Students from "../pages/Mentor/Students/Students.jsx";
 import MessagesPage from "../pages/Mentor/Messages/MessagesPage.jsx";
 import StudentSinglePage from "../pages/Mentor/Students/StudentSinglePage.jsx";
-import AdminDashboard from "../pages/Admin/Dashboard/Dashboard.jsx";
 import AdminReportPage from "../pages/Admin/ReportPage/AdminReportPage.jsx";
 import ReportSingle from "../Container/Admin/Report/ReportSingle.jsx";
 import LeaveRequestPage from "../pages/Admin/Leave-Request/LeaveRequestPage.jsx";
-import AdminDashboard from "../pages/Admin/Dashboard/AdminDashboard.jsx";
 import LeaveRecords from "../pages/Admin/Dashboard/LeaveRecords/LeaveRecords.jsx";
 
 const router = createBrowserRouter([
