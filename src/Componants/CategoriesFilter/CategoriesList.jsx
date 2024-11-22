@@ -6,7 +6,7 @@ const CategoriesList = ({ setFilter, setShowCategories }) => {
     setFilter(item);
   };
   return (
-    <div className="bg-white w-[234px] rounded-lg mt-4 p-2">
+    <div className="bg-white w-[234px] rounded-lg mt-4 p-2 shadow-sm border">
       {CategoriesFilterList.map((item, index) => (
         <div
           onClick={() => setFilterHandler(item)}
