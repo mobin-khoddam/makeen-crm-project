@@ -3,12 +3,10 @@ import CourseList from "../../../Container/Admin/Dashboard/CourseCard/CourseList
 import StudentsAreLate from "../../../Container/Admin/Dashboard/StudentsAreLate.jsx";
 import DateReadOnly from "../../../Container/Admin/Dashboard/DateReadOnly.jsx";
 import LeaveRequestContainer from "../../../Container/Admin/Dashboard/LeaveRequests/LeaveRequestContainer.jsx";
-import { useState } from "react";
 import { useRef } from "react";
 import './styles.css'
 
 const AdminDashboard = () => {
-    const [toggleModal, setToggleModal] = useState(false)
     const modalRef = useRef(null)
     return (
         <OriginalTemplatePage>
@@ -22,7 +20,6 @@ const AdminDashboard = () => {
                 </div>
             </div>
             <div className="bg-[#F9FAFB] p-6 rounded-lg">
-                <LeaveRequestContainer setState={setToggleModal} state={toggleModal} />
                 <LeaveRequestContainer modalRef={modalRef} onClick={() => modalRef.current.showModal()} />
             </div>
         </OriginalTemplatePage>
