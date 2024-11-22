@@ -994,3 +994,82 @@ export const AdminWorkReport = {
     },
   ],
 };
+
+export const LeaveRequestData = {
+  head: [
+    { id: 1, title: "#" },
+    { id: 2, title: "نام و نام خانوادگی " },
+    { id: 3, title: "دوره " },
+    { id: 4, title: "شماره دوره " },
+    { id: 5, title: "تاریخ ثبت " },
+    { id: 6, title: "وضعیت" },
+    { id: 7, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "تایید شده",
+    },
+    {
+      id: 2,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "تایید شده",
+    },
+    {
+      id: 3,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "تایید شده",
+    },
+    {
+      id: 4,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "تایید شده",
+    },
+    {
+      id: 5,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "تایید شده",
+    },
+    {
+      id: 6,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "رد شده",
+    },
+    {
+      id: 7,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "تایید شده",
+    },
+
+    {
+      id: 8,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "رد شده",
+    },
+  ],
+};
