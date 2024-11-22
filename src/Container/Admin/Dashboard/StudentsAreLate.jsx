@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const StudentsAreLate = () => {
     return (
-        <div className='bg-white mt-6 p-6 rounded-lg h-full'>
+        <div className='bg-white p-6 rounded-lg h-full'>
             <div className='flex justify-between mb-7 h-fit'>
                 <span>تاخیر دانشجویان</span>
                 <Link to='/admin/dashboard/leave-records' className='flex items-center gap-4 text-primary-blue'>
