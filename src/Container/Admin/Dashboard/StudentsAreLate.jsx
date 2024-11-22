@@ -1,16 +1,17 @@
 import arrow from '../../../assets/images/GeneralImages/arrowBlue.svg'
 import searchIcon from '../../../assets/images/GeneralImages/search.svg'
 import CustomButton from "../../Students/CustomButton.jsx";
+import {Link} from "react-router-dom";
 
 const StudentsAreLate = () => {
     return (
         <div className='bg-white mt-6 p-6 rounded-lg h-full'>
             <div className='flex justify-between mb-7 h-fit'>
                 <span>تاخیر دانشجویان</span>
-                <div className='flex items-center gap-4 text-primary-blue'>
+                <Link to='/admin/dashboard/leave-records' className='flex items-center gap-4 text-primary-blue'>
                     <span> سوابق تاخیر</span>
                     <img src={arrow} alt="arrow" />
-                </div>
+                </Link>
             </div>
             <div className='flex items-center justify-between relative bg-[#F9FAFB] h-[65px]'>
                 <label className='absolute right-2' htmlFor='LateRecords'>

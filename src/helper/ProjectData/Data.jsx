@@ -725,3 +725,24 @@ export const CourseCardList = [
     {id: 5, course: 'angular', numbers: 73},
     {id: 6, course: 'go', numbers: 73},
 ]
+
+export const adminPanelLeaveRecords = {
+  tableHead: [
+    {id: 1, title: '#'},
+    {id: 2, title: 'نام و نام خانوادگی '},
+    {id: 3, title: 'نام فرعی دوره'},
+    {id: 4, title: 'تاریخ'},
+    {id: 5, title: 'میزان تاخیر'},
+    {id: 6, title: 'باقی مانده مرخصی'},
+    {id: 7, title: 'عملیات'},
+  ],
+  tableBody: [
+    {id: 1, row: 1, name: 'علیرضا  احمدی ', courseName: 'ui/ux ', date: '1403/7/24', amountOfDelay: '21 دقیقه', range:{max: 16, min: 8}, operation: 'ویرایش'},
+    {id: 2, row: 2, name: 'علیرضا  احمدی ', courseName: 'ui/ux ', date: '1403/7/24', amountOfDelay: '21 دقیقه', range:{max: 16, min: 8}, operation: 'ویرایش'},
+    {id: 3, row: 3, name: 'علیرضا  احمدی ', courseName: 'ui/ux ', date: '1403/7/24', amountOfDelay: '21 دقیقه', range:{max: 16, min: 8}, operation: 'ویرایش'},
+    {id: 4, row: 4, name: 'علیرضا  احمدی ', courseName: 'ui/ux ', date: '1403/7/24', amountOfDelay: '21 دقیقه', range:{max: 16, min: 8}, operation: 'ویرایش'},
+    {id: 5, row: 5, name: 'علیرضا  احمدی ', courseName: 'ui/ux ', date: '1403/7/24', amountOfDelay: '21 دقیقه', range:{max: 16, min: 8}, operation: 'ویرایش'},
+    {id: 6, row: 6, name: 'علیرضا  احمدی ', courseName: 'ui/ux ', date: '1403/7/24', amountOfDelay: '21 دقیقه', range:{max: 16, min: 8}, operation: 'ویرایش'},
+    {id: 7, row: 7, name: 'علیرضا  احمدی ', courseName: 'ui/ux ', date: '1403/7/24', amountOfDelay: '21 دقیقه', range:{max: 16, min: 8}, operation: 'ویرایش'},
+  ],
+}
