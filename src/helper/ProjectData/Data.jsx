@@ -1,17 +1,17 @@
-import HomeSvg from '/src/assets/images/Sidebar/home.svg?react'
-import SmsSvg from '/src/assets/images/Sidebar/sms.svg?react'
-import JudgeSvg from '/src/assets/images/Sidebar/judge.svg?react'
-import NoteSvg from '/src/assets/images/Sidebar/note.svg?react'
-import CakeSvg from '/src/assets/images/Sidebar/cake.svg?react'
-import ProfileSvg from '/src/assets/images/Sidebar/profile.svg?react'
-import CardSvg from '/src/assets/images/Sidebar/card-send.svg?react'
-import PeoplesSvg from '/src/assets/images/Sidebar/people.svg?react'
-import UserSvg from '/src/assets/images/Sidebar/user-octagon.svg?react'
-import CodeCircleSvg from '/src/assets/images/Sidebar/code-circle.svg?react'
-import SettingSvg from '/src/assets/images/Sidebar/setting-2.svg?react'
-import NoteFavoriteSvg from '/src/assets/images/Sidebar/note-favorite.svg?react'
-import MenuBoardSvg from '/src/assets/images/Sidebar/menu-board.svg?react'
-
+import HomeSvg from "/src/assets/images/Sidebar/home.svg?react";
+import SmsSvg from "/src/assets/images/Sidebar/sms.svg?react";
+import JudgeSvg from "/src/assets/images/Sidebar/judge.svg?react";
+import NoteSvg from "/src/assets/images/Sidebar/note.svg?react";
+import CakeSvg from "/src/assets/images/Sidebar/cake.svg?react";
+import ProfileSvg from "/src/assets/images/Sidebar/profile.svg?react";
+import CardSvg from "/src/assets/images/Sidebar/card-send.svg?react";
+import PeoplesSvg from "/src/assets/images/Sidebar/people.svg?react";
+import UserSvg from "/src/assets/images/Sidebar/user-octagon.svg?react";
+import CodeCircleSvg from "/src/assets/images/Sidebar/code-circle.svg?react";
+import SettingSvg from "/src/assets/images/Sidebar/setting-2.svg?react";
+import NoteFavoriteSvg from "/src/assets/images/Sidebar/note-favorite.svg?react";
+import MenuBoardSvg from "/src/assets/images/Sidebar/menu-board.svg?react";
+import studentImage from "../../assets/images/menthor/profile1.png";
 
 export const studentSidebar = [
   { id: 1, location: "/student/dashboard", svg: HomeSvg, title: "داشبورد" },
