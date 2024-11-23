@@ -19,7 +19,7 @@ body {
 }
 
 .rmdp-input {
-    @apply pr-4 w-full
+    @apply pr-4 w-full border-solid border border-[#D1D5DB] !important
 }
 
 .rmdp-input:focus {
@@ -80,4 +80,8 @@ body {
 .custom-calender > .rmdp-day-picker,
 .custom-calender > .rmdp-top-class {
     @apply w-[350px] h-full max-sm:w-[250px];
+}
+
+.sd {
+    @apply w-full h-4/5
 }
