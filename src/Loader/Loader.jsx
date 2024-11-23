@@ -17,6 +17,7 @@ import ReportSingle from "../Container/Admin/Report/ReportSingle.jsx";
 import LeaveRequestPage from "../pages/Admin/Leave-Request/LeaveRequestPage.jsx";
 import LeaveRecords from "../pages/Admin/Dashboard/LeaveRecords/LeaveRecords.jsx";
 import AdminDashboard from "../pages/Admin/Dashboard/AdminDashboard.jsx";
+import AdminMentorsPage from "../pages/Admin/Mentors/AdminMentorsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -73,7 +74,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin/dashboard/leave-records",
-    element: <LeaveRecords />
+    element: <LeaveRecords />,
   },
   {
     path: "/admin/work-report-and-report-card",
@@ -86,6 +87,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/leave-request",
     element: <LeaveRequestPage />,
+  },
+  {
+    path: "/admin/mentors",
+    element: <AdminMentorsPage />,
   },
   {
     path: "*",
