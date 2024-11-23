@@ -16,14 +16,12 @@ const LeaveRecordsTable = ({tableHead, tableBody}) => {
         </td>
     )
 
-    const showRangeBtn = (column, row) => {
-        console.log();
-        return(
-            <td key={`${row.id}-${column}-range`}>
-                <GreenBtn className='mx-auto block rounded-md' tooltip={false} maxNum={row[column]['max']} minNum={row[column]['min']} color='[#A3AED0]' />
-            </td>
-        )
-    }
+    const showRangeBtn = (column, row) => (
+        <td key={`${row.id}-${column}-range`}>
+            <GreenBtn className='mx-auto block rounded-md' tooltip={false} maxNum={row[column]['max']}
+                      minNum={row[column]['min']} color='[#A3AED0]'/>
+        </td>
+    )
 
     const showNormalValue = (column, row) => (
         <td className='last:text-primary-blue [&>span]:last:bg-[#F7F5FF]' key={`${row.id}-${column}-normalValue`}>

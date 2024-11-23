@@ -4,7 +4,6 @@ import StudentsAreLate from "../../../Container/Admin/Dashboard/StudentsAreLate.
 import DateReadOnly from "../../../Container/Admin/Dashboard/DateReadOnly.jsx";
 import LeaveRequestContainer from "../../../Container/Admin/Dashboard/LeaveRequests/LeaveRequestContainer.jsx";
 import { useRef } from "react";
-import './styles.css'
 
 const AdminDashboard = () => {
     const modalRef = useRef(null)

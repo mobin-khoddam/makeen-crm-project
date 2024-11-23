@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CategoriesFilter from "../../../../Componants/CategoriesFilter/CategoriesFilter";
-import FilterDatePicker from "../../../../Componants/DatePicker";
+import FilterDatePicker from "../../../../Componants/Datepicker/DatePicker.jsx";
 import StudentReportList from "./StudentReportList";
 
 const StudentReport = () => {

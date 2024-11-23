@@ -1,5 +1,5 @@
 import cakeIcon from '../../../assets/images/Students/LeaveRequest/cake.svg'
-import FilterDatePicker from '../../../Componants/DatePicker.jsx'
+import FilterDatePicker from '../../../Componants/Datepicker/DatePicker.jsx'
 import TimePicker from "../TimePicker.jsx";
 import {useForm} from "react-hook-form";
 import CustomButton from "../CustomButton.jsx";
