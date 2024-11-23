@@ -18,6 +18,8 @@ import LeaveRequestPage from "../pages/Admin/Leave-Request/LeaveRequestPage.jsx"
 import LeaveRecords from "../pages/Admin/Dashboard/LeaveRecords/LeaveRecords.jsx";
 import AdminDashboard from "../pages/Admin/Dashboard/AdminDashboard.jsx";
 import AdminMentorsPage from "../pages/Admin/Mentors/AdminMentorsPage.jsx";
+import studentsPage from "../pages/Admin/Students/StudentsPage.jsx";
+import StudentsPage from "../pages/Admin/Students/StudentsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -87,6 +89,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/leave-request",
     element: <LeaveRequestPage />,
+  },
+  {
+    path: "/admin/students",
+    element: <StudentsPage />,
   },
   {
     path: "/admin/mentors",
