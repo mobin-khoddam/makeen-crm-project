@@ -2,14 +2,15 @@
 import ReportSheetTable from "./ReportSheetTable";
 import { ReportSheetData } from "../../../helper/ProjectData/Data";
 import Pagination from "../../../Componants/Pagination/Pagination";
+import FilterStudents from "../FilterStudents.jsx";
 
 const ReportSheet = () => {
   return (
     <>
-      <div className="w-full flex justify-between items-center mb-[24px]">
+      <div className="w-full flex justify-between items-center mb-[24px] flex-wrap max-2xl:flex-col gap-10">
         <span className="text-[16px] text-black ">نمایش بر اساس:</span>
-        <div className="w-[62.7906%] h-[42px] flex items-center justify-center ">
-          جای کار مبین
+        <div className="w-[62.7906%] flex items-center justify-center ">
+          <FilterStudents date={true} />
         </div>
         <button className="w-[162px] h-[41px] bg-[#4318FF] text-white text-[16px]  rounded-[10px] active:scale-95 transition-all duration-150 ease-linear">
           فیلتر کردن
