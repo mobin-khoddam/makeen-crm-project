@@ -1,17 +1,17 @@
 import WorkReportsTable from "./WorkReportsTable";
 import { AdminWorkReport } from "../../../helper/ProjectData/Data";
 import Pagination from "../../../Componants/Pagination/Pagination";
+import FilterStudents from "../FilterStudents.jsx";
 
 const WorkReportPart = () => {
   return (
     <>
-      <div className="mb-[48px] flex lg:justify-between lg:items-center lg:flex-row flex-col items-center justify-normal max-sm:gap-x-3">
-        <span className="text-[14px] max-lg:block max-lg:ml-auto">
+      <div className="mb-[48px] flex lg:justify-between items-center 2xl:flex-row flex-col justify-normal max-sm:gap-x-3 gap-10">
+        <span className="text-[14px] max-lg:block ">
           نمایش بر اساس:
         </span>
-        <div className="w-[45.2519%] h-[42px] flex items-center max-lg:ml-auto ">
-          {" "}
-          بخش داداشم مبین{" "}
+        <div className="flex items-center ">
+          <FilterStudents />
         </div>
         <div className="flex items-center  w-full  lg:w-[33%]  h-12 bg-gray-50 border border-gray-300 rounded-[8px] px-4 shadow-sm gap-x-1">
           <svg
