@@ -13,14 +13,15 @@ const StudentsAreLate = () => {
                     <img src={arrow} alt="arrow" />
                 </Link>
             </div>
-            <div className='flex items-center justify-between relative bg-[#F9FAFB] h-[65px]'>
+            <div className='flex items-center justify-between relative bg-[#F9FAFB] h-[65px] text-sm'>
                 <label className='absolute right-2' htmlFor='LateRecords'>
                     <img src={searchIcon} alt="arrow" />
                 </label>
                 <input id='LateRecords' type="text"
-                    className='w-full h-full bg-inherit border-[#D1D5DB] border-2 rounded-xl outline-none pr-8 pl-24' />
-                <div className='absolute left-2'><CustomButton text='جستجو' className='px-3 py-2 text-sm' /></div>
+                    className='w-full h-full bg-inherit border-[#D1D5DB] border-2 rounded-xl outline-none pr-8 max-sm:pl-4 pl-24' />
+                <div className='absolute left-2 max-sm:hidden'><CustomButton text='جستجو' className='px-3 py-2 text-sm' /></div>
             </div>
+                <CustomButton text='جستجو' className='px-3 py-2 text-sm mt-10 mx-auto block sm:hidden' />
         </div>
     )
 }

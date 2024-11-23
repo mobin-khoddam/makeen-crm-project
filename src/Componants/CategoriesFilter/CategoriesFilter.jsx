@@ -14,7 +14,7 @@ const CategoriesFilter = ({ setShowCategories, showCategories, className, title,
                 <span>{filter}</span>
                 <img className={`duration-300 ${showCategories ? 'rotate-180' : 'rotate-0'}`} src={`${arrowIcon}`} alt="" />
             </div>
-            <div className={`duration-300 absolute ${showCategories ? 'block' : 'hidden'}`}>
+            <div className={`duration-300 absolute z-10 ${showCategories ? 'block' : 'hidden'}`}>
                 <CategoriesList setFilter={setFilter} setShowCategories={setShowCategories} data={data} />
             </div>
         </div>
