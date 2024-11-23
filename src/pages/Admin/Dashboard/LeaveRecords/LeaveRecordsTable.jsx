@@ -20,7 +20,7 @@ const LeaveRecordsTable = ({tableHead, tableBody}) => {
         console.log();
         return(
             <td key={`${row.id}-${column}-range`}>
-                <GreenBtn className='mx-auto block rounded-md' tooltip={false} maxNum={row[column]['max']} minNum={row[column]['min']} color='primary-gray-100' />
+                <GreenBtn className='mx-auto block rounded-md' tooltip={false} maxNum={row[column]['max']} minNum={row[column]['min']} color='[#A3AED0]' />
             </td>
         )
     }

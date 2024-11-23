@@ -1,5 +1,5 @@
 .rmdp-wrapper, .rmdp-top-class, .rmdp-shadow , .rmdp-day-picker {
-    @apply !w-full 
+    @apply !w-full h-full
 }
 
 .sd {

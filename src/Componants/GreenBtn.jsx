@@ -8,7 +8,7 @@ const GreenBtn = ({
                   }) => {
     return (
         <div
-            className={`w-[59px] h-[32px] rounded-full border flex hover:scale-110 relative group duration-300 border-${color} text-${color} ${className}`}>
+            className={`w-[59px] h-[32px] rounded-full border flex hover:scale-110 relative group duration-300 ${className} border-${color} text-${color}`}>
             <div className={`absolute -top-[100px] hidden flex-col justify-between items-center ${tooltip && 'group-hover:flex'}`}>
                 <div className="w-[200px] h-[100px] bg-white shadow-md rounded p-3">
                     <div className="flex flex-col gap-2">
@@ -21,7 +21,7 @@ const GreenBtn = ({
             </div>
             <div className="w-[50%] h-full flex justify-center items-center">{maxNum}</div>
             <div
-                className={`w-[50%] h-full rounded-full text-white flex justify-center items-center bg-${color} ${className}`}
+                className={`w-[50%] h-full rounded-full text-white flex justify-center items-center ${className} bg-${color}`}
             >
                 {minNum}
             </div>
