@@ -4,24 +4,21 @@ import StudentsAreLate from "../../../Container/Admin/Dashboard/StudentsAreLate.
 import DateReadOnly from "../../../Container/Admin/Dashboard/DateReadOnly.jsx";
 import LeaveRequestContainer from "../../../Container/Admin/Dashboard/LeaveRequests/LeaveRequestContainer.jsx";
 import { useRef } from "react";
-import './styles.css'
 
 const AdminDashboard = () => {
     const modalRef = useRef(null)
     return (
         <OriginalTemplatePage>
-            <div className='flex gap-6 justify-between max-xl:flex-col-reverse items-center max-sm:text-sm h-[350px] max-xl:h-full'>
-                <div className='flex flex-col justify-between w-[65%] h-full max-xl:w-full'>
+            <div className='flex gap-6 mb-6 max-xl:flex-col-reverse max-xl:items-center'>
+                <div className='w-[70%] flex flex-col max-xl:w-full'>
                     <CourseList />
                     <StudentsAreLate />
                 </div>
-                <div className="w-[35%] max-lg:w-full flex justify-center items-center">
-                    <div className="w-[340px] max-[370px]:w-full">
-                        <DateReadOnly />
-                    </div>
+                <div className='w-[30%] max-xl:w-[250px]'>
+                    <DateReadOnly />
                 </div>
             </div>
-            <div className="mt-6 bg-[#F9FAFB] p-6 rounded-lg">
+            <div className="bg-[#F9FAFB] p-6 rounded-lg">
                 <LeaveRequestContainer modalRef={modalRef} onClick={() => modalRef.current.showModal()} />
             </div>
         </OriginalTemplatePage>
