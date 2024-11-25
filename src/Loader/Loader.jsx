@@ -18,6 +18,8 @@ import LeaveRequestPage from "../pages/Admin/Leave-Request/LeaveRequestPage.jsx"
 import LeaveRecords from "../pages/Admin/Dashboard/LeaveRecords/LeaveRecords.jsx";
 import AdminDashboard from "../pages/Admin/Dashboard/AdminDashboard.jsx";
 import AdminMentorsPage from "../pages/Admin/Mentors/AdminMentorsPage.jsx";
+import StudentsPage from "../pages/Admin/Students/StudentsPage.jsx";
+import SendNotificationPage from "../pages/Admin/SendNotification/SendNotificationPage.jsx";
 
 const router = createBrowserRouter([
   {
