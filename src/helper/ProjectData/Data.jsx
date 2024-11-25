@@ -1414,3 +1414,196 @@ export const NotificationRecordsData = {
     },
   ],
 };
+
+
+export const coursesDataListStudents = [
+  {
+    id: 1,
+    courseName: 'PHP',
+    courseList: [
+      {
+        id: 1,
+        courseHeld: 16,
+        membersNumber: 10,
+        activeStudents: 20,
+        graduate: 20,
+        employment: 0,
+        withdrawal: 500,
+        rejection: 1
+      },
+    ]
+  },
+  {
+    id: 2,
+    courseName: 'React',
+    courseList: [
+      {
+        id: 2,
+        courseHeld: 0,
+        membersNumber: 10,
+        activeStudents: 20,
+        graduate: 2,
+        employment: 2,
+        withdrawal: 200,
+        rejection: 100
+      },
+    ]
+  },
+  {
+    id: 3,
+    courseName: 'python',
+    courseList: [
+      {
+        id: 3,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 10
+      },
+    ]
+  },
+  {
+    id: 4,
+    courseName: 'ui / ux',
+    courseList: [
+      {
+        id: 4,
+        courseHeld: 100,
+        membersNumber: 0,
+        activeStudents: 0,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 900,
+        rejection: 0
+      },
+    ]
+  },
+  {
+    id: 5,
+    courseName: 'node.js',
+    courseList: [
+      {
+        id: 5,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 3,
+        employment: 10,
+        withdrawal: 20,
+        rejection: 10
+      },
+    ]
+  },
+  {
+    id: 6,
+    courseName: 'java',
+    courseList: [
+      {
+        id: 6,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 10
+      },
+    ]
+  },
+]
+
+export const courseStudentsCollapse = [
+  {
+    id: 1,
+    open: false,
+    CourseName: 'تعداد کل فرانت اند',
+    courseNumber: 10,
+    courseList: [
+      {
+        id: 1,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 3
+      },
+    ]
+  },
+  {
+    id: 2,
+    open: false,
+    CourseName: 'تعداد کل بک اند',
+    courseNumber: 10,
+    courseList: [
+      {
+        id: 2,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 4
+      },
+    ]
+  },
+  {
+    id: 3,
+    open: false,
+    CourseName: 'تعداد کل UI UX',
+    courseNumber: 5,
+    courseList: [
+      {
+        id: 3,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 6
+      },
+    ]
+  },
+  {
+    id: 4,
+    open: false,
+    CourseName: 'تعداد کل مقدماتی',
+    courseNumber: 9,
+    courseList: [
+      {
+        id: 4,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 8
+      },
+    ]
+  },
+  {
+    id: 5,
+    open: false,
+    CourseName: 'تعداد کل فرانت اند',
+    courseNumber: 10,
+    courseList: [
+      {
+        id: 5,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 9
+      },
+    ]
+  }
+]
