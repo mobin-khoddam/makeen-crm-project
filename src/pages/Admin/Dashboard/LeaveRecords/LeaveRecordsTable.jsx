@@ -23,11 +23,33 @@ const LeaveRecordsTable = ({tableHead, tableBody}) => {
         </td>
     )
 
+    const studentsInformation = (column, row) => {
+        let color
+        switch (row[column]){
+            case 'دانشجو':
+                color = 'text-[#FF00B8]'
+                break;
+            case 'فارغ التحصیل':
+                color = 'text-[#A3AED0]'
+                break;
+            case 'استخدام':
+                color = 'text-[#09814A]'
+                break;
+                default: color = 'text-black'
+        }
+        return (
+            <td key={`${row.id}-${column}-student-status`} className={color}>
+                <span className='mx-auto block w-fit'>{row[column]}</span>
+            </td>
+        )
+    }
+
     const showNormalValue = (column, row) => (
-        <td className='last:text-primary-blue [&>span]:last:bg-[#F7F5FF]' key={`${row.id}-${column}-normalValue`}>
+        <td className='last:text-primary-blue [&>span]:last:bg-[#F7F5FF] [&>span]:last:cursor-pointer' key={`${row.id}-${column}-normalValue`}>
             <span className='mx-auto block w-fit p-2 rounded-xl'>{row[column]}</span>
         </td>
     )
+
 
     return (
         <div className='flex flex-col gap-10'>
@@ -63,6 +85,9 @@ const LeaveRecordsTable = ({tableHead, tableBody}) => {
                                     }
                                     if (column === 'range') {
                                         return showRangeBtn(column, row)
+                                    }
+                                    if (column === 'status') {
+                                        return studentsInformation(column, row)
                                     }
                                     return (
                                         showNormalValue(column, row)
