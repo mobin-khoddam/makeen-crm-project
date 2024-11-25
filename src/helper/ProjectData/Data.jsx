@@ -1353,6 +1353,68 @@ export const MentorsCardData = [
   },
 ];
 
+export const NotificationRecordsData = {
+  head: [
+    { id: 1, title: "#" },
+    { id: 2, title: "موضوع پیام" },
+    { id: 3, title: "تیتر اصلی " },
+    { id: 4, title: "تیتر فرعی" },
+    { id: 5, title: "شماره دوره" },
+    { id: 6, title: "تاریخ" },
+    { id: 7, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      subject: "تبریک عید",
+      mainTitle: "فرانت اند ",
+      subtitle: "REACT",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+    {
+      id: 2,
+      subject: "تبریک روز زن",
+      mainTitle: "مقدماتی",
+      subtitle: "مقدماتی",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+    {
+      id: 3,
+      subject: "تبریک روز زن",
+      mainTitle: "فرانت اند",
+      subtitle: "REACT",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+    {
+      id: 4,
+      subject: "دعوت به جشن",
+      mainTitle: "UI UX",
+      subtitle: "UI UX",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+    {
+      id: 5,
+      subject: "دعوت به جشن",
+      mainTitle: "UI UX",
+      subtitle: "UI UX",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+    {
+      id: 6,
+      subject: "تبریک روز زن",
+      mainTitle: "فرانت اند",
+      subtitle: "REACT",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+  ],
+};
+
 
 export const coursesDataListStudents = [
   {
