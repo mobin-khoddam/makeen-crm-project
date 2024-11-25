@@ -1607,3 +1607,63 @@ export const courseStudentsCollapse = [
     ]
   }
 ]
+
+export const adminPageStudentsInformation = {
+  tableHead: [
+    { id: 1, title: "#" },
+    { id: 2, title: "نام و نام خانوادگی " },
+    { id: 3, title: "دوره" },
+    { id: 4, title: "وضعیت" },
+    { id: 5, title: "عملیات" },
+  ],
+  tableBody: [
+    {
+      id: 1,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'دانشجو',
+      information: 'مشاهده اطلاعات',
+    },
+    {
+      id: 1,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'فارغ التحصیل',
+      information: 'مشاهده اطلاعات',
+    },
+    {
+      id: 1,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'استخدام',
+      information: 'مشاهده اطلاعات',
+    },
+    {
+      id: 1,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'دانشجو',
+      information: 'مشاهده اطلاعات',
+    },
+    {
+      id: 1,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'فارغ التحصیل',
+      information: 'مشاهده اطلاعات',
+    },
+    {
+      id: 1,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'استخدام',
+      information: 'مشاهده اطلاعات',
+    },
+  ],
+};

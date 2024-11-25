@@ -2,7 +2,8 @@ import {useState} from "react";
 import FilterStudents from "../FilterStudents.jsx";
 import CustomButton from "../../Students/CustomButton.jsx";
 import SearchInput from "../SearchInput.jsx";
-import DetailedReport from "../../Students/DetailedReportPage/DetailedReport.jsx";
+import DetailedReport from "./DetailedReportPage/DetailedReport.jsx";
+import StatisticalReport from "./StatisticalReportPage/StatisticalReport.jsx";
 
 const StudentsTabBar = () => {
     const [pages, setPages] = useState({first: true, second: false,})
@@ -31,9 +32,8 @@ const StudentsTabBar = () => {
                 <span>نمایش بر اساس :</span>
                 <FilterStudents/>
             </div>
-            {
-                pages.first && <DetailedReport />
-            }
+            {pages.first && <DetailedReport />}
+            {pages.second && <StatisticalReport />}
         </>
     )
 }
