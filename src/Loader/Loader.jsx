@@ -17,6 +17,11 @@ import ReportSingle from "../Container/Admin/Report/ReportSingle.jsx";
 import LeaveRequestPage from "../pages/Admin/Leave-Request/LeaveRequestPage.jsx";
 import LeaveRecords from "../pages/Admin/Dashboard/LeaveRecords/LeaveRecords.jsx";
 import AdminDashboard from "../pages/Admin/Dashboard/AdminDashboard.jsx";
+import AdminMentorsPage from "../pages/Admin/Mentors/AdminMentorsPage.jsx";
+import StudentsPage from "../pages/Admin/Students/StudentsPage.jsx";
+import SendNotificationPage from "../pages/Admin/SendNotification/SendNotificationPage.jsx";
+import * as path from "node:path";
+import StudentsInformationTabBar from "../pages/Admin/Students/StudentsInformation/StudentsInformationTabBar.jsx";
 
 const router = createBrowserRouter([
   {
@@ -73,7 +78,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin/dashboard/leave-records",
-    element: <LeaveRecords />
+    element: <LeaveRecords />,
   },
   {
     path: "/admin/work-report-and-report-card",
@@ -86,6 +91,22 @@ const router = createBrowserRouter([
   {
     path: "/admin/leave-request",
     element: <LeaveRequestPage />,
+  },
+  {
+    path: "/admin/students",
+    element: <StudentsPage />,
+  },
+  {
+    path: "/admin/mentors",
+    element: <AdminMentorsPage />,
+  },
+  {
+    path: "/admin/send-notification",
+    element: <SendNotificationPage />,
+  },
+  {
+    path: "/admin/students/:id",
+    element: <StudentsInformationTabBar />
   },
   {
     path: "*",

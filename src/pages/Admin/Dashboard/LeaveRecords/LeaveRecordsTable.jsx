@@ -1,7 +1,8 @@
 import GreenBtn from "../../../../Componants/GreenBtn.jsx";
 import Pagination from "../../../../Componants/Pagination/Pagination.jsx";
+import {Link} from "react-router-dom";
 
-const LeaveRecordsTable = ({tableHead, tableBody}) => {
+const LeaveRecordsTable = ({tableHead, tableBody, link}) => {
 
     const head = Object.keys(tableHead[0])
     const body = Object.keys(tableBody[0])
@@ -23,11 +24,39 @@ const LeaveRecordsTable = ({tableHead, tableBody}) => {
         </td>
     )
 
+    const studentsInformation = (column, row) => {
+        let color
+        switch (row[column]){
+            case 'دانشجو':
+                color = 'text-[#FF00B8]'
+                break;
+            case 'فارغ التحصیل':
+                color = 'text-[#A3AED0]'
+                break;
+            case 'استخدام':
+                color = 'text-[#09814A]'
+                break;
+                default: color = 'text-black'
+        }
+        return (
+            <td key={`${row.id}-${column}-student-status`} className={color}>
+                <span className='mx-auto block w-fit'>{row[column]}</span>
+            </td>
+        )
+    }
+
+    const studentsInformationLink = (column, row) => (
+        <td>
+            <Link className='text-primary-blue bg-[#F7F5FF] mx-auto block w-fit p-2 rounded-xl' to={`${link}${row.id}`} >{row[column]}</Link>
+        </td>
+    )
+
     const showNormalValue = (column, row) => (
-        <td className='last:text-primary-blue [&>span]:last:bg-[#F7F5FF]' key={`${row.id}-${column}-normalValue`}>
+        <td className='last:text-primary-blue [&>span]:last:bg-[#F7F5FF] [&>span]:last:cursor-pointer' key={`${row.id}-${column}-normalValue`}>
             <span className='mx-auto block w-fit p-2 rounded-xl'>{row[column]}</span>
         </td>
     )
+
 
     return (
         <div className='flex flex-col gap-10'>
@@ -63,6 +92,12 @@ const LeaveRecordsTable = ({tableHead, tableBody}) => {
                                     }
                                     if (column === 'range') {
                                         return showRangeBtn(column, row)
+                                    }
+                                    if (column === 'status') {
+                                        return studentsInformation(column, row)
+                                    }
+                                    if (column === 'information') {
+                                        return studentsInformationLink(column, row)
                                     }
                                     return (
                                         showNormalValue(column, row)

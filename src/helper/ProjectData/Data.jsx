@@ -1159,3 +1159,512 @@ export const LeaveRequestData = {
     },
   ],
 };
+export const MentorsData = {
+  head: [
+    { id: 1, title: "#" },
+    { id: 2, title: "نام و نام خانوادگی " },
+    { id: 3, title: "نام فرعی دوره " },
+    { id: 4, title: "زمان استخدام" },
+    { id: 5, title: "وضعیت دوره" },
+    { id: 6, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      fullName: "حسین رفیعی",
+      courseName: "REACT ",
+      date: "1402/07/25",
+      status: "فعال",
+    },
+    {
+      id: 2,
+      fullName: "محسن زیرک",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "غیرفعال",
+    },
+    {
+      id: 3,
+      fullName: "خانم پیشداد",
+      courseName: "PHP",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "غیرفعال",
+    },
+    {
+      id: 4,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "فعال",
+    },
+    {
+      id: 5,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "فعال",
+    },
+    {
+      id: 6,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "فعال",
+    },
+    {
+      id: 7,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "فعال",
+    },
+
+    {
+      id: 8,
+      fullName: "مسعود رمضانی",
+      courseName: "ui/ux ",
+      courseNumber: 13,
+      date: "1402/07/25",
+      status: "فعال",
+    },
+  ],
+};
+
+export const MentorsCardData = [
+  {
+    id: 1,
+    mentor: "استاد کاظمی",
+    course: "PHP",
+    courseCount: "تعداد دوره برگذار شده",
+    courseCountValue: 16,
+    allMembers: "تعداد کل شرکت کننده ها ",
+    allMembersValue: 160,
+    activeStudents: "تعداد دانشجوی فعال",
+    countActiveStudents: 10,
+    graduateds: "تعداد فارغ التحصیل",
+    graduatedsValue: 160,
+    hierds: "تعداد استخدامی",
+    hierdsCount: 76,
+    quiteds: "تعداد انصرافی",
+    quitedsCount: 12,
+    fireds: "تعداد ریجکتی",
+    firedsCount: 18,
+  },
+  {
+    id: 2,
+    mentor: "استاد زیرک",
+    course: "LARAVEL",
+    courseCount: "تعداد دوره برگذار شده",
+    courseCountValue: 16,
+    allMembers: "تعداد کل شرکت کننده ها ",
+    allMembersValue: 160,
+    activeStudents: "تعداد دانشجوی فعال",
+    countActiveStudents: 10,
+    graduateds: "تعداد فارغ التحصیل",
+    graduatedsValue: 160,
+    hierds: "تعداد استخدامی",
+    hierdsCount: 76,
+    quiteds: "تعداد انصرافی",
+    quitedsCount: 12,
+    fireds: "تعداد ریجکتی",
+    firedsCount: 18,
+  },
+  {
+    id: 3,
+    mentor: "استاد صادقی کیا",
+    course: "UI UX",
+    courseCount: "تعداد دوره برگذار شده",
+    courseCountValue: 16,
+    allMembers: "تعداد کل شرکت کننده ها ",
+    allMembersValue: 160,
+    activeStudents: "تعداد دانشجوی فعال",
+    countActiveStudents: 10,
+    graduateds: "تعداد فارغ التحصیل",
+    graduatedsValue: 160,
+    hierds: "تعداد استخدامی",
+    hierdsCount: 76,
+    quiteds: "تعداد انصرافی",
+    quitedsCount: 12,
+    fireds: "تعداد ریجکتی",
+    firedsCount: 18,
+  },
+  {
+    id: 4,
+    mentor: "استاد آذریان",
+    course: "REACT",
+    courseCount: "تعداد دوره برگذار شده",
+    courseCountValue: 16,
+    allMembers: "تعداد کل شرکت کننده ها ",
+    allMembersValue: 160,
+    activeStudents: "تعداد دانشجوی فعال",
+    countActiveStudents: 10,
+    graduateds: "تعداد فارغ التحصیل",
+    graduatedsValue: 160,
+    hierds: "تعداد استخدامی",
+    hierdsCount: 76,
+    quiteds: "تعداد انصرافی",
+    quitedsCount: 12,
+    fireds: "تعداد ریجکتی",
+    firedsCount: 18,
+  },
+  {
+    id: 5,
+    mentor: "استاد رفیعی",
+    course: "REACT",
+    courseCount: "تعداد دوره برگذار شده",
+    courseCountValue: 16,
+    allMembers: "تعداد کل شرکت کننده ها ",
+    allMembersValue: 160,
+    activeStudents: "تعداد دانشجوی فعال",
+    countActiveStudents: 10,
+    graduateds: "تعداد فارغ التحصیل",
+    graduatedsValue: 160,
+    hierds: "تعداد استخدامی",
+    hierdsCount: 76,
+    quiteds: "تعداد انصرافی",
+    quitedsCount: 12,
+    fireds: "تعداد ریجکتی",
+    firedsCount: 18,
+  },
+  {
+    id: 6,
+    mentor: "استاد صادقی کیا",
+    course: "UI UX",
+    courseCount: "تعداد دوره برگذار شده",
+    courseCountValue: 16,
+    allMembers: "تعداد کل شرکت کننده ها ",
+    allMembersValue: 160,
+    activeStudents: "تعداد دانشجوی فعال",
+    countActiveStudents: 10,
+    graduateds: "تعداد فارغ التحصیل",
+    graduatedsValue: 160,
+    hierds: "تعداد استخدامی",
+    hierdsCount: 76,
+    quiteds: "تعداد انصرافی",
+    quitedsCount: 12,
+    fireds: "تعداد ریجکتی",
+    firedsCount: 18,
+  },
+];
+
+export const NotificationRecordsData = {
+  head: [
+    { id: 1, title: "#" },
+    { id: 2, title: "موضوع پیام" },
+    { id: 3, title: "تیتر اصلی " },
+    { id: 4, title: "تیتر فرعی" },
+    { id: 5, title: "شماره دوره" },
+    { id: 6, title: "تاریخ" },
+    { id: 7, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      subject: "تبریک عید",
+      mainTitle: "فرانت اند ",
+      subtitle: "REACT",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+    {
+      id: 2,
+      subject: "تبریک روز زن",
+      mainTitle: "مقدماتی",
+      subtitle: "مقدماتی",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+    {
+      id: 3,
+      subject: "تبریک روز زن",
+      mainTitle: "فرانت اند",
+      subtitle: "REACT",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+    {
+      id: 4,
+      subject: "دعوت به جشن",
+      mainTitle: "UI UX",
+      subtitle: "UI UX",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+    {
+      id: 5,
+      subject: "دعوت به جشن",
+      mainTitle: "UI UX",
+      subtitle: "UI UX",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+    {
+      id: 6,
+      subject: "تبریک روز زن",
+      mainTitle: "فرانت اند",
+      subtitle: "REACT",
+      courseNumber: 18,
+      date: "1403/2/13",
+    },
+  ],
+};
+
+
+export const coursesDataListStudents = [
+  {
+    id: 1,
+    courseName: 'PHP',
+    courseList: [
+      {
+        id: 1,
+        courseHeld: 16,
+        membersNumber: 10,
+        activeStudents: 20,
+        graduate: 20,
+        employment: 0,
+        withdrawal: 500,
+        rejection: 1
+      },
+    ]
+  },
+  {
+    id: 2,
+    courseName: 'React',
+    courseList: [
+      {
+        id: 2,
+        courseHeld: 0,
+        membersNumber: 10,
+        activeStudents: 20,
+        graduate: 2,
+        employment: 2,
+        withdrawal: 200,
+        rejection: 100
+      },
+    ]
+  },
+  {
+    id: 3,
+    courseName: 'python',
+    courseList: [
+      {
+        id: 3,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 10
+      },
+    ]
+  },
+  {
+    id: 4,
+    courseName: 'ui / ux',
+    courseList: [
+      {
+        id: 4,
+        courseHeld: 100,
+        membersNumber: 0,
+        activeStudents: 0,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 900,
+        rejection: 0
+      },
+    ]
+  },
+  {
+    id: 5,
+    courseName: 'node.js',
+    courseList: [
+      {
+        id: 5,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 3,
+        employment: 10,
+        withdrawal: 20,
+        rejection: 10
+      },
+    ]
+  },
+  {
+    id: 6,
+    courseName: 'java',
+    courseList: [
+      {
+        id: 6,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 10
+      },
+    ]
+  },
+]
+
+export const courseStudentsCollapse = [
+  {
+    id: 1,
+    open: false,
+    CourseName: 'تعداد کل فرانت اند',
+    courseNumber: 10,
+    courseList: [
+      {
+        id: 1,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 3
+      },
+    ]
+  },
+  {
+    id: 2,
+    open: false,
+    CourseName: 'تعداد کل بک اند',
+    courseNumber: 10,
+    courseList: [
+      {
+        id: 2,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 4
+      },
+    ]
+  },
+  {
+    id: 3,
+    open: false,
+    CourseName: 'تعداد کل UI UX',
+    courseNumber: 5,
+    courseList: [
+      {
+        id: 3,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 6
+      },
+    ]
+  },
+  {
+    id: 4,
+    open: false,
+    CourseName: 'تعداد کل مقدماتی',
+    courseNumber: 9,
+    courseList: [
+      {
+        id: 4,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 8
+      },
+    ]
+  },
+  {
+    id: 5,
+    open: false,
+    CourseName: 'تعداد کل فرانت اند',
+    courseNumber: 10,
+    courseList: [
+      {
+        id: 5,
+        courseHeld: 1,
+        membersNumber: 0,
+        activeStudents: 20,
+        graduate: 0,
+        employment: 0,
+        withdrawal: 20,
+        rejection: 9
+      },
+    ]
+  }
+]
+
+export const adminPageStudentsInformation = {
+  linK: '/admin/students/',
+  tableHead: [
+    { id: 1, title: "#" },
+    { id: 2, title: "نام و نام خانوادگی " },
+    { id: 3, title: "دوره" },
+    { id: 4, title: "وضعیت" },
+    { id: 5, title: "عملیات" },
+  ],
+  tableBody: [
+    {
+      id: 1,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'دانشجو',
+      information: 'مشاهده اطلاعات',
+    },
+    {
+      id: 2,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'فارغ التحصیل',
+      information: 'مشاهده اطلاعات',
+    },
+    {
+      id: 3,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'استخدام',
+      information: 'مشاهده اطلاعات',
+    },
+    {
+      id: 4,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'دانشجو',
+      information: 'مشاهده اطلاعات',
+    },
+    {
+      id: 5,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'فارغ التحصیل',
+      information: 'مشاهده اطلاعات',
+    },
+    {
+      id: 6,
+      name: "علیرضا  احمدی ",
+      course: 'react',
+      phoneNumber: "09397636467 ",
+      status: 'استخدام',
+      information: 'مشاهده اطلاعات',
+    },
+  ],
+};

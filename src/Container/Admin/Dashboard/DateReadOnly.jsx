@@ -11,7 +11,7 @@ const DateReadOnly = () => {
             showOtherDays
             readOnly
             value={new Date()}
-            className="custom"
+            className="purple"
         />
     );
 };

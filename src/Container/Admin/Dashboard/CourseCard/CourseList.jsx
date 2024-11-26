@@ -10,7 +10,7 @@ const CourseList = () => {
 
     return (
         <div
-            className=' flex items-center gap-16 scrollbar-none  overflow-x-auto pb-1 h-[120px]'
+            className=' flex items-start gap-12 scrollbar-none  overflow-x-auto pb-1 h-[100px]'
             {...events}
             ref={ref}
         >

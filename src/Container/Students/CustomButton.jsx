@@ -7,12 +7,14 @@ const CustomButton = ({ text, className, href, onClick }) => {
     }
     const bind = useDoubleTap(clickHandler)
     return (
-        <div>
+        <div
+            className={`[&>*]:bg-primary-blue [&>*]:text-white [&>*]:px-5 [&>*]:py-3 [&>*]:rounded-xl [&>*]:active:scale-95 [&>*]:duration-150 w-fit`}
+            {...bind}>
             {
-                href ? <Link {...bind} className={`button bg-primary-blue text-white px-5 py-3 rounded-xl ${className}`} to={href}>
+                href ? <Link className={className} to={href}>
                     {text}
                 </Link> :
-                    <button {...bind} className={`button bg-primary-blue text-white px-5 py-3 rounded-xl ${className}`}>
+                    <button className={className}>
                         {text}
                     </button>
             }

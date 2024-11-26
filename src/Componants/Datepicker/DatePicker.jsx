@@ -15,6 +15,8 @@ const FilterDatePicker = ({date, setDate}) => {
                 value={date}
                 onChange={setDate}
                 showOtherDays
+                calendarPosition='bottom-left'
+                fixMainPosition={true}
             />
             <img className="absolute left-6" src={dateIcon} alt="" />
         </div>
