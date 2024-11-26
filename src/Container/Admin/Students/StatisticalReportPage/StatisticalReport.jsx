@@ -4,7 +4,7 @@ import LeaveRecordsTable from "../../../../pages/Admin/Dashboard/LeaveRecords/Le
 const StatisticalReport = () => {
     return (
         <div>
-            <LeaveRecordsTable tableBody={adminPageStudentsInformation.tableBody} tableHead={adminPageStudentsInformation.tableHead} />
+            <LeaveRecordsTable tableBody={adminPageStudentsInformation.tableBody} tableHead={adminPageStudentsInformation.tableHead} link={adminPageStudentsInformation.linK} />
         </div>
     )
 }

@@ -1609,6 +1609,7 @@ export const courseStudentsCollapse = [
 ]
 
 export const adminPageStudentsInformation = {
+  linK: '/admin/students/',
   tableHead: [
     { id: 1, title: "#" },
     { id: 2, title: "نام و نام خانوادگی " },
@@ -1626,7 +1627,7 @@ export const adminPageStudentsInformation = {
       information: 'مشاهده اطلاعات',
     },
     {
-      id: 1,
+      id: 2,
       name: "علیرضا  احمدی ",
       course: 'react',
       phoneNumber: "09397636467 ",
@@ -1634,7 +1635,7 @@ export const adminPageStudentsInformation = {
       information: 'مشاهده اطلاعات',
     },
     {
-      id: 1,
+      id: 3,
       name: "علیرضا  احمدی ",
       course: 'react',
       phoneNumber: "09397636467 ",
@@ -1642,7 +1643,7 @@ export const adminPageStudentsInformation = {
       information: 'مشاهده اطلاعات',
     },
     {
-      id: 1,
+      id: 4,
       name: "علیرضا  احمدی ",
       course: 'react',
       phoneNumber: "09397636467 ",
@@ -1650,7 +1651,7 @@ export const adminPageStudentsInformation = {
       information: 'مشاهده اطلاعات',
     },
     {
-      id: 1,
+      id: 5,
       name: "علیرضا  احمدی ",
       course: 'react',
       phoneNumber: "09397636467 ",
@@ -1658,7 +1659,7 @@ export const adminPageStudentsInformation = {
       information: 'مشاهده اطلاعات',
     },
     {
-      id: 1,
+      id: 6,
       name: "علیرضا  احمدی ",
       course: 'react',
       phoneNumber: "09397636467 ",
