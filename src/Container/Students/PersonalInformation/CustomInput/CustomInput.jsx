@@ -18,9 +18,6 @@ const CustomInput = ({register, name, placeholder, errors, isNumber, isRequired}
                         <input
                             placeholder={placeholder} {...register(name, {
                             required: isRequired ? 'پر کردن این فیلد الزامیست' : false,
-                            // pattern: {
-                            //     value: /^[\u0600-\u06FF\s]+$/, message: 'فقط حروف فارسی مجاز هست'
-                            // }
                         })}
                             type="text"
                             className="w-[184px] h-[55px] p-4 rounded-xl text-sm shadow-[0px_1px_2px_3px_#0000000D] outline-none"/>
