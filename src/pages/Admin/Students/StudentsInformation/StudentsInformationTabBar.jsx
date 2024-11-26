@@ -1,11 +1,12 @@
 import OriginalTemplatePage from "../../../../Componants/OriginalTemplate/OriginalTemplatePage.jsx";
 import {useState} from "react";
 import PersonalInformationForm from "../../../../Componants/PersonalInformationForm.jsx";
+import CourseInformation from "../../../../Container/Admin/Students/StudentsInforMation/CourseInformation.jsx";
 
 const StudentsInformationTabBar = () => {
     const [page, setPage] = useState([
         {id: 1, title: 'اطلاعات فردی', active: true, page: <PersonalInformationForm/>},
-        {id: 2, title: 'اظلاعات دوره', active: false},
+        {id: 2, title: 'اطلاعات دوره', active: false, page: <CourseInformation />},
         {id: 3, title: 'گزارش عملکرد', active: false},
         {id: 4, title: 'امور مالی', active: false},
         {id: 5, title: 'مرخصی ها', active: false},
