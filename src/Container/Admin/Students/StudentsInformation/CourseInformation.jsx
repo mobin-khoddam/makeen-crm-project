@@ -13,14 +13,16 @@ const  CourseInformation = () => {
     ]
   return (
       <div className='bg-white p-8'>
-          <div className='grid grid-cols-3 gap-12 justify-between max-xl:grid-cols-2 max-lg:grid-cols-1 mb-8'>
+          <div className='grid grid-cols-3 gap-12 justify-between max-xl:grid-cols-2 max-lg:grid-cols-1 mb-8 w-4/5 mx-auto'>
               {fieldData.map( item=> (
                   <div key={item.id}>
                       <CustomReadOnly title={item.title} text={item.text} />
                   </div>
               ))}
           </div>
-          <ImageUploader />
+          <div className='w-2/3 mx-auto max-[900px]:w-full'>
+              <ImageUploader />
+          </div>
           <div className='flex justify-center items-center mt-8'>
               <CustomButton text='ثبت اطلاعات' />
           </div>
