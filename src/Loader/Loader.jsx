@@ -20,6 +20,7 @@ import AdminDashboard from "../pages/Admin/Dashboard/AdminDashboard.jsx";
 import AdminMentorsPage from "../pages/Admin/Mentors/AdminMentorsPage.jsx";
 import StudentsPage from "../pages/Admin/Students/StudentsPage.jsx";
 import SendNotificationPage from "../pages/Admin/SendNotification/SendNotificationPage.jsx";
+import AdminFinancePage from "../pages/Admin/Finance/AdminFinancePage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -101,6 +102,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/send-notification",
     element: <SendNotificationPage />,
+  },
+  {
+    path: "/admin/financial-affairs",
+    element: <AdminFinancePage />,
   },
   {
     path: "*",
