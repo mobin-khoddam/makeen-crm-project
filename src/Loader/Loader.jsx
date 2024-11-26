@@ -21,6 +21,8 @@ import AdminMentorsPage from "../pages/Admin/Mentors/AdminMentorsPage.jsx";
 import StudentsPage from "../pages/Admin/Students/StudentsPage.jsx";
 import SendNotificationPage from "../pages/Admin/SendNotification/SendNotificationPage.jsx";
 import AdminFinancePage from "../pages/Admin/Finance/AdminFinancePage.jsx";
+import * as path from "node:path";
+import StudentsInformationTabBar from "../pages/Admin/Students/StudentsInformation/StudentsInformationTabBar.jsx";
 
 const router = createBrowserRouter([
   {
@@ -106,6 +108,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/financial-affairs",
     element: <AdminFinancePage />,
+  },
+  {
+    path: "/admin/students/:id",
+    element: <StudentsInformationTabBar />
   },
   {
     path: "*",

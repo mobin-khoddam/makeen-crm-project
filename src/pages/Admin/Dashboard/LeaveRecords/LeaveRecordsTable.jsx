@@ -1,7 +1,8 @@
 import GreenBtn from "../../../../Componants/GreenBtn.jsx";
 import Pagination from "../../../../Componants/Pagination/Pagination.jsx";
+import {Link} from "react-router-dom";
 
-const LeaveRecordsTable = ({tableHead, tableBody}) => {
+const LeaveRecordsTable = ({tableHead, tableBody, link}) => {
 
     const head = Object.keys(tableHead[0])
     const body = Object.keys(tableBody[0])
@@ -43,6 +44,12 @@ const LeaveRecordsTable = ({tableHead, tableBody}) => {
             </td>
         )
     }
+
+    const studentsInformationLink = (column, row) => (
+        <td>
+            <Link className='text-primary-blue bg-[#F7F5FF] mx-auto block w-fit p-2 rounded-xl' to={`${link}${row.id}`} >{row[column]}</Link>
+        </td>
+    )
 
     const showNormalValue = (column, row) => (
         <td className='last:text-primary-blue [&>span]:last:bg-[#F7F5FF] [&>span]:last:cursor-pointer' key={`${row.id}-${column}-normalValue`}>
@@ -88,6 +95,9 @@ const LeaveRecordsTable = ({tableHead, tableBody}) => {
                                     }
                                     if (column === 'status') {
                                         return studentsInformation(column, row)
+                                    }
+                                    if (column === 'information') {
+                                        return studentsInformationLink(column, row)
                                     }
                                     return (
                                         showNormalValue(column, row)
