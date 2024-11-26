@@ -22,7 +22,7 @@ import StudentsPage from "../pages/Admin/Students/StudentsPage.jsx";
 import SendNotificationPage from "../pages/Admin/SendNotification/SendNotificationPage.jsx";
 import AdminFinancePage from "../pages/Admin/Finance/AdminFinancePage.jsx";
 import * as path from "node:path";
-import StudentsInformationTabBar from "../pages/Admin/Students/StudentsInformation/StudentsInformationTabBar.jsx";
+import StudentsInformationPage from "../pages/Admin/Students/StudentsInformation/StudentsInformationPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -111,7 +111,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin/students/:id",
-    element: <StudentsInformationTabBar />
+    element: <StudentsInformationPage />
   },
   {
     path: "*",
