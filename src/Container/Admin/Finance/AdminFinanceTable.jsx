@@ -1,7 +1,9 @@
-const AdminMentorsTable = ({ head, body }) => {
+import React from "react";
+
+const AdminFinanceTable = ({ head, body }) => {
   return (
-    <div className="overflow-x-auto bg-white border-[#E9E9E9] border-solid rounded-[8px] mb-[40px] ">
-      <table className="table table-zebra border-[1px] ">
+    <div className="overflow-x-auto  border-[#E9E9E9] border-solid rounded-[8px] mb-[40px] ">
+      <table className="table table-zebra border-[1px] mb-[48px] ">
         {/* head */}
         <thead>
           <tr className="bg-[#F9FAFB] border-b border-solid border-[1px] border-[#E5E7EB] h-[64px] ">
@@ -21,17 +23,22 @@ const AdminMentorsTable = ({ head, body }) => {
               className="text-[#3E3838] text-[16px] h-[64px]"
             >
               <th className=" text-center">{item.id}</th>
-              <td className=" text-center ">{item.fullName}</td>
+              <td className=" text-center ">{item.name}</td>
               <td className=" text-center text-[12px] md:text-[14px] lg:text-[16px] ">
-                {item.courseName}
+                {item.course}
               </td>
-              <td className=" text-center">{item.date}</td>
+              <td className=" text-center">{item.courseNumber}</td>
+              <td className="text-center ">{item.amount}</td>
+              <td className="text-center ">{item.remain}</td>
               <td className="text-center ">
                 <span
-                  className=" mx-auto drop-shadow-sm border-[1px] border-solid border-[#09814A] rounded-[37px] block h-[28px] leading-[28px] text-[14px]"
                   style={{
-                    width: item.status === "فعال	" ? "48px" : "67px",
-                    color: item.status === "فعال" ? "#09814A" : "#A3AED0",
+                    color:
+                      item.status === "دانشجو"
+                        ? "#FF00B8"
+                        : item.status === "فارغ التحصیل"
+                        ? "#A3AED0"
+                        : "#09814A",
                   }}
                 >
                   {item.status}
@@ -40,23 +47,10 @@ const AdminMentorsTable = ({ head, body }) => {
 
               <td className=" text-center">
                 <button
-                  onClick={() => {
-                    navigate(
-                      `/admin/work-report-and-report-card/${item.fullName}`,
-                      {
-                        state: {
-                          id: item.id,
-                          fullName: item.fullName,
-                          img: item.img,
-                          courseName: item.courseName,
-                          courseNumber: item.courseNumber,
-                        },
-                      }
-                    );
-                  }}
+                  onClick={() => {}}
                   className="w-[114px] h-[40px] bg-[#F7F5FF] rounded-[10px] text-[14px] text-[#4318FF] "
                 >
-                  مشاهده اطلاعات{" "}
+                  جزییات{" "}
                 </button>
               </td>
             </tr>
@@ -67,4 +61,4 @@ const AdminMentorsTable = ({ head, body }) => {
   );
 };
 
-export default AdminMentorsTable;
+export default AdminFinanceTable;
