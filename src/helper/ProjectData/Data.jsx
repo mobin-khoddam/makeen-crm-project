@@ -1844,3 +1844,70 @@ export const ArrearsTableData = {
     },
   ],
 };
+
+export const adminPanelStudentsFinanceData = {
+  head: [
+      { id: 1, title: "شماره قسط" },
+      { id: 2, title: "مهلت پرداخت تا" },
+      { id: 3, title: "زمان پرداخت شده" },
+      { id: 4, title: "مبلغ قسط" },
+      { id: 5, title: "مبلغ واریزی" },
+      { id: 6, title: "وضعیت" },
+  ],
+  body:[
+    {id: 1, row: 1, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت شده'},
+    {id: 2, row: 2, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت شده'},
+    {id: 3, row: 3, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت قسط '},
+    {id: 4, row: 4, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت قسط '},
+    {id: 5, row: 5, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت قسط '},
+    {id: 6, row: 6, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت قسط '},
+  ]
+}
+
+
+export const LeaveRequestListAdminPanel = [
+  {
+    id: 1,
+    thirdNumber: false,
+    icon: timerIcon,
+    timeNumberAndTitleColor: "text-[#D10000]",
+    title: "میزان تاخیر های روزانه",
+    titleBackgroundColor: "bg-[#FFD7D7]",
+  },
+  {
+    id: 2,
+    thirdNumber: false,
+    icon: coffeeIcon,
+    timeNumberAndTitleColor: "text-[#007ACC]",
+    title: "مرخصی باقی مانده",
+    titleBackgroundColor: "bg-[#E8F9FF]",
+  },
+  {
+    id: 3,
+    thirdNumber: false,
+    icon: coffeeIcon2,
+    timeNumberAndTitleColor: "text-[#3E8E00]",
+    title: "مرخصی استفاده شده",
+    titleBackgroundColor: "bg-[#EDFFE8]",
+  },
+];
+
+export const adminPanelStudentsLeaveRequestData = {
+  head: [
+    { id: 1, title: "شماره قسط" },
+    { id: 2, title: "تاریخ مرخصی" },
+    { id: 3, title: "میزان ساعت مرخصی" },
+    { id: 4, title: "وضعیت" },
+    { id: 5, title: "عملیات" },
+  ],
+  body:[
+    {id: 1, installmentNumber: 1, leaveRequestDate: '1403/4/24', vacationHours: 2, status: 'تایید شده', operation: 'عملیات'},
+    {id: 2, installmentNumber: 2, leaveRequestDate: '1403/4/24', vacationHours: 1, status: 'رد شده', operation: 'عملیات'},
+    {id: 3, installmentNumber: 3, leaveRequestDate: '1403/4/24', vacationHours: 4, status: 'در حال بررسی',  operation: 'عملیات'},
+    {id: 4, installmentNumber: 4, leaveRequestDate: '1403/4/24', vacationHours: 4, status: 'مشروط',  operation: 'عملیات'},
+    {id: 5, installmentNumber: 5, leaveRequestDate: '1403/4/24', vacationHours: 1, status: 'رد شده', operation: 'عملیات'},
+    {id: 6, installmentNumber: 6, leaveRequestDate: '1403/4/24', vacationHours: 4, status: 'در حال بررسی',  operation: 'عملیات'},
+    {id: 7, installmentNumber: 7, leaveRequestDate: '1403/4/24', vacationHours: 4, status: 'مشروط',  operation: 'عملیات'},
+  ]
+}
+
