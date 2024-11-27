@@ -36,6 +36,18 @@ const LeaveRecordsTable = ({tableHead, tableBody, link}) => {
             case 'استخدام':
                 color = 'text-[#09814A]'
                 break;
+            case 'تایید شده':
+                color = 'text-[#09814A]'
+                break;
+            case 'رد شده':
+                color = 'text-[#FD151B]'
+                break;
+            case 'در حال بررسی':
+                color = 'text-[#A3AED0]'
+                break;
+            case 'مشروط':
+            color = 'text-[#FACA15]'
+                break;
                 default: color = 'text-black'
         }
         return (
