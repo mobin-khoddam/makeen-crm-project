@@ -39,11 +39,11 @@ const FinancialAffairsTabBar = () => {
     }
     return (
         <div>
-            <div className='flex justify-between first:[&>button]:rounded-r-box last:[&>button]:rounded-l-box'>
+            <div className='flex justify-between first:[&>button]:rounded-r-box last:[&>button]:rounded-l-box mb-6 max-sm:flex-col  max-sm:first:[&>button]:rounded-none max-sm:last:[&>button]:rounded-none overflow-hidden max-sm:rounded-2xl'>
                 {financePage.map(item => (
                     <button key={item.id}
                           onClick={() => !item.disable && changePage(item.id)}
-                          className={`w-full block text-center p-5 border cursor-pointer ${item.active ? 'bg-primary-blue text-white' : 'bg-white text-[#6B7280]'}`}>{item.title}</button>
+                          className={`w-full block text-center p-5 border max-lg:text-xs ${item.active ? 'bg-primary-blue text-white' : 'bg-white text-[#6B7280]'}`}>{item.title}</button>
                 ))}
             </div>
             {showPage()}
