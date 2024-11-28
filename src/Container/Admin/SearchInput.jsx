@@ -1,7 +1,7 @@
-const SearchInput = ({placholder}) => {
+const SearchInput = ({placholder, className}) => {
   return (
       <div
-          className="flex items-center  w-full  lg:w-[40%]  h-12 bg-gray-50 border border-gray-300 rounded-[8px] px-4 shadow-sm gap-x-1">
+          className={`flex items-center  w-full  lg:w-[40%]  h-12 bg-gray-50 border border-gray-300 rounded-[8px] px-4 shadow-sm gap-x-1 ${className}`}>
           <svg
               width="18"
               height="19"
