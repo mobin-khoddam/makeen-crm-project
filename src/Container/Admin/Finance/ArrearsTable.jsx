@@ -71,7 +71,7 @@ const ArrearsTable = ({ head, body }) => {
                           </span>
                         </div>
                         <div className="flex w-full  items-center justify-between max-[476px]:flex-col max-[476px]:w-full gap-y-3">
-                          <div className="w-[210px] max-[476px]:w-full h-[154px] flex flex-col items-center justify-center gap-y-2 bg-[#F5F9FF] border-[0.5px] border-solid border-[#4318FF] rounded-[5px]">
+                          <div className="w-[210px] max-[476px]:w-full h-[154px] flex flex-col items-center justify-center gap-y-2 bg-[#F5F9FF] border-[0.5px] border-solid text-[#4318FF] border-[#4318FF] rounded-[5px]">
                             {" "}
                             <svg
                               width="24"
@@ -168,21 +168,19 @@ const ArrearsTable = ({ head, body }) => {
                             ایمیل
                           </span>
                         </div>
-                        <div className="modal-action ">
-                          <div className="w-full flex flex-col    lg:flex-row lg: items-center lg:justify-center  gap-y-2">
-                            <button
-                              className="btn   min-w-[86px] sm:aw-[86px] mx-auto w-full bg-white rounded-md border-[1px] border-solid border-[#4318FF] text-[#4318FF] shadow-none lg:w-[90px]"
-                              onClick={closeModal}
-                            >
-                              بازگشت
-                            </button>
-                            <button
-                              className="btn   w-full  lg:w-[83px] mx-auto   bg-[#4318FF] rounded-md border-[1px] border-solid border-[#4318FF] text-white shadow-none"
-                              onClick={closeModal}
-                            >
-                              ارسال{" "}
-                            </button>
-                          </div>
+                        <div className="modal-action flex flex-col  w-full md:w-fit gap-2  md:flex-row mx-auto">
+                          <button
+                            className="btn    min-w-[80px]  mx-auto max-md:w-full bg-[#4318FF] text-white rounded-md  shadow-none !lg:w-[90px]"
+                            onClick={closeModal}
+                          >
+                            ارسال{" "}
+                          </button>
+                          <button
+                            className="btn   max-md:w-full   lg:w-[94px] mx-auto   bg-white rounded-md border-[1px] border-solid border-[#3E3838] text-[#3E3838] shadow-none"
+                            onClick={closeModal}
+                          >
+                            بازگشت{" "}
+                          </button>
                         </div>
                       </div>
                     </div>
