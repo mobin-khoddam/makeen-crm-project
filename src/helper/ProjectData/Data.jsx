@@ -1911,3 +1911,61 @@ export const adminPanelStudentsLeaveRequestData = {
   ]
 }
 
+import img1 from '/src/assets/images/Admin/Courses/Frame1.png'
+import img2 from '/src/assets/images/Admin/Courses/Frame2.png'
+import img3 from '/src/assets/images/Admin/Courses/Frame3.png'
+
+
+export const panelAdminCourses = [
+  {id: 1, img: img1,},
+  {id: 2, img: img2,},
+  {id: 3, img: img3,},
+  {id: 4, img: img1,},
+  {id: 5, img: img2,},
+  {id: 6, img: img3,},
+  {id: 7, img: img1,},
+  {id: 8, img: img2,},
+  {id: 9, img: img3,},
+]
+
+import img4 from '/src/assets/images/Admin/Courses/Frame4.png'
+import img5 from '/src/assets/images/Admin/Courses/Frame5.png'
+import img6 from '/src/assets/images/Admin/Courses/Frame6.png'
+
+export const panelAdminCourses2 = [
+  {id: 1, img: img4,},
+  {id: 2, img: img5,},
+  {id: 3, img: img6,},
+  {id: 4, img: img4,},
+  {id: 5, img: img5,},
+  {id: 6, img: img6,},
+  {id: 7, img: img4,},
+  {id: 8, img: img5,},
+  {id: 9, img: img6,},
+]
+
+import img7 from '/src/assets/images/Admin/Courses/Group.png'
+import img8 from '/src/assets/images/Admin/Courses/Group1.png'
+import img9 from '/src/assets/images/Admin/Courses/Group2.png'
+
+export const panelAdminCourses3 = [
+  {id: 1, img: img7,},
+  {id: 2, img: img8,},
+  {id: 3, img: img9,},
+  {id: 4, img:img7,},
+  {id: 5, img:img8,},
+  {id: 6, img:img9,},
+  {id: 7, img: img7,},
+  {id: 8, img: img8,},
+  {id: 9, img: img9,},
+]
+
+export const adminPanelSetTimeCourseRadioInput = [
+  {id: 1, value: 'Saturday', title: 'شنبه'},
+  {id: 2, value: 'Sunday', title: 'یکشنبه'},
+  {id: 3, value: 'Monday', title: 'دوشنبه'},
+  {id: 4, value: 'Tuesday', title: 'سه‌شنبه'},
+  {id: 5, value: 'Wednesday', title: 'چهارشنبه'},
+  {id: 6, value: 'Thursday', title: 'پنجشنبه'},
+  {id: 7, value: 'Friday', title: 'جمعه'},
+]

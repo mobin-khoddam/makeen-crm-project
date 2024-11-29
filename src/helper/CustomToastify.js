@@ -3,16 +3,16 @@ import 'react-toastify/dist/ReactToastify.css';
 
 export const notify = (type = 'error', message = 'message') => {
     const allowedTypes = ["info", "success", "error", "warning"];
-    const checkTypes = allowedTypes.includes(type);
-    if (checkTypes && typeof message === 'string') {
-        toast[type](message, {
+    if (allowedTypes.includes(type) && typeof message === 'string') {
+        toast[type]?.(message, {
             position: "top-center",
             rtl: true,
         });
     } else {
-        toast.error('تایپ ورودی نامعتیر هست', {
+        toast.error('نوع ورودی نامعتبر است.', {
             position: "top-center",
             rtl: true,
         });
     }
 };
+
