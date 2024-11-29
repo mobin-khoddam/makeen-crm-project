@@ -22,9 +22,9 @@ import StudentsPage from "../pages/Admin/Students/StudentsPage.jsx";
 import SendNotificationPage from "../pages/Admin/SendNotification/SendNotificationPage.jsx";
 import AdminFinancePage from "../pages/Admin/Finance/AdminFinancePage.jsx";
 import StudentsInformationPage from "../pages/Admin/Students/StudentsInformation/StudentsInformationPage.jsx";
+import DisciplinaryRegulationsPage from "../pages/Admin/DisciplinaryRegulations/DisciplinaryRegulationsPage.jsx";
 import Courses from "../pages/Admin/Courses/Courses.jsx";
 import AddCoursePage from "../pages/Admin/Courses/AddCoursePage.jsx";
-
 
 const router = createBrowserRouter([
   {
@@ -113,7 +113,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin/students/:id",
-    element: <StudentsInformationPage />
+    element: <StudentsInformationPage />,
+  },
+  {
+    path: "/admin/disciplinary-regulations",
+    element: <DisciplinaryRegulationsPage />,
   },
   {
     path: '/admin/courses',
