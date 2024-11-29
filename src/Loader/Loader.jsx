@@ -23,7 +23,7 @@ import SendNotificationPage from "../pages/Admin/SendNotification/SendNotificati
 import AdminFinancePage from "../pages/Admin/Finance/AdminFinancePage.jsx";
 import StudentsInformationPage from "../pages/Admin/Students/StudentsInformation/StudentsInformationPage.jsx";
 import Courses from "../pages/Admin/Courses/Courses.jsx";
-import AddCourse from "../pages/Admin/Courses/AddCourse.jsx";
+import AddCoursePage from "../pages/Admin/Courses/AddCoursePage.jsx";
 
 
 const router = createBrowserRouter([
@@ -121,7 +121,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/admin/courses/add-course',
-    element: <AddCourse />
+    element: <AddCoursePage />
   },
   {
     path: "*",

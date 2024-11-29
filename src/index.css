@@ -15,7 +15,7 @@ body {
 }
 
 .rmdp-input, .rmdp-container {
-    @apply w-full h-[51px] border-none rounded-xl block
+    @apply w-full h-[55px] border-none rounded-xl block shadow-[0px_1px_2px_3px_#0000000D] !important;
 }
 
 .rmdp-input {
