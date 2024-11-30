@@ -48,13 +48,6 @@ body {
     @apply w-full;
 }
 
-.rmdp-day {
-    @apply h-[44.58px] max-[420px]:h-[28.86px];
-}
-
-.rmdp-calendar {
-    @apply w-full border-0;
-}
 
 .rmdp-wrapper {
     @apply border-0;
@@ -62,7 +55,7 @@ body {
 
 
 .rmdp-day-picker {
-    @apply p-5;
+    @apply p-2;
 }
 
 .btn-active {
@@ -79,9 +72,9 @@ body {
 
 .custom-calender > .rmdp-day-picker,
 .custom-calender > .rmdp-top-class {
-    @apply w-[350px] h-full max-sm:w-[250px];
+    @apply w-[220px] h-full ;
 }
 
 .sd {
-    @apply w-full h-4/5
+    @apply w-6 h-4/5
 }

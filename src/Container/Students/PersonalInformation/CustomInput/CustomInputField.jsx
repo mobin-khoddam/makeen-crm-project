@@ -1,13 +1,14 @@
 import CustomInput from "./CustomInput.jsx";
 import DatePicker from "../../../../Componants/Datepicker/DatePicker.jsx";
 
-const CustomInputField = ({register, data, errors, className, registerHelper, isRequired,}) => {
+const CustomInputField = ({register, data, errors, className, registerHelper, isRequired, watch}) => {
     return (
         <div className={className}>
             {
                 data.map(item => {
                     return item.date ? (
-                        <div className='w-[184px] mb-7'>
+                        <div key={`${item.id}-date`}
+                            className='w-[184px] mb-7'>
                             <DatePicker date={item.state} setDate={item.setState}
                                         placeholder={item.placeholder}/>
                         </div>
@@ -19,6 +20,7 @@ const CustomInputField = ({register, data, errors, className, registerHelper, is
                                          name={`${item.name}${registerHelper}`}
                                          placeholder={item.placeholder}
                                          isRequired={isRequired}
+                                         watch={watch}
                             />
                         </div>
                     )
