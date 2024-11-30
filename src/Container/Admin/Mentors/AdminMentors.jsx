@@ -2,16 +2,23 @@ import React, { useState } from "react";
 import AdminMentorsTable from "./AdminMentorsTable";
 import { MentorsData } from "../../../helper/ProjectData/Data";
 import StatisticalReport from "./StatisticalReport";
+import { useNavigate } from "react-router-dom";
 
 const AdminMentors = () => {
   const [state, setState] = useState({
     first: true,
     second: false,
   });
+  const navigate = useNavigate();
   return (
     <div className="w-full">
       <div className="w-full h-fit flex flex-col-reverse gap-4 items-center lg:items-center lg:justify-between lg:flex-row ">
-        <button className="lg:w-[151px] w-full h-[40px] bg-[#4318FF] text-white rounded-[10px] active:scale-95 transition-all ease-linear duration-150">
+        <button
+          onClick={() => {
+            navigate("/admin/mentors/add-mentor");
+          }}
+          className="lg:w-[151px] w-full h-[40px] bg-[#4318FF] text-white rounded-[10px] active:scale-95 transition-all ease-linear duration-150"
+        >
           افزودن استاد +
         </button>
         <div className="lg:w-[350px] w-full h-[40px] relative flex items-center ">
