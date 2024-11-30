@@ -1961,11 +1961,11 @@ export const panelAdminCourses3 = [
 ]
 
 export const adminPanelSetTimeCourseRadioInput = [
-  {id: 1, value: 'Saturday', title: 'شنبه'},
-  {id: 2, value: 'Sunday', title: 'یکشنبه'},
-  {id: 3, value: 'Monday', title: 'دوشنبه'},
-  {id: 4, value: 'Tuesday', title: 'سه‌شنبه'},
-  {id: 5, value: 'Wednesday', title: 'چهارشنبه'},
-  {id: 6, value: 'Thursday', title: 'پنجشنبه'},
-  {id: 7, value: 'Friday', title: 'جمعه'},
+  {id: 1, value: 'شنبه', title: 'شنبه'},
+  {id: 2, value: 'یکشنبه', title: 'یکشنبه'},
+  {id: 3, value: 'دوشنبه', title: 'دوشنبه'},
+  {id: 4, value: 'سه‌شنبه', title: 'سه‌شنبه'},
+  {id: 5, value: 'چهارشنبه', title: 'چهارشنبه'},
+  {id: 6, value: 'پنجشنبه', title: 'پنجشنبه'},
+  {id: 7, value: 'جمعه', title: 'جمعه'},
 ]
