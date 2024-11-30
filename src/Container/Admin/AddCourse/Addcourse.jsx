@@ -5,13 +5,13 @@ import CustomInputField from "../../Students/PersonalInformation/CustomInput/Cus
 import ImageUploader from "../../Students/PersonalInformation/ImageUploader.jsx";
 import CustomButton from "../../Students/CustomButton.jsx";
 import AddButton from "./AddButton.jsx";
-import AddTimeModal from "../../../pages/Admin/Courses/AddTimeModal.jsx";
+import AddTimeModal from "../../../pages/Admin/Courses/AddTimeModal/AddTimeModal.jsx";
 
 const AddCourse = () => {
     const [startDate, setStartDate] = useState();
     const [endDate, setEndDate] = useState();
     const [installmentsDate, setInstallmentsDate] = useState();
-    const {register, handleSubmit, formState: {errors}} = useForm()
+    const {register, handleSubmit, watch, formState: {errors}} = useForm()
     const courseData = [
         {id: 1, placeholder: 'نام اصلی دوره', name: 'OriginalNameCourse',},
         {id: 2, placeholder: 'نام فرعی دوره', name: 'CourseSubName',},
@@ -44,7 +44,8 @@ const AddCourse = () => {
                                 className='flex flex-wrap gap-x-6 max-[1020px]:justify-center max-[1020px]:items-center'
                                 data={courseData} errors={errors}
                                 register={register}
-                                isRequired={true}/>
+                                isRequired={true}
+                                watch={watch}/>
                         </div>
                         <div className='min-w-[300px] max-w-full max-sm:min-w-full'>
                             <ImageUploader/>
