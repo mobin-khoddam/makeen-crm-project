@@ -4,10 +4,11 @@ import {notify} from "../../../helper/CustomToastify.js";
 import CustomInputField from "../../Students/PersonalInformation/CustomInput/CustomInputField.jsx";
 import ImageUploader from "../../Students/PersonalInformation/ImageUploader.jsx";
 import CustomButton from "../../Students/CustomButton.jsx";
-import AddButton from "./AddButton.jsx";
-import AddTimeModal from "../../../pages/Admin/Courses/AddTimeModal/AddTimeModal.jsx";
+import AddTimeModal from "./AddTimeModal/AddTimeModal.jsx";
+import StudentsTable from "./StudentsTable.jsx";
 
 const AddCourse = () => {
+    const [courseTime, setCourseTime] = useState([])
     const [startDate, setStartDate] = useState();
     const [endDate, setEndDate] = useState();
     const [installmentsDate, setInstallmentsDate] = useState();
@@ -55,7 +56,8 @@ const AddCourse = () => {
             </form>
             <div className='bg-white rounded-lg p-8 '>
                 <span className='mb-6 block'>روز و ساعت کلاس</span>
-                <AddTimeModal text='افزودن'/>
+                    <StudentsTable courseTime={courseTime} setCourseTime={setCourseTime} />
+                <AddTimeModal setCourseTime={setCourseTime} courseTime={courseTime} text='افزودن'/>
             </div>
             <CustomButton className='mb-96' text='submit'/>
         </>
