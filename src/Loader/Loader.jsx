@@ -25,6 +25,7 @@ import StudentsInformationPage from "../pages/Admin/Students/StudentsInformation
 import DisciplinaryRegulationsPage from "../pages/Admin/DisciplinaryRegulations/DisciplinaryRegulationsPage.jsx";
 import Courses from "../pages/Admin/Courses/Courses.jsx";
 import AddCoursePage from "../pages/Admin/Courses/AddCoursePage.jsx";
+import AddMentor from "../Container/Admin/Mentors/addMentor/addMentor.jsx";
 
 const router = createBrowserRouter([
   {
@@ -104,6 +105,10 @@ const router = createBrowserRouter([
     element: <AdminMentorsPage />,
   },
   {
+    path: "/admin/mentors/add-mentor",
+    element: <AddMentor />,
+  },
+  {
     path: "/admin/send-notification",
     element: <SendNotificationPage />,
   },
@@ -120,12 +125,12 @@ const router = createBrowserRouter([
     element: <DisciplinaryRegulationsPage />,
   },
   {
-    path: '/admin/courses',
-    element: <Courses />
+    path: "/admin/courses",
+    element: <Courses />,
   },
   {
-    path: '/admin/courses/add-course',
-    element: <AddCoursePage />
+    path: "/admin/courses/add-course",
+    element: <AddCoursePage />,
   },
   {
     path: "*",
