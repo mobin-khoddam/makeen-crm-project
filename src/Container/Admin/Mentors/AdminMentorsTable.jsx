@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const AdminMentorsTable = ({ head, body }) => {
+  const navigate = useNavigate();
   return (
     <div className="overflow-x-auto bg-white border-[#E9E9E9] border-solid rounded-[8px] mb-[40px] ">
       <table className="table table-zebra border-[1px] ">
@@ -42,7 +45,7 @@ const AdminMentorsTable = ({ head, body }) => {
                 <button
                   onClick={() => {
                     navigate(
-                      `/admin/work-report-and-report-card/${item.fullName}`,
+                      `/admin/work-report-and-report-card/${item.fullName}  `,
                       {
                         state: {
                           id: item.id,
