@@ -9,17 +9,21 @@ import TimeInput from "./TimeInput.jsx";
 import {v4 as uuidv4} from "uuid";
 
 
-const AddTimeModal = ({text, data, modalRef, errors, register, onClick }) => {
+const AddTimeModal = ({text, data, modalRef, errors, register, onClick, watch}) => {
     const [id, setId] = useState();
 
     const openModal = () => {
         setId(uuidv4());
         modalRef.current?.showModal()
     }
+
     console.log(id)
     const addCourseTime = () => {
+        if (watch()[`courseTime${id}`] && watch()[`endHour${id}`] && watch()[`endMinute${id}`] && watch()[`startHour${id}`] && watch()[`startMinute${id}`]) {
+            onClick(id)
+        }
         modalRef.current?.close()
-        onClick(id)
+        setId('')
     }
     return (
         <>

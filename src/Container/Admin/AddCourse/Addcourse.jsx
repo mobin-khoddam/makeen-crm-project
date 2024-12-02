@@ -14,7 +14,7 @@ const AddCourse = () => {
     const [startDate, setStartDate] = useState();
     const [endDate, setEndDate] = useState();
     const [installmentsDate, setInstallmentsDate] = useState();
-    const {register, handleSubmit, watch, formState: {errors}} = useForm()
+    const {register, unregister, handleSubmit, watch, formState: {errors}} = useForm()
     const courseData = [
         {id: 1, placeholder: 'نام اصلی دوره', name: 'OriginalNameCourse',},
         {id: 2, placeholder: 'نام فرعی دوره', name: 'CourseSubName',},
@@ -67,13 +67,13 @@ const AddCourse = () => {
             <div className='bg-white rounded-lg p-8 mb-16'>
                 <span className='mb-6 block'>روز و ساعت کلاس</span>
                 <CourseTimeTable courseTime={courseTime} setCourseTime={setCourseTime} errors={errors}
-                                 register={register} courseTimeData={courseTimeData}
-                                 watch={watch}/>
+                                 register={register} courseTimeData={courseTimeData} unregister={unregister}
+                                 watch={watch} setCourseTimeData={setCourseTimeData}/>
                 <AddTimeModal modalRef={modalRef} courseTime={courseTime} text='افزودن'
                               register={register} errors={errors} watch={watch} onClick={table}/>
             </div>
             <div className='bg-white rounded-lg p-8'>
-                <AddStudentsModal/>
+                {/*<AddStudentsModal/>*/}
             </div>
             <CustomButton className='mb-96' text='submit'/>
         </>

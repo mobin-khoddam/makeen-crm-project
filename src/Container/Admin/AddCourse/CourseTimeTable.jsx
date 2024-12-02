@@ -3,12 +3,18 @@ import deleteIcon from '/src/assets/images/Admin/Courses/delete.svg'
 import AddTimeModal from "./AddTimeModal/AddTimeModal.jsx";
 import {useRef, useState} from "react";
 
-const CourseTimeTable = ({courseTime, register, watch, errors, setCourseTime, courseTimeData}) => {
+const CourseTimeTable = ({unregister, register, watch, errors, setCourseTimeData, courseTimeData}) => {
     const [editedCourse, setEditedCourse] = useState({});
     const modalRef = useRef(null);
 
     const removeHandler = (id) => {
-        setCourseTime(courseTime.filter(item => item.id !== id))
+        unregister(`courseTime${id}`)
+        unregister(`endHour${id}`)
+        unregister(`endMinute${id}`)
+        unregister(`startHour${id}`)
+        unregister(`startMinute${id}`)
+        setCourseTimeData(courseTimeData.filter(item => item !== id))
+        console.log(id)
     }
 
     const editeHandler = (data) => {
@@ -16,10 +22,11 @@ const CourseTimeTable = ({courseTime, register, watch, errors, setCourseTime, co
         modalRef.current?.showModal()
     }
     console.log(courseTimeData)
+
+    console.log(watch())
     return (
         <>
-            {courseTime.length > 0 ? (
-                <div className="overflow-x-auto mb-6">
+                <div className={`overflow-x-auto mb-6 ${courseTimeData.length > 0 ? 'opacity-100' : 'opacity-0'}`}>
                     <table className="table table-zebra">
                         <thead>
                         <tr className='bg-[#e5e7eb]'>
@@ -31,13 +38,13 @@ const CourseTimeTable = ({courseTime, register, watch, errors, setCourseTime, co
                         </thead>
                         <tbody>
                         {courseTimeData.map(item => (
-                            <tr key={'courseTime'}>
+                            <tr key={item}>
                                 <th>{watch()[`courseTime${item}`]}</th>
                             <th>{watch()[`endHour${item}`]} : {watch()[`endMinute${item}`]}</th>
                             <th>{watch()[`startHour${item}`]} : {watch()[`startMinute${item}`]}</th>
                             <th className='flex items-center justify-end gap-4'>
                                 <img onClick={() => editeHandler(item)} className='cursor-pointer' src={editeIcon} alt=""/>
-                                <img onClick={() => removeHandler(item.id)} className='cursor-pointer'
+                                <img onClick={() => removeHandler(item)} className='cursor-pointer'
                                      src={deleteIcon} alt=""/>
                             </th>
                         </tr>
@@ -46,8 +53,6 @@ const CourseTimeTable = ({courseTime, register, watch, errors, setCourseTime, co
                     </table>
                     <AddTimeModal errors={errors} register={register} watch={watch} modalRef={modalRef} data={true} />
                 </div>
-            ) : null
-            }
         </>
     )
 }
