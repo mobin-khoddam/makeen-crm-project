@@ -1,14 +1,16 @@
-import {useState} from "react";
+import {useRef, useState} from "react";
 import {useForm} from "react-hook-form";
 import {notify} from "../../../helper/CustomToastify.js";
 import CustomInputField from "../../Students/PersonalInformation/CustomInput/CustomInputField.jsx";
 import ImageUploader from "../../Students/PersonalInformation/ImageUploader.jsx";
 import CustomButton from "../../Students/CustomButton.jsx";
 import AddTimeModal from "./AddTimeModal/AddTimeModal.jsx";
-import StudentsTable from "./StudentsTable.jsx";
+import CourseTimeTable from "./CourseTimeTable.jsx";
+import AddStudentsModal from "./AddStudentsModal.jsx";
 
 const AddCourse = () => {
     const [courseTime, setCourseTime] = useState([])
+    const [courseTimeData, setCourseTimeData] = useState([])
     const [startDate, setStartDate] = useState();
     const [endDate, setEndDate] = useState();
     const [installmentsDate, setInstallmentsDate] = useState();
@@ -24,6 +26,7 @@ const AddCourse = () => {
         {id: 8, placeholder: 'شروع اقساط', state: installmentsDate, setState: setInstallmentsDate, date: true},
     ]
 
+    const modalRef = useRef(null);
     const onSubmit = (data) => {
         if (startDate && endDate && installmentsDate) {
             console.log(data)
@@ -34,6 +37,13 @@ const AddCourse = () => {
             notify('warning', 'لطفا تاریخ ها را پر کنید')
         }
     }
+    const table = (id) => {
+        const watchValue = watch()
+        setCourseTimeData(prev => [...prev, id])
+        setCourseTime(prev => [...prev, watchValue])
+    }
+
+
     return (
         <>
             <form onSubmit={handleSubmit(onSubmit)}>
@@ -54,10 +64,16 @@ const AddCourse = () => {
                     </div>
                 </div>
             </form>
-            <div className='bg-white rounded-lg p-8 '>
+            <div className='bg-white rounded-lg p-8 mb-16'>
                 <span className='mb-6 block'>روز و ساعت کلاس</span>
-                    <StudentsTable courseTime={courseTime} setCourseTime={setCourseTime} />
-                <AddTimeModal setCourseTime={setCourseTime} courseTime={courseTime} text='افزودن'/>
+                <CourseTimeTable courseTime={courseTime} setCourseTime={setCourseTime} errors={errors}
+                                 register={register} courseTimeData={courseTimeData}
+                                 watch={watch}/>
+                <AddTimeModal modalRef={modalRef} courseTime={courseTime} text='افزودن'
+                              register={register} errors={errors} watch={watch} onClick={table}/>
+            </div>
+            <div className='bg-white rounded-lg p-8'>
+                <AddStudentsModal/>
             </div>
             <CustomButton className='mb-96' text='submit'/>
         </>

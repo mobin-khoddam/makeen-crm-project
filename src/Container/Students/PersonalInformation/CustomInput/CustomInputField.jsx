@@ -1,7 +1,7 @@
 import CustomInput from "./CustomInput.jsx";
 import DatePicker from "../../../../Componants/Datepicker/DatePicker.jsx";
 
-const CustomInputField = ({register, data, errors, className, registerHelper, isRequired, watch}) => {
+const   CustomInputField = ({register, data, errors, className, registerHelper, isRequired, watch}) => {
     return (
         <div className={className}>
             {
