@@ -73,7 +73,7 @@ const AddCourse = () => {
                               register={register} errors={errors} watch={watch} onClick={table}/>
             </div>
             <div className='bg-white rounded-lg p-8'>
-                {/*<AddStudentsModal/>*/}
+                <AddStudentsModal/>
             </div>
             <CustomButton className='mb-96' text='submit'/>
         </>
