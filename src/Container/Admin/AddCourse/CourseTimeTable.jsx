@@ -4,7 +4,7 @@ import AddTimeModal from "./AddTimeModal/AddTimeModal.jsx";
 import {useRef, useState} from "react";
 
 const CourseTimeTable = ({unregister, register, watch, errors, setCourseTimeData, courseTimeData}) => {
-    // const [editedCourse, setEditedCourse] = useState({});
+    const [editId, setEditId] = useState();
     const modalRef = useRef(null);
 
     const removeHandler = (id) => {
@@ -16,9 +16,13 @@ const CourseTimeTable = ({unregister, register, watch, errors, setCourseTimeData
         setCourseTimeData(courseTimeData.filter(item => item !== id))
     }
 
-    const editeHandler = (data) => {
-        setEditedCourse(data)
+    const editeHandler = (id) => {
+        setEditId(id)
         modalRef.current?.showModal()
+    }
+
+    const clearEditId = () => {
+        setEditId('')
     }
 
     return (
@@ -39,8 +43,8 @@ const CourseTimeTable = ({unregister, register, watch, errors, setCourseTimeData
                             {courseTimeData.map(item => (
                                 <tr key={item}>
                                     <th>{watch()[`courseTime${item}`]}</th>
-                                    <th>{watch()[`endHour${item}`]} : {watch()[`endMinute${item}`]}</th>
                                     <th>{watch()[`startHour${item}`]} : {watch()[`startMinute${item}`]}</th>
+                                    <th>{watch()[`endHour${item}`]} : {watch()[`endMinute${item}`]}</th>
                                     <th className='flex items-center justify-end gap-4'>
                                         <img onClick={() => editeHandler(item)} className='cursor-pointer' src={editeIcon}
                                              alt=""/>
@@ -51,7 +55,7 @@ const CourseTimeTable = ({unregister, register, watch, errors, setCourseTimeData
                             ))}
                             </tbody>
                         </table>
-                        <AddTimeModal errors={errors} register={register} watch={watch} modalRef={modalRef} data={true}/>
+                        <AddTimeModal editId={editId} clearEditId={clearEditId}  errors={errors} register={register} watch={watch} modalRef={modalRef} data={true}/>
                     </div>
                 )
             }
