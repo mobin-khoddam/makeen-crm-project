@@ -2,7 +2,7 @@ const CustomRadioInput = ({register, data, errors, name, title, isRequired, clas
     return (
         <div className={parentClass}>
             <div className={`flex items-center gap-4 ${className}`}>
-                <span className="text-nowrap">{title}</span>
+                {title && <span className="text-nowrap">{title}</span>}
                 {
                     data.map(item => (
                         <div key={item.id}>
