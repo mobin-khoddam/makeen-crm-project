@@ -1,15 +1,14 @@
-import {useRef, useState} from "react";
+import { useState} from "react";
 import AddButton from "../AddButton.jsx";
 import closeIcon from "/src/assets/images/Admin/Courses/close-circle.svg"
 import CustomRadioInput from "../../../Students/PersonalInformation/CustomRadioInput.jsx";
-import {useForm} from "react-hook-form";
 import {adminPanelSetTimeCourseRadioInput} from "../../../../helper/ProjectData/Data.jsx";
 import CustomButton from "../../../Students/CustomButton.jsx";
 import TimeInput from "./TimeInput.jsx";
 import {v4 as uuidv4} from "uuid";
 
 
-const AddTimeModal = ({text, data, modalRef, errors, register, onClick, watch, editId, clearEditId, reset}) => {
+const AddTimeModal = ({text, data, modalRef, errors, register, onClick, watch, editId, clearEditId}) => {
     const [id, setId] = useState();
 
     const openModal = () => {
