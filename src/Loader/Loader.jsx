@@ -26,6 +26,7 @@ import DisciplinaryRegulationsPage from "../pages/Admin/DisciplinaryRegulations/
 import Courses from "../pages/Admin/Courses/Courses.jsx";
 import AddCoursePage from "../pages/Admin/Courses/AddCoursePage.jsx";
 import AddMentor from "../Container/Admin/Mentors/addMentor/addMentor.jsx";
+import Compositions from "../pages/Admin/Compositions.jsx";
 
 const router = createBrowserRouter([
   {
@@ -131,6 +132,10 @@ const router = createBrowserRouter([
   {
     path: "/admin/courses/add-course",
     element: <AddCoursePage />,
+  },
+  {
+    path: "/admin/compositions",
+    element: <Compositions />,
   },
   {
     path: "*",
