@@ -12,7 +12,11 @@ import SettingSvg from "/src/assets/images/Sidebar/setting-2.svg?react";
 import NoteFavoriteSvg from "/src/assets/images/Sidebar/note-favorite.svg?react";
 import MenuBoardSvg from "/src/assets/images/Sidebar/menu-board.svg?react";
 import studentImage from "../../assets/images/menthor/profile1.png";
-
+import AdminProfile1 from "../../assets/images/menthor/profile1.png";
+import AdminProfile2 from "../../assets/images/menthor/profile2.png";
+import AdminProfile3 from "../../assets/images/menthor/profile3.png";
+import AdminProfile4 from "../../assets/images/menthor/profile4.png";
+import AdminProfile5 from "../../assets/images/menthor/profile5.png";
 export const studentSidebar = [
   { id: 1, location: "/student/dashboard", svg: HomeSvg, title: "داشبورد" },
   { id: 2, location: "/student/work-report", svg: NoteSvg, title: "گزارش کار" },
@@ -1608,7 +1612,7 @@ export const courseStudentsCollapse = [
 ];
 
 export const adminPageStudentsInformation = {
-  linK: '/admin/students/',
+  linK: "/admin/students/",
   tableHead: [
     { id: 1, title: "#" },
     { id: 2, title: "نام و نام خانوادگی " },
@@ -1847,23 +1851,70 @@ export const ArrearsTableData = {
 
 export const adminPanelStudentsFinanceData = {
   head: [
-      { id: 1, title: "شماره قسط" },
-      { id: 2, title: "مهلت پرداخت تا" },
-      { id: 3, title: "زمان پرداخت شده" },
-      { id: 4, title: "مبلغ قسط" },
-      { id: 5, title: "مبلغ واریزی" },
-      { id: 6, title: "وضعیت" },
+    { id: 1, title: "شماره قسط" },
+    { id: 2, title: "مهلت پرداخت تا" },
+    { id: 3, title: "زمان پرداخت شده" },
+    { id: 4, title: "مبلغ قسط" },
+    { id: 5, title: "مبلغ واریزی" },
+    { id: 6, title: "وضعیت" },
   ],
-  body:[
-    {id: 1, row: 1, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت شده'},
-    {id: 2, row: 2, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت شده'},
-    {id: 3, row: 3, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت قسط '},
-    {id: 4, row: 4, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت قسط '},
-    {id: 5, row: 5, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت قسط '},
-    {id: 6, row: 6, paymentDeadline: '1403/4/24', paidTime: '1403/4/24', installmentAmount: '1.200.000', DepositAmount: '1.200.000', status: 'پرداخت قسط '},
-  ]
-}
-
+  body: [
+    {
+      id: 1,
+      row: 1,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت شده",
+    },
+    {
+      id: 2,
+      row: 2,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت شده",
+    },
+    {
+      id: 3,
+      row: 3,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت قسط ",
+    },
+    {
+      id: 4,
+      row: 4,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت قسط ",
+    },
+    {
+      id: 5,
+      row: 5,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت قسط ",
+    },
+    {
+      id: 6,
+      row: 6,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت قسط ",
+    },
+  ],
+};
 
 export const LeaveRequestListAdminPanel = [
   {
@@ -1900,72 +1951,159 @@ export const adminPanelStudentsLeaveRequestData = {
     { id: 4, title: "وضعیت" },
     { id: 5, title: "عملیات" },
   ],
-  body:[
-    {id: 1, installmentNumber: 1, leaveRequestDate: '1403/4/24', vacationHours: 2, status: 'تایید شده', operation: 'عملیات'},
-    {id: 2, installmentNumber: 2, leaveRequestDate: '1403/4/24', vacationHours: 1, status: 'رد شده', operation: 'عملیات'},
-    {id: 3, installmentNumber: 3, leaveRequestDate: '1403/4/24', vacationHours: 4, status: 'در حال بررسی',  operation: 'عملیات'},
-    {id: 4, installmentNumber: 4, leaveRequestDate: '1403/4/24', vacationHours: 4, status: 'مشروط',  operation: 'عملیات'},
-    {id: 5, installmentNumber: 5, leaveRequestDate: '1403/4/24', vacationHours: 1, status: 'رد شده', operation: 'عملیات'},
-    {id: 6, installmentNumber: 6, leaveRequestDate: '1403/4/24', vacationHours: 4, status: 'در حال بررسی',  operation: 'عملیات'},
-    {id: 7, installmentNumber: 7, leaveRequestDate: '1403/4/24', vacationHours: 4, status: 'مشروط',  operation: 'عملیات'},
-  ]
-}
+  body: [
+    {
+      id: 1,
+      installmentNumber: 1,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 2,
+      status: "تایید شده",
+      operation: "عملیات",
+    },
+    {
+      id: 2,
+      installmentNumber: 2,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 1,
+      status: "رد شده",
+      operation: "عملیات",
+    },
+    {
+      id: 3,
+      installmentNumber: 3,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 4,
+      status: "در حال بررسی",
+      operation: "عملیات",
+    },
+    {
+      id: 4,
+      installmentNumber: 4,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 4,
+      status: "مشروط",
+      operation: "عملیات",
+    },
+    {
+      id: 5,
+      installmentNumber: 5,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 1,
+      status: "رد شده",
+      operation: "عملیات",
+    },
+    {
+      id: 6,
+      installmentNumber: 6,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 4,
+      status: "در حال بررسی",
+      operation: "عملیات",
+    },
+    {
+      id: 7,
+      installmentNumber: 7,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 4,
+      status: "مشروط",
+      operation: "عملیات",
+    },
+  ],
+};
 
-import img1 from '/src/assets/images/Admin/Courses/Frame1.png'
-import img2 from '/src/assets/images/Admin/Courses/Frame2.png'
-import img3 from '/src/assets/images/Admin/Courses/Frame3.png'
-
+import img1 from "/src/assets/images/Admin/Courses/Frame1.png";
+import img2 from "/src/assets/images/Admin/Courses/Frame2.png";
+import img3 from "/src/assets/images/Admin/Courses/Frame3.png";
 
 export const panelAdminCourses = [
-  {id: 1, img: img1,},
-  {id: 2, img: img2,},
-  {id: 3, img: img3,},
-  {id: 4, img: img1,},
-  {id: 5, img: img2,},
-  {id: 6, img: img3,},
-  {id: 7, img: img1,},
-  {id: 8, img: img2,},
-  {id: 9, img: img3,},
-]
+  { id: 1, img: img1 },
+  { id: 2, img: img2 },
+  { id: 3, img: img3 },
+  { id: 4, img: img1 },
+  { id: 5, img: img2 },
+  { id: 6, img: img3 },
+  { id: 7, img: img1 },
+  { id: 8, img: img2 },
+  { id: 9, img: img3 },
+];
 
-import img4 from '/src/assets/images/Admin/Courses/Frame4.png'
-import img5 from '/src/assets/images/Admin/Courses/Frame5.png'
-import img6 from '/src/assets/images/Admin/Courses/Frame6.png'
+import img4 from "/src/assets/images/Admin/Courses/Frame4.png";
+import img5 from "/src/assets/images/Admin/Courses/Frame5.png";
+import img6 from "/src/assets/images/Admin/Courses/Frame6.png";
 
 export const panelAdminCourses2 = [
-  {id: 1, img: img4,},
-  {id: 2, img: img5,},
-  {id: 3, img: img6,},
-  {id: 4, img: img4,},
-  {id: 5, img: img5,},
-  {id: 6, img: img6,},
-  {id: 7, img: img4,},
-  {id: 8, img: img5,},
-  {id: 9, img: img6,},
-]
+  { id: 1, img: img4 },
+  { id: 2, img: img5 },
+  { id: 3, img: img6 },
+  { id: 4, img: img4 },
+  { id: 5, img: img5 },
+  { id: 6, img: img6 },
+  { id: 7, img: img4 },
+  { id: 8, img: img5 },
+  { id: 9, img: img6 },
+];
 
-import img7 from '/src/assets/images/Admin/Courses/Group.png'
-import img8 from '/src/assets/images/Admin/Courses/Group1.png'
-import img9 from '/src/assets/images/Admin/Courses/Group2.png'
+import img7 from "/src/assets/images/Admin/Courses/Group.png";
+import img8 from "/src/assets/images/Admin/Courses/Group1.png";
+import img9 from "/src/assets/images/Admin/Courses/Group2.png";
 
 export const panelAdminCourses3 = [
-  {id: 1, img: img7,},
-  {id: 2, img: img8,},
-  {id: 3, img: img9,},
-  {id: 4, img:img7,},
-  {id: 5, img:img8,},
-  {id: 6, img:img9,},
-  {id: 7, img: img7,},
-  {id: 8, img: img8,},
-  {id: 9, img: img9,},
-]
+  { id: 1, img: img7 },
+  { id: 2, img: img8 },
+  { id: 3, img: img9 },
+  { id: 4, img: img7 },
+  { id: 5, img: img8 },
+  { id: 6, img: img9 },
+  { id: 7, img: img7 },
+  { id: 8, img: img8 },
+  { id: 9, img: img9 },
+];
 
 export const adminPanelSetTimeCourseRadioInput = [
-  {id: 1, value: 'شنبه', title: 'شنبه'},
-  {id: 2, value: 'یکشنبه', title: 'یکشنبه'},
-  {id: 3, value: 'دوشنبه', title: 'دوشنبه'},
-  {id: 4, value: 'سه‌شنبه', title: 'سه‌شنبه'},
-  {id: 5, value: 'چهارشنبه', title: 'چهارشنبه'},
-  {id: 6, value: 'پنجشنبه', title: 'پنجشنبه'},
-  {id: 7, value: 'جمعه', title: 'جمعه'},
-]
+  { id: 1, value: "شنبه", title: "شنبه" },
+  { id: 2, value: "یکشنبه", title: "یکشنبه" },
+  { id: 3, value: "دوشنبه", title: "دوشنبه" },
+  { id: 4, value: "سه‌شنبه", title: "سه‌شنبه" },
+  { id: 5, value: "چهارشنبه", title: "چهارشنبه" },
+  { id: 6, value: "پنجشنبه", title: "پنجشنبه" },
+  { id: 7, value: "جمعه", title: "جمعه" },
+];
+
+export const AdminsData = [
+  {
+    id: 1,
+    fullName: "محمد صادقی کیا",
+    role: "سوپر ادمین",
+    image: AdminProfile1,
+  },
+  {
+    id: 2,
+    fullName: "امیررضا پاکزاد",
+    role: "ادمین",
+    image: AdminProfile2,
+  },
+  {
+    id: 3,
+    fullName: "خانم پیشداد",
+    role: "ادمین",
+    image: AdminProfile3,
+  },
+  {
+    id: 4,
+    fullName: "حسین رفیعی",
+    role: "ادمین",
+    image: AdminProfile4,
+  },
+  {
+    id: 5,
+    fullName: "محمد سلطانی",
+    role: "ادمین",
+    image: AdminProfile5,
+  },
+  {
+    id: 6,
+    fullName: "مبین خدام",
+    role: "ادمین",
+    image: AdminProfile1,
+  },
+];
