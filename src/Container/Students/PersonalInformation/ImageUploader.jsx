@@ -23,7 +23,7 @@ function ImageUploader() {
 
   return (
     <div className="max-w-full">
-      <div className="w-full h-[333px] border-4 border-dashed relative flex justify-center items-center max-sm:w-full">
+      <div className="w-full h-[333px] border-4 border-dashed relative flex justify-center items-center max-sm:w-full max-sm:text-xs">
         <div>
           <img
             className="w-[70px] h-[45px] mx-auto mb-5"

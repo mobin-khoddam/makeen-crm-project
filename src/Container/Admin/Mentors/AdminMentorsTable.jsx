@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const AdminMentorsTable = ({ head, body }) => {
+  const navigate = useNavigate();
   return (
     <div className="overflow-x-auto bg-white border-[#E9E9E9] border-solid rounded-[8px] mb-[40px] ">
       <table className="table table-zebra border-[1px] ">
@@ -28,7 +31,7 @@ const AdminMentorsTable = ({ head, body }) => {
               <td className=" text-center">{item.date}</td>
               <td className="text-center ">
                 <span
-                  className=" drop-shadow-sm border-[1px] border-solid border-[#09814A] rounded-[37px] block h-[28px] leading-[28px] text-[14px]"
+                  className=" mx-auto drop-shadow-sm border-[1px] border-solid border-[#09814A] rounded-[37px] block h-[28px] leading-[28px] text-[14px]"
                   style={{
                     width: item.status === "فعال	" ? "48px" : "67px",
                     color: item.status === "فعال" ? "#09814A" : "#A3AED0",
@@ -42,7 +45,7 @@ const AdminMentorsTable = ({ head, body }) => {
                 <button
                   onClick={() => {
                     navigate(
-                      `/admin/work-report-and-report-card/${item.fullName}`,
+                      `/admin/work-report-and-report-card/${item.fullName}  `,
                       {
                         state: {
                           id: item.id,

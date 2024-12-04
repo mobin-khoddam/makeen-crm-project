@@ -71,7 +71,7 @@ const PersonalInformationForm = () => {
                     <CustomInputField isRequired={true} register={register} data={personalInformationInput}
                                       errors={errors}
                                       className="grid grid-cols-3 gap-x-7 w-fit justify-center items-center max-lg:flex max-lg:flex-wrap"/>
-                    <div className='w-[333px]'>
+                    <div className='w-[333px] max-w-full'>
                         <ImageUploader/>
                     </div>
                 </div>

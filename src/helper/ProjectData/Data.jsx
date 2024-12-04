@@ -12,7 +12,11 @@ import SettingSvg from "/src/assets/images/Sidebar/setting-2.svg?react";
 import NoteFavoriteSvg from "/src/assets/images/Sidebar/note-favorite.svg?react";
 import MenuBoardSvg from "/src/assets/images/Sidebar/menu-board.svg?react";
 import studentImage from "../../assets/images/menthor/profile1.png";
-
+import AdminProfile1 from "../../assets/images/menthor/profile1.png";
+import AdminProfile2 from "../../assets/images/menthor/profile2.png";
+import AdminProfile3 from "../../assets/images/menthor/profile3.png";
+import AdminProfile4 from "../../assets/images/menthor/profile4.png";
+import AdminProfile5 from "../../assets/images/menthor/profile5.png";
 export const studentSidebar = [
   { id: 1, location: "/student/dashboard", svg: HomeSvg, title: "داشبورد" },
   { id: 2, location: "/student/work-report", svg: NoteSvg, title: "گزارش کار" },
@@ -1415,11 +1419,10 @@ export const NotificationRecordsData = {
   ],
 };
 
-
 export const coursesDataListStudents = [
   {
     id: 1,
-    courseName: 'PHP',
+    courseName: "PHP",
     courseList: [
       {
         id: 1,
@@ -1429,13 +1432,13 @@ export const coursesDataListStudents = [
         graduate: 20,
         employment: 0,
         withdrawal: 500,
-        rejection: 1
+        rejection: 1,
       },
-    ]
+    ],
   },
   {
     id: 2,
-    courseName: 'React',
+    courseName: "React",
     courseList: [
       {
         id: 2,
@@ -1445,13 +1448,13 @@ export const coursesDataListStudents = [
         graduate: 2,
         employment: 2,
         withdrawal: 200,
-        rejection: 100
+        rejection: 100,
       },
-    ]
+    ],
   },
   {
     id: 3,
-    courseName: 'python',
+    courseName: "python",
     courseList: [
       {
         id: 3,
@@ -1461,13 +1464,13 @@ export const coursesDataListStudents = [
         graduate: 0,
         employment: 0,
         withdrawal: 20,
-        rejection: 10
+        rejection: 10,
       },
-    ]
+    ],
   },
   {
     id: 4,
-    courseName: 'ui / ux',
+    courseName: "ui / ux",
     courseList: [
       {
         id: 4,
@@ -1477,13 +1480,13 @@ export const coursesDataListStudents = [
         graduate: 0,
         employment: 0,
         withdrawal: 900,
-        rejection: 0
+        rejection: 0,
       },
-    ]
+    ],
   },
   {
     id: 5,
-    courseName: 'node.js',
+    courseName: "node.js",
     courseList: [
       {
         id: 5,
@@ -1493,13 +1496,13 @@ export const coursesDataListStudents = [
         graduate: 3,
         employment: 10,
         withdrawal: 20,
-        rejection: 10
+        rejection: 10,
       },
-    ]
+    ],
   },
   {
     id: 6,
-    courseName: 'java',
+    courseName: "java",
     courseList: [
       {
         id: 6,
@@ -1509,17 +1512,17 @@ export const coursesDataListStudents = [
         graduate: 0,
         employment: 0,
         withdrawal: 20,
-        rejection: 10
+        rejection: 10,
       },
-    ]
+    ],
   },
-]
+];
 
 export const courseStudentsCollapse = [
   {
     id: 1,
     open: false,
-    CourseName: 'تعداد کل فرانت اند',
+    CourseName: "تعداد کل فرانت اند",
     courseNumber: 10,
     courseList: [
       {
@@ -1530,14 +1533,14 @@ export const courseStudentsCollapse = [
         graduate: 0,
         employment: 0,
         withdrawal: 20,
-        rejection: 3
+        rejection: 3,
       },
-    ]
+    ],
   },
   {
     id: 2,
     open: false,
-    CourseName: 'تعداد کل بک اند',
+    CourseName: "تعداد کل بک اند",
     courseNumber: 10,
     courseList: [
       {
@@ -1548,14 +1551,14 @@ export const courseStudentsCollapse = [
         graduate: 0,
         employment: 0,
         withdrawal: 20,
-        rejection: 4
+        rejection: 4,
       },
-    ]
+    ],
   },
   {
     id: 3,
     open: false,
-    CourseName: 'تعداد کل UI UX',
+    CourseName: "تعداد کل UI UX",
     courseNumber: 5,
     courseList: [
       {
@@ -1566,14 +1569,14 @@ export const courseStudentsCollapse = [
         graduate: 0,
         employment: 0,
         withdrawal: 20,
-        rejection: 6
+        rejection: 6,
       },
-    ]
+    ],
   },
   {
     id: 4,
     open: false,
-    CourseName: 'تعداد کل مقدماتی',
+    CourseName: "تعداد کل مقدماتی",
     courseNumber: 9,
     courseList: [
       {
@@ -1584,14 +1587,14 @@ export const courseStudentsCollapse = [
         graduate: 0,
         employment: 0,
         withdrawal: 20,
-        rejection: 8
+        rejection: 8,
       },
-    ]
+    ],
   },
   {
     id: 5,
     open: false,
-    CourseName: 'تعداد کل فرانت اند',
+    CourseName: "تعداد کل فرانت اند",
     courseNumber: 10,
     courseList: [
       {
@@ -1602,14 +1605,14 @@ export const courseStudentsCollapse = [
         graduate: 0,
         employment: 0,
         withdrawal: 20,
-        rejection: 9
+        rejection: 9,
       },
-    ]
-  }
-]
+    ],
+  },
+];
 
 export const adminPageStudentsInformation = {
-  linK: '/admin/students/',
+  linK: "/admin/students/",
   tableHead: [
     { id: 1, title: "#" },
     { id: 2, title: "نام و نام خانوادگی " },
@@ -1621,50 +1624,486 @@ export const adminPageStudentsInformation = {
     {
       id: 1,
       name: "علیرضا  احمدی ",
-      course: 'react',
+      course: "react",
       phoneNumber: "09397636467 ",
-      status: 'دانشجو',
-      information: 'مشاهده اطلاعات',
+      status: "دانشجو",
+      information: "مشاهده اطلاعات",
     },
     {
       id: 2,
       name: "علیرضا  احمدی ",
-      course: 'react',
+      course: "react",
       phoneNumber: "09397636467 ",
-      status: 'فارغ التحصیل',
-      information: 'مشاهده اطلاعات',
+      status: "فارغ التحصیل",
+      information: "مشاهده اطلاعات",
     },
     {
       id: 3,
       name: "علیرضا  احمدی ",
-      course: 'react',
+      course: "react",
       phoneNumber: "09397636467 ",
-      status: 'استخدام',
-      information: 'مشاهده اطلاعات',
+      status: "استخدام",
+      information: "مشاهده اطلاعات",
     },
     {
       id: 4,
       name: "علیرضا  احمدی ",
-      course: 'react',
+      course: "react",
       phoneNumber: "09397636467 ",
-      status: 'دانشجو',
-      information: 'مشاهده اطلاعات',
+      status: "دانشجو",
+      information: "مشاهده اطلاعات",
     },
     {
       id: 5,
       name: "علیرضا  احمدی ",
-      course: 'react',
+      course: "react",
       phoneNumber: "09397636467 ",
-      status: 'فارغ التحصیل',
-      information: 'مشاهده اطلاعات',
+      status: "فارغ التحصیل",
+      information: "مشاهده اطلاعات",
     },
     {
       id: 6,
       name: "علیرضا  احمدی ",
-      course: 'react',
+      course: "react",
       phoneNumber: "09397636467 ",
-      status: 'استخدام',
-      information: 'مشاهده اطلاعات',
+      status: "استخدام",
+      information: "مشاهده اطلاعات",
     },
   ],
 };
+export const adminFinanceStudents = {
+  head: [
+    { id: 1, title: "#" },
+    { id: 2, title: "نام و نام خانوادگی " },
+    { id: 3, title: "دوره" },
+    { id: 4, title: "شماره دوره" },
+    { id: 5, title: "پرداخت شده" },
+    { id: 6, title: "مانده" },
+    { id: 7, title: "وضعیت" },
+    { id: 8, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      amount: "15.240.238",
+      remain: "1.450.237",
+      status: "استخدام",
+    },
+    {
+      id: 2,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      amount: "15.240.238",
+      remain: "1.450.237",
+      status: "دانشجو",
+    },
+    {
+      id: 3,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      amount: "15.240.238",
+      remain: "1.450.237",
+      status: "دانشجو",
+    },
+    {
+      id: 4,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      amount: "15.240.238",
+      remain: "1.450.237",
+      status: "فارغ التحصیل",
+    },
+    {
+      id: 5,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      amount: "15.240.238",
+      remain: "1.450.237",
+      status: "دانشجو",
+    },
+  ],
+};
+export const LatestTransActionFinanceData = {
+  head: [
+    { id: 1, title: "#" },
+    { id: 2, title: "نام و نام خانوادگی " },
+    { id: 3, title: "دوره" },
+    { id: 4, title: "شماره دوره" },
+    { id: 5, title: "تاریخ پرداخت" },
+    { id: 6, title: "مبلغ قسط" },
+    { id: 7, title: "وضعیت" },
+    { id: 8, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      date: "1403/8/28",
+      amount: "15.240.238",
+      status: "استخدام",
+    },
+    {
+      id: 2,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      date: "1403/8/28",
+      amount: "15.240.238",
+      status: "دانشجو",
+    },
+    {
+      id: 3,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      date: "1403/8/28",
+      amount: "15.240.238",
+      status: "دانشجو",
+    },
+    {
+      id: 4,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      date: "1403/8/28",
+      amount: "15.240.238",
+      status: "فارغ التحصیل",
+    },
+    {
+      id: 5,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      date: "1403/8/28",
+      amount: "15.240.238",
+      status: "دانشجو",
+    },
+  ],
+};
+export const ArrearsTableData = {
+  head: [
+    { id: 1, title: "#" },
+    { id: 2, title: "نام و نام خانوادگی " },
+    { id: 3, title: "دوره" },
+    { id: 4, title: "شماره دوره" },
+    { id: 5, title: "مهلت پرداخت" },
+    { id: 6, title: "مبلغ قسط" },
+    { id: 7, title: "وضعیت" },
+    { id: 8, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      PaymentDeadline: "1403/8/28",
+      amount: "15.240.238",
+      status: "استخدام",
+    },
+    {
+      id: 2,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      PaymentDeadline: "1403/8/28",
+      amount: "15.240.238",
+      status: "دانشجو",
+    },
+    {
+      id: 3,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      PaymentDeadline: "1403/8/28",
+      amount: "15.240.238",
+      status: "دانشجو",
+    },
+    {
+      id: 4,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      PaymentDeadline: "1403/8/28",
+      amount: "15.240.238",
+      status: "فارغ التحصیل",
+    },
+    {
+      id: 5,
+      name: "علیرضا  احمدی ",
+      course: "react",
+      courseNumber: 18,
+      PaymentDeadline: "1403/8/28",
+      amount: "15.240.238",
+      status: "دانشجو",
+    },
+  ],
+};
+
+export const adminPanelStudentsFinanceData = {
+  head: [
+    { id: 1, title: "شماره قسط" },
+    { id: 2, title: "مهلت پرداخت تا" },
+    { id: 3, title: "زمان پرداخت شده" },
+    { id: 4, title: "مبلغ قسط" },
+    { id: 5, title: "مبلغ واریزی" },
+    { id: 6, title: "وضعیت" },
+  ],
+  body: [
+    {
+      id: 1,
+      row: 1,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت شده",
+    },
+    {
+      id: 2,
+      row: 2,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت شده",
+    },
+    {
+      id: 3,
+      row: 3,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت قسط ",
+    },
+    {
+      id: 4,
+      row: 4,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت قسط ",
+    },
+    {
+      id: 5,
+      row: 5,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت قسط ",
+    },
+    {
+      id: 6,
+      row: 6,
+      paymentDeadline: "1403/4/24",
+      paidTime: "1403/4/24",
+      installmentAmount: "1.200.000",
+      DepositAmount: "1.200.000",
+      status: "پرداخت قسط ",
+    },
+  ],
+};
+
+export const LeaveRequestListAdminPanel = [
+  {
+    id: 1,
+    thirdNumber: false,
+    icon: timerIcon,
+    timeNumberAndTitleColor: "text-[#D10000]",
+    title: "میزان تاخیر های روزانه",
+    titleBackgroundColor: "bg-[#FFD7D7]",
+  },
+  {
+    id: 2,
+    thirdNumber: false,
+    icon: coffeeIcon,
+    timeNumberAndTitleColor: "text-[#007ACC]",
+    title: "مرخصی باقی مانده",
+    titleBackgroundColor: "bg-[#E8F9FF]",
+  },
+  {
+    id: 3,
+    thirdNumber: false,
+    icon: coffeeIcon2,
+    timeNumberAndTitleColor: "text-[#3E8E00]",
+    title: "مرخصی استفاده شده",
+    titleBackgroundColor: "bg-[#EDFFE8]",
+  },
+];
+
+export const adminPanelStudentsLeaveRequestData = {
+  head: [
+    { id: 1, title: "شماره قسط" },
+    { id: 2, title: "تاریخ مرخصی" },
+    { id: 3, title: "میزان ساعت مرخصی" },
+    { id: 4, title: "وضعیت" },
+    { id: 5, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      installmentNumber: 1,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 2,
+      status: "تایید شده",
+      operation: "عملیات",
+    },
+    {
+      id: 2,
+      installmentNumber: 2,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 1,
+      status: "رد شده",
+      operation: "عملیات",
+    },
+    {
+      id: 3,
+      installmentNumber: 3,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 4,
+      status: "در حال بررسی",
+      operation: "عملیات",
+    },
+    {
+      id: 4,
+      installmentNumber: 4,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 4,
+      status: "مشروط",
+      operation: "عملیات",
+    },
+    {
+      id: 5,
+      installmentNumber: 5,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 1,
+      status: "رد شده",
+      operation: "عملیات",
+    },
+    {
+      id: 6,
+      installmentNumber: 6,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 4,
+      status: "در حال بررسی",
+      operation: "عملیات",
+    },
+    {
+      id: 7,
+      installmentNumber: 7,
+      leaveRequestDate: "1403/4/24",
+      vacationHours: 4,
+      status: "مشروط",
+      operation: "عملیات",
+    },
+  ],
+};
+
+import img1 from "/src/assets/images/Admin/Courses/Frame1.png";
+import img2 from "/src/assets/images/Admin/Courses/Frame2.png";
+import img3 from "/src/assets/images/Admin/Courses/Frame3.png";
+
+export const panelAdminCourses = [
+  { id: 1, img: img1 },
+  { id: 2, img: img2 },
+  { id: 3, img: img3 },
+  { id: 4, img: img1 },
+  { id: 5, img: img2 },
+  { id: 6, img: img3 },
+  { id: 7, img: img1 },
+  { id: 8, img: img2 },
+  { id: 9, img: img3 },
+];
+
+import img4 from "/src/assets/images/Admin/Courses/Frame4.png";
+import img5 from "/src/assets/images/Admin/Courses/Frame5.png";
+import img6 from "/src/assets/images/Admin/Courses/Frame6.png";
+
+export const panelAdminCourses2 = [
+  { id: 1, img: img4 },
+  { id: 2, img: img5 },
+  { id: 3, img: img6 },
+  { id: 4, img: img4 },
+  { id: 5, img: img5 },
+  { id: 6, img: img6 },
+  { id: 7, img: img4 },
+  { id: 8, img: img5 },
+  { id: 9, img: img6 },
+];
+
+import img7 from "/src/assets/images/Admin/Courses/Group.png";
+import img8 from "/src/assets/images/Admin/Courses/Group1.png";
+import img9 from "/src/assets/images/Admin/Courses/Group2.png";
+
+export const panelAdminCourses3 = [
+  { id: 1, img: img7 },
+  { id: 2, img: img8 },
+  { id: 3, img: img9 },
+  { id: 4, img: img7 },
+  { id: 5, img: img8 },
+  { id: 6, img: img9 },
+  { id: 7, img: img7 },
+  { id: 8, img: img8 },
+  { id: 9, img: img9 },
+];
+
+export const adminPanelSetTimeCourseRadioInput = [
+  { id: 1, value: "شنبه", title: "شنبه" },
+  { id: 2, value: "یکشنبه", title: "یکشنبه" },
+  { id: 3, value: "دوشنبه", title: "دوشنبه" },
+  { id: 4, value: "سه‌شنبه", title: "سه‌شنبه" },
+  { id: 5, value: "چهارشنبه", title: "چهارشنبه" },
+  { id: 6, value: "پنجشنبه", title: "پنجشنبه" },
+  { id: 7, value: "جمعه", title: "جمعه" },
+];
+
+export const AdminsData = [
+  {
+    id: 1,
+    fullName: "محمد صادقی کیا",
+    role: "سوپر ادمین",
+    image: AdminProfile1,
+  },
+  {
+    id: 2,
+    fullName: "امیررضا پاکزاد",
+    role: "ادمین",
+    image: AdminProfile2,
+  },
+  {
+    id: 3,
+    fullName: "خانم پیشداد",
+    role: "ادمین",
+    image: AdminProfile3,
+  },
+  {
+    id: 4,
+    fullName: "حسین رفیعی",
+    role: "ادمین",
+    image: AdminProfile4,
+  },
+  {
+    id: 5,
+    fullName: "محمد سلطانی",
+    role: "ادمین",
+    image: AdminProfile5,
+  },
+  {
+    id: 6,
+    fullName: "مبین خدام",
+    role: "ادمین",
+    image: AdminProfile1,
+  },
+];
