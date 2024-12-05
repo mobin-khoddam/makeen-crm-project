@@ -33,6 +33,8 @@ const LoginForm = () => {
       navigate("/mentor/dashboard");
     } else if (data.userName === "admin") {
       navigate("/admin/dashboard");
+    } else if (data.userName === "super admin") {
+      navigate("/super-admin/admins-management");
     }
   };
 
