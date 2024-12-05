@@ -27,6 +27,7 @@ import Courses from "../pages/Admin/Courses/Courses.jsx";
 import AddCoursePage from "../pages/Admin/Courses/AddCoursePage.jsx";
 import AddMentor from "../Container/Admin/Mentors/addMentor/addMentor.jsx";
 import AdminsManagementPage from "../pages/SuperAdmin/AdminsManagement/AdminsManagementPage.jsx";
+import Compositions from "../pages/Admin/Compositions.jsx";
 
 const router = createBrowserRouter([
   {
@@ -136,6 +137,10 @@ const router = createBrowserRouter([
   {
     path: "/super-admin/admins-management",
     element: <AdminsManagementPage />,
+  },
+  {
+    path: "/admin/compositions",
+    element: <Compositions />,
   },
   {
     path: "*",

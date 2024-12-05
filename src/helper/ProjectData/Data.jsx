@@ -2107,3 +2107,29 @@ export const AdminsData = [
     image: AdminProfile1,
   },
 ];
+
+
+export const adminPanelSettingWorkReportSettings = [
+  {id: 1, hour: 'minimumWorkReportHour', minute: 'minimumWorkReportMinute', title: 'حداقل زمان قابل قبول گزارش کار'},
+  {id: 2, hour: 'calculateBaseReportHour', minute: 'calculateBaseReportMinute', title: 'محاسبه مبنای گزارش'},
+  {id: 3, hour: 'reportDeadlineHour', minute: 'reportDeadlineMinute', title: 'آخرین مهلت ارسال گزارش'},
+  {id: 4, hour: 'deadlineReportFineHour', minute: 'deadlineReportFineMinute', title: 'آخرین مهلت ارسال گزارش با احتساب جریمه'},
+  {id: 5, fine: 'PenaltyPerHourDeducted', title: 'جریمه به ازای هر ساعت کسر'},
+]
+
+export const adminPanelSettingLeaveAndAbsence = [
+  {id: 1, placeholder: 'ساعت', name:'maximumHoursOfLeave', title: 'حداکثر ساعت مجاز مرخصی' },
+  {id: 2, placeholder: 'ضریب', name:'noticeOfLeaveUntil24', title: 'اطلاع مرخصی تا 24 ساعت با ضریب' },
+  {id: 3, placeholder: 'ضریب', name:'lessNoticeOfLeave24', title: 'اطلاع مرخصی کمتر از 24 ساعت با ضریب' },
+  {id: 4, placeholder: 'ضریب', name:'leaveWithoutNotice', title: 'مرخصی بدون اطلاع دادن با ضریب' },
+]
+
+import fineIcon from '/src/assets/images/Admin/Compositions/ticket-expired.svg'
+import CardIcon from '/src/assets/images/Admin/Compositions/card-pos.svg'
+import graduateIcon from '/src/assets/images/Admin/Compositions/teacher.svg'
+
+export const TransferToCardAdminPanel = [
+  {id: 1, title: 'تنظیمات کارت به کارت جریمه', icon: fineIcon, inputName: 'transferToFineCard'},
+  {id: 2, title: 'تنظیمات کارت به کارت قسط', icon: CardIcon, inputName: 'TransferToInstallmentCard'},
+  {id: 3, title: 'تنظیمات کارت به کارت فارغ التحصیلان', icon: graduateIcon, inputName: 'transferToGraduateCard'},
+]
