@@ -2190,3 +2190,39 @@ export const TransferToCardAdminPanel = [
     {id: 2, title: 'تنظیمات کارت به کارت قسط', icon: CardIcon, inputName: 'TransferToInstallmentCard'},
     {id: 3, title: 'تنظیمات کارت به کارت فارغ التحصیلان', icon: graduateIcon, inputName: 'transferToGraduateCard'},
 ]
+
+
+import makeenIcon from '/src/assets/images/SuperAdmin/makeen.png'
+import cupIcon from '/src/assets/images/SuperAdmin/cup.png'
+import graduatesIcon from '/src/assets/images/SuperAdmin/graduates.png'
+import studentsIcon from '/src/assets/images/SuperAdmin/students.png'
+
+export const NumberOfStudentsCard = [
+    {id: 1, title: 'کل مکینی ها', image: makeenIcon, number: 1, bgFrom: 'from-[#D224F4]', bgTo: 'to-[#EE95FF]'},
+    {id: 2, title: 'فارغ التحصیلان', image: cupIcon, number: 0, bgFrom: 'from-[#13DFC4]', bgTo: 'to-[#71E8D8]'},
+    {id: 3, title: 'استخدامی ها', image: graduatesIcon, number: 0, bgFrom: 'from-[#2B97E5]', bgTo: 'to-[#67C3F6]'},
+    {id: 4, title: 'دانشجویان', image: studentsIcon, number: 1, bgFrom: 'from-[#DFE316]', bgTo: 'to-[#FEFF70]'},
+]
+
+import person1 from '/src/assets/images/SuperAdmin/person1.svg'
+import person2 from '/src/assets/images/SuperAdmin/person2.svg'
+import person3 from '/src/assets/images/SuperAdmin/person3.svg'
+import person4 from '/src/assets/images/SuperAdmin/person4.svg'
+
+export const mentorsTeam =  {
+    title: 'اساتید',
+    data: [
+        {id: 1, name: 'استاد علی آذریان', role: 'REACT', image: person1},
+        {id: 2, name: 'استاد محمد صادقی کیا', role: 'UI / UX', image: person2},
+        {id: 3, name: 'استاد محمود کاظمی', role: 'PHP LARAVEL', image: person3},
+        {id: 4, name: 'استاد حسین رفیعی', role: 'REACT', image: person4},
+    ]
+}
+
+export const executiveAgentsTeam =  {
+    title: 'عوامل اجرایی',
+    data: [
+        {id: 1, name: 'استاد محمد صادقی کیا', role: 'admin', image: person2},
+        {id: 2, name: 'آقای امیررضا پاکزاد', role: 'admin', image: person3},
+    ]
+}
