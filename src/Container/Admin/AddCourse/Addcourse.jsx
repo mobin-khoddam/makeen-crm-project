@@ -4,17 +4,18 @@ import {notify} from "../../../helper/CustomToastify.js";
 import CustomInputField from "../../Students/PersonalInformation/CustomInput/CustomInputField.jsx";
 import ImageUploader from "../../Students/PersonalInformation/ImageUploader.jsx";
 import CustomButton from "../../Students/CustomButton.jsx";
-import AddTimeModal from "./AddTimeModal/AddTimeModal.jsx";
+import AddTimeModal from "./AddTimeModal/addCourseModal/AddTimeModal.jsx";
 import CourseTimeTable from "./CourseTimeTable.jsx";
 import AddStudentsModal from "./AddStudentsModal.jsx";
 
 const AddCourse = () => {
+    const [editId, setEditId] = useState();
     const [courseTime, setCourseTime] = useState([])
     const [courseTimeData, setCourseTimeData] = useState([])
     const [startDate, setStartDate] = useState();
     const [endDate, setEndDate] = useState();
     const [installmentsDate, setInstallmentsDate] = useState();
-    const {register, unregister, handleSubmit,reset, watch, formState: {errors}} = useForm()
+    const {register, unregister, handleSubmit, reset, watch, formState: {errors}} = useForm()
     const courseData = [
         {id: 1, placeholder: 'نام اصلی دوره', name: 'OriginalNameCourse',},
         {id: 2, placeholder: 'نام فرعی دوره', name: 'CourseSubName',},
@@ -43,6 +44,15 @@ const AddCourse = () => {
         setCourseTime(prev => [...prev, watchValue])
     }
 
+    const editeHandler = (id) => {
+        setEditId(id)
+        modalRef.current?.showModal()
+    }
+
+    const clearEditId = () => {
+        setEditId('')
+    }
+
 
     return (
         <>
@@ -68,14 +78,16 @@ const AddCourse = () => {
                 <span className='mb-6 block'>روز و ساعت کلاس</span>
                 <CourseTimeTable courseTime={courseTime} setCourseTime={setCourseTime} errors={errors}
                                  register={register} courseTimeData={courseTimeData} unregister={unregister}
-                                 watch={watch} setCourseTimeData={setCourseTimeData}/>
-                <AddTimeModal modalRef={modalRef} courseTime={courseTime} text='افزودن'
+                                 watch={watch} setCourseTimeData={setCourseTimeData} clearEditId={clearEditId}
+                                 editeHandler={editeHandler} editId={editId}/>
+                <AddTimeModal modalRef={modalRef} courseTime={courseTime} text='افزودن' clearEditId={clearEditId}
+                              editId={editId}
                               register={register} errors={errors} watch={watch} reset={reset} onClick={table}/>
             </div>
             <div className='bg-white rounded-lg p-8'>
                 <AddStudentsModal/>
             </div>
-            <CustomButton className='mb-96' text='submit'/>
+            <CustomButton parentClass='w-full' className='my-20 w-full' text='ذخیره'/>
         </>
     )
 }
