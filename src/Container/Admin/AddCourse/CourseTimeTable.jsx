@@ -1,10 +1,9 @@
 import editeIcon from '/src/assets/images/Admin/Courses/editIcon.svg'
 import deleteIcon from '/src/assets/images/Admin/Courses/delete.svg'
-import AddTimeModal from "./AddTimeModal/AddTimeModal.jsx";
+import AddTimeModal from "./AddTimeModal/addCourseModal/AddTimeModal.jsx";
 import {useRef, useState} from "react";
 
-const CourseTimeTable = ({unregister, register, watch, errors, setCourseTimeData, courseTimeData}) => {
-    const [editId, setEditId] = useState();
+const   CourseTimeTable = ({unregister, register, watch, errors, setCourseTimeData, courseTimeData, editeHandler, clearEditId, editId}) => {
     const modalRef = useRef(null);
 
     const removeHandler = (id) => {
@@ -16,14 +15,6 @@ const CourseTimeTable = ({unregister, register, watch, errors, setCourseTimeData
         setCourseTimeData(courseTimeData.filter(item => item !== id))
     }
 
-    const editeHandler = (id) => {
-        setEditId(id)
-        modalRef.current?.showModal()
-    }
-
-    const clearEditId = () => {
-        setEditId('')
-    }
 
     return (
         <>
