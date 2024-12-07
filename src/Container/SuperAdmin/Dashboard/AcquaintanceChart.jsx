@@ -1,7 +1,7 @@
 import { useEffect, useRef, useMemo } from "react";
 import { Chart, BarElement, CategoryScale, LinearScale } from "chart.js";
 
-const Acquaintance = () => {
+const AcquaintanceChart = () => {
     const chartData = useMemo(() => [
         {
             id: 1,
@@ -89,11 +89,11 @@ const Acquaintance = () => {
     }, [chartData]);
 
     return (
-        <div className='bg-white p-6 rounded-lg relative'>
-            <canvas ref={chartRef} style={{ width: "100%", height: "20px", borderRadius: "10px" }} />
-            <ul className={`list-disc grid grid-cols-2 gap-4 mt-14 shadow-[0px_18px_40px_0px_#7090B01F] w-3/4 p-6 rounded-lg mx-auto`}>
+        <div className='bg-white p-6 rounded-[20px] relative w-full'>
+            <canvas ref={chartRef} style={{ width: "100%", maxHeight: "20px", minHeight: "20px", borderRadius: "10px" }} />
+            <ul className={`list-disc grid grid-cols-2 gap-4 mt-14 shadow-[0px_18px_40px_0px_#7090B01F] w-fit p-6 rounded-lg mx-auto max-sm:text-sm max-[400px]:grid-cols-1`}>
                 {chartData.map(item => (
-                    <li key={item.id} className={`list-inside text-[#A3AED0] text-center ${item.markerColor}`}>
+                    <li key={item.id} className={`list-inside text-[#A3AED0] text-start ${item.markerColor}`}>
                         {item.title} {' '}
                         <span className='text-black'>%{item.data}</span>
                     </li>
@@ -103,4 +103,4 @@ const Acquaintance = () => {
     );
 };
 
-export default Acquaintance;
+export default AcquaintanceChart;

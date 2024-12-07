@@ -2226,3 +2226,20 @@ export const executiveAgentsTeam =  {
         {id: 2, name: 'آقای امیررضا پاکزاد', role: 'admin', image: person3},
     ]
 }
+
+export const activeCoursesPanelAmin = [
+    {id: 1, courseName: 'REACT', mentor: 'علی آذریان', number: 10, CourseNumber: 14, startDate: '1402/11/14', endDate: '1402/11/14'},
+    {id: 1, courseName: 'REACT', mentor: 'استاد محمود کاظمی', number: 11, CourseNumber: 13, startDate: '1402/11/14', endDate: '1402/11/14'},
+    {id: 1, courseName: 'REACT', mentor: 'حسین رفیعی', number: 12, CourseNumber: 17, startDate: '1402/11/14', endDate: '1402/11/14'},
+]
+
+import userIcon from '/src/assets/images/SuperAdmin/user.svg'
+import trashIcon from '/src/assets/images/SuperAdmin/trash.svg'
+import massageIcon from '/src/assets/images/SuperAdmin/plain.svg'
+
+
+export const personListDropDown = [
+    {id: 1, text: 'مشاهده اطلاعات ', icon: userIcon},
+    {id: 2, text: 'حذف ', icon: trashIcon},
+    {id: 3, text: 'ارسال پیام', icon: massageIcon},
+]
