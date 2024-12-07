@@ -149,7 +149,7 @@ const router = createBrowserRouter([
     element: <SuperAdminDashboard />,
   },
   {
-    path: "/super-admin/financial-reports",
+    path: "/super-admin/financial/reports",
     element: <FinanceReportPage />,
   },
   {
