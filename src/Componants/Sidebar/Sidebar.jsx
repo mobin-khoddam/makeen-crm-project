@@ -5,7 +5,7 @@ import { userRoll } from "../../../store/store.jsx";
 import {
   adminSideBar,
   mentorSidebar,
-  studentSidebar,
+  studentSidebar, superAdminSideBar,
 } from "../../helper/ProjectData/Data.jsx";
 
 const Sidebar = () => {
@@ -30,9 +30,10 @@ const Sidebar = () => {
                 <SideBarLink data={studentSidebar} />
               ) : role === "mentor" ? (
                 <SideBarLink data={mentorSidebar} />
-              ) : (
+              ) : role === "mentor" ? (
                 <SideBarLink data={adminSideBar} />
-              )}
+              ) :
+              <SideBarLink data={superAdminSideBar} />}
             </div>
             <div className="flex gap-4 mb-6 cursor-pointer pr-6">
               <img className="w-6 h-6" src={`${logOutIcon}`} alt="" />

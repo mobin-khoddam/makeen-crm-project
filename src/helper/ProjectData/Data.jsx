@@ -11,12 +11,14 @@ import CodeCircleSvg from "/src/assets/images/Sidebar/code-circle.svg?react";
 import SettingSvg from "/src/assets/images/Sidebar/setting-2.svg?react";
 import NoteFavoriteSvg from "/src/assets/images/Sidebar/note-favorite.svg?react";
 import MenuBoardSvg from "/src/assets/images/Sidebar/menu-board.svg?react";
+import FinanceSvg from "/src/assets/images/Sidebar/finance-report.svg?react";
 import studentImage from "../../assets/images/menthor/profile1.png";
 import AdminProfile1 from "../../assets/images/menthor/profile1.png";
 import AdminProfile2 from "../../assets/images/menthor/profile2.png";
 import AdminProfile3 from "../../assets/images/menthor/profile3.png";
 import AdminProfile4 from "../../assets/images/menthor/profile4.png";
 import AdminProfile5 from "../../assets/images/menthor/profile5.png";
+
 export const studentSidebar = [
   { id: 1, location: "/student/dashboard", svg: HomeSvg, title: "داشبورد" },
   { id: 2, location: "/student/work-report", svg: NoteSvg, title: "گزارش کار" },
@@ -66,6 +68,56 @@ export const adminSideBar = [
     title: "امور مالی",
   },
   { id: 7, location: "/admin/courses", svg: CodeCircleSvg, title: "دوره ها" },
+  {
+    id: 8,
+    location: "/admin/send-notification",
+    svg: SmsSvg,
+    title: "ارسال اعلان",
+  },
+  { id: 9, location: "/admin/compositions", svg: SettingSvg, title: "تنضیمات" },
+  {
+    id: 10,
+    location: "/admin/disciplinary-regulations",
+    svg: NoteFavoriteSvg,
+    title: "آیین نامه انظباطی",
+  },
+];
+
+export const superAdminSideBar = [
+  { id: 1, location: "/super-admin/dashboard", svg: HomeSvg, title: "داشبورد" },
+  {
+    id: 11,
+    location: "/super-admin/admins-management",
+    svg: UserSvg,
+    title: "مدیریت ادمین ها",
+  },
+  {
+    id: 2,
+    location: "/admin/work-report-and-report-card",
+    svg: NoteSvg,
+    title: "گزارش کار - کارنامه",
+  },
+  {
+    id: 3,
+    location: "/admin/leave-request",
+    svg: MenuBoardSvg,
+    title: "درخواست های مرخصی",
+  },
+  { id: 4, location: "/admin/students", svg: PeoplesSvg, title: "دانشجویان" },
+  { id: 5, location: "/admin/mentors", svg: UserSvg, title: "اساتید" },
+  {
+    id: 6,
+    location: "/admin/financial-affairs",
+    svg: CardSvg,
+    title: "امور مالی",
+  },
+  { id: 7, location: "/admin/courses", svg: CodeCircleSvg, title: "دوره ها" },
+  {
+    id: 8,
+    location: "/super-admin/financial-reports",
+    svg: FinanceSvg,
+    title: "گزارش های مالی مکین",
+  },
   {
     id: 8,
     location: "/admin/send-notification",
@@ -2107,3 +2159,319 @@ export const AdminsData = [
     image: AdminProfile1,
   },
 ];
+
+export const adminPanelSettingWorkReportSettings = [
+  {
+    id: 1,
+    hour: "minimumWorkReportHour",
+    minute: "minimumWorkReportMinute",
+    title: "حداقل زمان قابل قبول گزارش کار",
+  },
+  {
+    id: 2,
+    hour: "calculateBaseReportHour",
+    minute: "calculateBaseReportMinute",
+    title: "محاسبه مبنای گزارش",
+  },
+  {
+    id: 3,
+    hour: "reportDeadlineHour",
+    minute: "reportDeadlineMinute",
+    title: "آخرین مهلت ارسال گزارش",
+  },
+  {
+    id: 4,
+    hour: "deadlineReportFineHour",
+    minute: "deadlineReportFineMinute",
+    title: "آخرین مهلت ارسال گزارش با احتساب جریمه",
+  },
+  { id: 5, fine: "PenaltyPerHourDeducted", title: "جریمه به ازای هر ساعت کسر" },
+];
+
+export const adminPanelSettingLeaveAndAbsence = [
+  {
+    id: 1,
+    placeholder: "ساعت",
+    name: "maximumHoursOfLeave",
+    title: "حداکثر ساعت مجاز مرخصی",
+  },
+  {
+    id: 2,
+    placeholder: "ضریب",
+    name: "noticeOfLeaveUntil24",
+    title: "اطلاع مرخصی تا 24 ساعت با ضریب",
+  },
+  {
+    id: 3,
+    placeholder: "ضریب",
+    name: "lessNoticeOfLeave24",
+    title: "اطلاع مرخصی کمتر از 24 ساعت با ضریب",
+  },
+  {
+    id: 4,
+    placeholder: "ضریب",
+    name: "leaveWithoutNotice",
+    title: "مرخصی بدون اطلاع دادن با ضریب",
+  },
+];
+
+import fineIcon from "/src/assets/images/Admin/Compositions/ticket-expired.svg";
+import CardIcon from "/src/assets/images/Admin/Compositions/card-pos.svg";
+import graduateIcon from "/src/assets/images/Admin/Compositions/teacher.svg";
+
+export const TransferToCardAdminPanel = [
+  {
+    id: 1,
+    title: "تنظیمات کارت به کارت جریمه",
+    icon: fineIcon,
+    inputName: "transferToFineCard",
+  },
+  {
+    id: 2,
+    title: "تنظیمات کارت به کارت قسط",
+    icon: CardIcon,
+    inputName: "TransferToInstallmentCard",
+  },
+  {
+    id: 3,
+    title: "تنظیمات کارت به کارت فارغ التحصیلان",
+    icon: graduateIcon,
+    inputName: "transferToGraduateCard",
+  },
+];
+
+export const SettlementsData = {
+  head: [
+    { id: 1, title: "#" },
+    { id: 2, title: "نام و نام خانوادگی " },
+    { id: 3, title: "دوره" },
+    { id: 4, title: "شماره دوره" },
+    { id: 5, title: "تاریخ تسویه حساب" },
+    { id: 6, title: "مبلغ کل" },
+    { id: 7, title: "وضعیت" },
+    { id: 8, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      date: "1403/8/28",
+      total: "1.450.237",
+      status: "دانشجو",
+    },
+    {
+      id: 2,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      date: "1403/8/28",
+      total: "1.450.237",
+      status: "اخراج",
+    },
+    {
+      id: 3,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      date: "1403/8/28",
+      total: "1.450.237",
+      status: "دانشجو",
+    },
+    {
+      id: 4,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      date: "1403/8/28",
+      total: "1.450.237",
+      status: "دانشجو",
+    },
+    {
+      id: 5,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      date: "1403/8/28",
+      total: "1.450.237",
+      status: "انصراف",
+    },
+    {
+      id: 6,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      date: "1403/8/28",
+      total: "1.450.237",
+      status: "اتمام دوره",
+    },
+    {
+      id: 7,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      date: "1403/8/28",
+      total: "1.450.237",
+      status: "شاغل",
+    },
+  ],
+};
+
+export const DebtsData = {
+  head: [
+    { id: 1, title: "#" },
+    { id: 2, title: "نام و نام خانوادگی " },
+    { id: 3, title: "دوره" },
+    { id: 4, title: "شماره دوره" },
+    { id: 5, title: "مهلت پرداخت" },
+    { id: 6, title: "میزان بدهکاری" },
+    { id: 7, title: "وضعیت" },
+    { id: 8, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      deadline: "1403/8/28",
+
+      total: "1.450.237",
+      status: "دانشجو",
+    },
+    {
+      id: 2,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      deadline: "1403/8/28",
+
+      total: "1.450.237",
+      status: "اخراج",
+    },
+    {
+      id: 3,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      deadline: "1403/8/28",
+
+      total: "1.450.237",
+      status: "دانشجو",
+    },
+    {
+      id: 4,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      deadline: "1403/8/28",
+      total: "1.450.237",
+      status: "دانشجو",
+    },
+    {
+      id: 5,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      deadline: "1403/8/28",
+      total: "1.450.237",
+      status: "انصراف",
+    },
+    {
+      id: 6,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      deadline: "1403/8/28",
+      total: "1.450.237",
+      status: "اتمام دوره",
+    },
+    {
+      id: 7,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      deadline: "1403/8/28",
+      total: "1.450.237",
+      status: "شاغل",
+    },
+  ],
+};
+export const DepositsData = {
+  head: [
+    { id: 1, title: "#" },
+    { id: 2, title: "نام و نام خانوادگی " },
+    { id: 3, title: "دوره" },
+    { id: 4, title: "شماره دوره" },
+    { id: 5, title: "پرداخت شده" },
+    { id: 6, title: "مانده" },
+    { id: 7, title: "وضعیت" },
+    { id: 8, title: "عملیات" },
+  ],
+  body: [
+    {
+      id: 1,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      paid: "1403/8/28",
+      remaining: "1.450.237",
+      status: "دانشجو",
+    },
+    {
+      id: 2,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      paid: "1403/8/28",
+      remaining: "1.450.237",
+      status: "اخراج",
+    },
+    {
+      id: 3,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      paid: "1403/8/28",
+      remaining: "1.450.237",
+      status: "دانشجو",
+    },
+    {
+      id: 4,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      paid: "1403/8/28",
+      remaining: "1.450.237",
+      status: "دانشجو",
+    },
+    {
+      id: 5,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      paid: "1403/8/28",
+      remaining: "1.450.237",
+      status: "انصراف",
+    },
+    {
+      id: 6,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      paid: "1403/8/28",
+      remaining: "1.450.237",
+      status: "اتمام دوره",
+    },
+    {
+      id: 7,
+      fullName: "علیرضا  احمدی ",
+      course: "ui/ux",
+      courseNumber: 18,
+      paid: "1403/8/28",
+      remaining: "1.450.237",
+      status: "شاغل",
+    },
+  ],
+};
