@@ -1,8 +1,21 @@
-# React + Vite
+# CRM Makeen 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+CRM Makeen is a customer relationship management (CRM) system designed with 4 distinct roles. The project is built using **React** ⚛️ and utilizes **Tailwind CSS** 🐦 and **Material-UI (MUI)** 🎨 for the user interface. To manage user roles and state, we use **Zustand** 🧠.
 
-Currently, two official plugins are available:
+This project is fully **responsive** 📱, ensuring a seamless experience across devices. It was developed collaboratively with my friend [Mohammad Soltani Bahram](www.linkedin.com/in/mohammad-bahram-706b28295) 🤝, making it a true team effort.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features ✨
+
+- **4 User Roles** 👥: Each user role has its specific permissions and access within the CRM system.
+- **Responsive Design** 📱💻: The app is fully responsive, optimized for desktop, tablet, and mobile devices.
+- **UI Components** 🎨: Tailwind CSS and MUI provide a sleek, modern interface with flexible styling.
+- **State Management** 🧠: Zustand is used to handle state and manage the different roles effectively.
+
+## Tech Stack ⚙️
+
+- **React** ⚛️: For building the user interface and components.
+- **Tailwind CSS** 🐦: Utility-first CSS framework for responsive design and styling.
+- **Material-UI (MUI)** 🎨: A popular React UI framework used for building modern and reusable components.
+- **Zustand** 🧠: A minimalistic state management tool used to handle user roles and state across the app.
+
+
