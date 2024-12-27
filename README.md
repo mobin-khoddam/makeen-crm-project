@@ -2,7 +2,7 @@
 
 CRM Makeen is a customer relationship management (CRM) system designed with 4 distinct roles. The project is built using **React** ⚛️ and utilizes **Tailwind CSS** 🐦 and **Material-UI (MUI)** 🎨 for the user interface. To manage user roles and state, we use **Zustand** 🧠.
 
-This project is fully **responsive** 📱, ensuring a seamless experience across devices. It was developed collaboratively with my friend [Mohammad Soltani Bahram](www.linkedin.com/in/mohammad-bahram-706b28295) 🤝, making it a true team effort.
+This project is fully **responsive** 📱, ensuring a seamless experience across devices. It was developed collaboratively with my friend [Mohammad Soltani Bahram](Mohammadsoltani138@gmail.com) 🤝, making it a true team effort.
 
 ## Features ✨
 
